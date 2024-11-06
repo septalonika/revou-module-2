@@ -866,29 +866,29 @@ burgerBtn.addEventListener("click", () => {
 
 ### Home - Mobile View
 
-![mobile-home.jpeg](./src/assets/images/readme/mobile-home.jpeg)
+<img src="./src/assets/images/readme/mobile-home.jpeg" alt="mobile-home.jpeg" width="200">
 
 ### Burger Navigation
 
 I created a Mobile burger navigation and helped by javascript to implemented how it's worked.
 
-![mobile-nav.png](./src/assets/images/readme/mobile-nav.png)
+<img src="./src/assets/images/readme/mobile-nav.png" alt="mobile-nav.png" width="200">
 
 ### Footer - Mobile View
 
-![mobile-footer.png](./src/assets/images/readme/mobile-footer.png)
+<img src="./src/assets/images/readme/mobile-footer.png" alt="mobile-footer.png" width="200">
 
 ### Booking - Mobile View
 
-![mobile-booking.png](./src/assets/images/readme/mobile-booking.png)
+<img src="./src/assets/images/readme/mobile-booking.png" alt="mobile-booking.png" width="200">
 
 ### Success - Mobile View
 
-![mobile-success.png](./src/assets/images/readme/mobile-success.png)
+<img src="./src/assets/images/readme/mobile-success.png" alt="mobile-success.png" width="200">
 
 ### About Us - Mobile View
 
-![mobile-about.png](./src/assets/images/readme/mobile-about.png)
+<img src="./src/assets/images/readme/mobile-about.png" alt="mobile-about.png" width="200">
 
 ### Career - Mobile View
 
