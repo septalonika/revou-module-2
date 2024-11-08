@@ -55,8 +55,7 @@ h6 {
 }
 
 .hero-info-img {
-  width: 6vw;
-  height: 4vh;
+  @apply w-[6vw] h-[4vh] lg:w-[3vw] lg:h-[3vh];
 }
 
 .scrollbar-none::-webkit-scrollbar {
@@ -68,7 +67,7 @@ h6 {
 }
 
 .company-logo {
-  @apply text-xl md:text-4xl font-bold;
+  @apply text-xl md:text-4xl lg:text-2xl font-bold;
 }
 
 .company-logo span {
@@ -120,10 +119,13 @@ h6 {
 }
 
 .copyleft {
-  @apply flex justify-center items-center leading-5 h-12 md:h-16 w-screen bg-[#44576d] text-[#e6e6e6];
+  @apply flex justify-center items-center leading-5 h-12 md:h-16 lg:h-10 w-screen lg:w-auto bg-[#44576d] text-[#e6e6e6];
 }
 
 @media (min-width: 1024px) {
+  .hero-shadow {
+    @apply absolute z-auto border border-[#768a96] top-[20vh] right-[10vw] w-[36vw] h-[30vh] rounded-tl-[10vw] rounded-tr-2xl rounded-bl-2xl rounded-br-[10vw];
+  }
   /* animation */
   .slide-in-right {
     animation: slideInRight 1s ease-out;
