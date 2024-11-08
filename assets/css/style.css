@@ -68,14 +68,14 @@ h6 {
 }
 
 .company-logo {
-  @apply text-xl font-bold;
+  @apply text-xl md:text-4xl font-bold;
 }
 
 .company-logo span {
   @apply text-[#86373e];
 }
 .burger-btn {
-  @apply flex relative h-[40px] w-[40px] ml-auto;
+  @apply flex relative h-[40px]   w-[40px] ml-auto;
 }
 
 .burger-btn span {
@@ -103,7 +103,7 @@ h6 {
 }
 
 .burger-menu {
-  @apply flex flex-col justify-center items-center fixed z-20  top-0 -right-[450px] bg-[#aac7d8] h-screen w-full max-w-[50%] transition-all duration-300;
+  @apply flex flex-col justify-center items-center fixed z-20 top-0 -right-[450px] bg-[#aac7d8] h-screen w-full max-w-[50%] transition-all duration-300;
 }
 
 .burger-menu.active {
@@ -115,12 +115,12 @@ h6 {
 }
 
 .burger-menu-outer {
-  @apply fixed h-screen w-full top-0 -right-[450px] z-10 
+  @apply fixed h-screen w-full top-0 -right-[450px] md:-right-[820px] z-10 
   bg-[#29353c90];
 }
 
 .copyleft {
-  @apply flex justify-center items-center leading-5 h-12 bg-[#44576d] text-[#e6e6e6];
+  @apply flex justify-center items-center leading-5 h-12 md:h-16 w-screen bg-[#44576d] text-[#e6e6e6];
 }
 
 @media (min-width: 1024px) {
