@@ -7,6 +7,10 @@
     <meta name="description" content="Booking Hotels | Hotelolet" />
     <meta name="author" content="Andi" />
     <meta name="keywords" content="Booking Hotels, Hotelolet, Hotel" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>HOTELOLET - #1 Hotel in Jakarta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -129,7 +133,7 @@
           <div class="burger-menu-outer"></div>
         </nav>
       </header>
-      <main>
+      <main class="min-h-[386px]">
         <section id="welcome">
           <div
             class="flex absolute z-10 bg-white/50 top-[8vh] hero-text w-full h-[30vh]"
@@ -141,7 +145,7 @@
               </h2>
               <a
                 class="flex justify-center btn py-2 px-2 w-44"
-                href="/hotelolet/index.html#rooms"
+                href="./index.html#rooms"
                 >Check Now</a
               >
               <div
@@ -176,7 +180,7 @@
           </div>
           <div class="flex hero-img">
             <img
-              class="slide-in-right w-screen"
+              class="slide-in-right w-screen min-h-[30vh]"
               src="./assets/images/hero-hotel.jpg"
               alt="hotel"
             />
@@ -193,62 +197,68 @@
           <div class="relative overflow-x-auto scrollbar-none">
             <ul class="flex gap-2">
               <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
+                <a href="./pages/booking.html?room=double-1">
+                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                    <img
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/double-1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div class="flex flex-col h-16 p-2">
+                        <p>Double-1 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
+                <a href="./pages/booking.html?room=luxury-1">
+                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                    <img
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/luxury-1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div class="flex flex-col h-16 p-2">
+                        <p>Luxury-1 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
+                <a href="./pages/booking.html?room=twin-4">
+                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                    <img
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/twin-4.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div class="flex flex-col h-16 p-2">
+                        <p>Twin-4 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
         </section>
         <section
           id="rooms"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
+          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4"
         >
           <ul class="flex flex-col gap-8">
             <li>
@@ -259,151 +269,80 @@
                     class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
                   >
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=single-1">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/single-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Single-1 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=single-2">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/single-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Single-2 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=single-3">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/single-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Single-3 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=single-4">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/single-4.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Single-4 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold">Single Bed Rooms</h2>
-                <div class="flex">
-                  <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
-                  >
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -411,78 +350,173 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold">Single Bed Rooms</h2>
+                <h2 class="text-2xl font-semibold">Double Bed Rooms</h2>
                 <div class="flex">
                   <ul
                     class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
                   >
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=double-1">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/double-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Double-1 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=double-2">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/double-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Double-2 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=double-3">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/double-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Double-3 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
+                      <a href="./pages/booking.html?room=luxury-1">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/luxury-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Luxury-1 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-2xl font-semibold">Twin Bed Rooms</h2>
+                <div class="flex">
+                  <ul
+                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
+                  >
+                    <li>
+                      <a href="./pages/booking.html?room=twin-1">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/twin-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Twin-1 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/booking.html?room=twin-2">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/twin-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Twin-2 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/booking.html?room=twin-3">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/twin-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Twin-3 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/booking.html?room=twin-4">
+                        <div
+                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            src="./assets/images/rooms/twin-4.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg">Twin-4 Bed</h3>
+                              <p class="text-sm">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -492,78 +526,118 @@
         </section>
         <section
           id="facilities"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
+          class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4"
         >
           <div class="flex flex-col gap-8">
-            <div class="flex flex-col gap-2">
+            <div
+              class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] rounded-2xl"
+            >
               <h2 class="text-2xl font-semibold">Facilities</h2>
               <div class="flex">
-                <ul class="grid grid-rows-4 lg:grid-cols-4 grid-flow-col gap-2">
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
-                      />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
-                      />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
-                      />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
-                      />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                <div class="grid grid-cols-4 grid-rows-5 w-full">
+                  <div class="grid row-span-2 p-1 shadow-xlobject-center">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/basketball-court.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-1 justify-center items-center p-1 shadow-xl"
+                  >
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/foodhall.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                  >
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/fashion-3.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/fashion-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/gym-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover object-center h-full w-full"
+                      src="./assets/images/facilities/omakase.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover object-top h-full w-full"
+                      src="./assets/images/facilities/fashion.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/groceries.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl"
+                  >
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/restaurant.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                  >
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/swimming-pools.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                  >
+                    <img
+                      class="object-cover object-right h-full w-full"
+                      src="./assets/images/facilities/working-space.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/gym.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="grid justify-center items-center p-1 shadow-xl">
+                    <img
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/zumba.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -571,10 +645,10 @@
       </main>
       <footer>
         <div
-          class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff]"
+          class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff] rounded-t-3xl"
         >
           <div class="footer-detail">
-            <div class="footer-container company-slogan flex flex-col">
+            <div class="flex flex-col">
               <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
               <p>
                 We owe you a memorable experience and recharge your happiness
@@ -584,18 +658,16 @@
               <h2 class="font-semibold">Information</h2>
               <ul>
                 <li>
-                  <a href="/hotelolet/src/pages/about.html">About us </a>
+                  <a href="./about.html">About us </a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/career.html">Our Careers</a>
+                  <a href="./career.html">Our Careers</a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/privacy.html">Privacy</a>
+                  <a href="./privacy.html">Privacy</a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/tnc.html"
-                    >Terms and Conditions</a
-                  >
+                  <a href="./tnc.html">Terms and Conditions</a>
                 </li>
               </ul>
             </div>
@@ -638,6 +710,7 @@
                     required
                   />
                   <button
+                    onclick="(e)=>{e.preventDefault()}"
                     type="submit"
                     form="booking-form"
                     class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
