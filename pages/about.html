@@ -92,7 +92,7 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   </head>
-  <body class="text-primary">
+  <body class="text-primary md:text-2xl">
     <div class="container px-auto lg:px-[2vw] flex flex-col">
       <header
         class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen rounded-none"
@@ -102,7 +102,7 @@
         >
           <div class="nav-container">
             <a class="company-logo text-bold" href="../index.html">
-              <h2 class="text-2xl">Hotel<span>olet</span>.</h2>
+              <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
           <div class="nav-container">
@@ -133,12 +133,12 @@
           <div class="burger-menu-outer"></div>
         </nav>
       </header>
-      <main class="min-h-[386px]">
+      <main class="min-h-[386px] md:min-h-[440px]">
         <section id="about">
           <div
             class="flex flex-col w-screen px-[6vw] mb-[4vh] gap-4 items-center py-[4vh]"
           >
-            <h1 class="font-bold text-2xl text-shadow">About Us</h1>
+            <h1 class="font-bold text-2xl text-shadow md:text-3xl">About Us</h1>
             <img class="line" src="../assets/images/line.svg" alt="" />
             <article>
               <p>
@@ -155,7 +155,7 @@
           <div
             class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 items-center py-[4vh] bg-[#ffffff] rounded-2xl"
           >
-            <h1 class="font-bold text-2xl">Our Vision</h1>
+            <h1 class="font-bold text-2xl md:text-3xl">Our Vision</h1>
             <img class="line" src="../assets/images/line.svg" alt="" />
             <article>
               <p>
@@ -174,7 +174,9 @@
           <div
             class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 items-center py-[4vh]"
           >
-            <h1 class="font-bold text-2xl text-shadow">Our Commitment</h1>
+            <h1 class="font-bold text-2xl text-shadow md:text-3xl">
+              Our Commitment
+            </h1>
             <img class="line" src="../assets/images/line.svg" alt="" />
             <article>
               <p>
@@ -192,7 +194,7 @@
           <div
             class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 items-center py-[4vh] bg-[#ffffff] rounded-2xl"
           >
-            <h1 class="font-bold text-2xl">Join Us</h1>
+            <h1 class="font-bold text-2xl md:text-3xl">Join Us</h1>
             <img class="line" src="../assets/images/line.svg" alt="" />
             <article>
               <p>
@@ -210,13 +212,13 @@
           <div
             class="flex flex-col w-screen px-[6vw] mt-[2vh] gap-4 items-center py-[4vh]"
           >
-            <h1 class="font-bold text-2xl text-shadow">
+            <h1 class="font-bold text-2xl text-shadow md:text-3xl">
               See The Traveler Reviews
             </h1>
             <img class="line" src="../assets/images/line.svg" alt="" />
             <div class="flex flex-col py-[2vh]">
               <img
-                class="max-sm:hidden quotes-container"
+                class="sm:hidden quotes-container"
                 src="../assets/images/quotes.svg"
                 alt=""
               />
@@ -243,7 +245,7 @@
             </div>
             <div class="flex flex-col py-[2vh]">
               <img
-                class="max-sm:hidden quotes-container"
+                class="sm:hidden quotes-container"
                 src="../assets/images/quotes.svg"
                 alt=""
               />
@@ -269,7 +271,7 @@
             </div>
             <div class="flex flex-col py-[2vh]">
               <img
-                class="max-sm:hidden quotes-container"
+                class="sm:hidden quotes-container"
                 src="../assets/images/quotes.svg"
                 alt=""
               />
@@ -342,32 +344,35 @@
             <div class="footer-container">
               <h2 class="font-semibold">Subscribe</h2>
               <p>Save 15% on your first reserve</p>
-              <div class="footer-form-container">
-                <form
-                  name="reservation"
-                  class="flex"
-                  id="reservation-form"
-                  action="./success.html"
-                  method="GET"
-                  target="_self"
-                >
-                  <input
-                    class="flex h-8 bg-[#e6e6e6] rounded pl-2 pr-8 border-none focus:outline-none"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    onclick="(e)=>{e.preventDefault()}"
-                    type="submit"
-                    form="reservation-form"
-                    class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
+              <div class="footer-container">
+                <h2 class="font-semibold md:text-2xl">Subscribe</h2>
+                <p>Save 15% on your first reserve</p>
+                <div class="footer-form-container">
+                  <form
+                    name="reservation"
+                    class="flex"
+                    id="reservation-form"
+                    action="./success.html"
+                    method="GET"
+                    target="_self"
                   >
-                    Send
-                  </button>
-                </form>
+                    <input
+                      class="flex h-8 md:h-12 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] border-none focus:outline-none"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      form="reservation-form"
+                      class="btn flex h-8 md:h-12 justify-center items-center px-[2vw] md:px-[4vw] absolute left-[56vw] md:left-[58vw] rounded"
+                    >
+                      Send
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
