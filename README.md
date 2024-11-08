@@ -2,9 +2,9 @@
 
 Hotelolet is a company profile website for it's hotel.
 
-![alt text](./src/assets/images/readme/hotelolet.png)
+![alt text](./assets/images/readme/hotelolet.png)
 
-link: https://septalonika.github.io/module-1-deploy.github.io/index.html
+link: https://septalonika.github.io/revou-module-2/index.html
 
 > _"The idea is to make a website that is simple, clean, and easy to use."_
 
@@ -268,7 +268,7 @@ each section has a unique id so that when the user clicks on the navigation tab,
 
 ---
 
-![welcome](./src/assets/images/readme/welcome.jpeg)
+![welcome](./assets/images/readme/welcome.jpeg)
 this is the welcome section of the page, it's the first thing that will be shown when the page is loaded.
 
 ###
@@ -279,11 +279,11 @@ this is the welcome section of the page, it's the first thing that will be shown
 
 ### Rooms Section
 
-![Rooms](./src/assets/images/readme/rooms.jpeg)
+![Rooms](./assets/images/readme/rooms.jpeg)
 
 ### Facilities Section
 
-![facilties](./src/assets/images/readme/facilties.jpeg)
+![facilties](./assets/images/readme/facilties.jpeg)
 
 ---
 
@@ -311,7 +311,7 @@ I'm using the `grid-template-columns` property to create the grid layout for the
 
 ## Footer
 
-![footer.jpeg](./src/assets/images/readme/footer.jpeg)
+![footer.jpeg](./assets/images/readme/footer.jpeg)
 
 at the end of the page, I'm using the `footer` tag to create the footer of the page.
 it's a simple footer that includes a copyright text.
@@ -322,15 +322,15 @@ it's a simple footer that includes a copyright text.
 
 # about.html
 
-![about.jpeg](./src/assets/images/readme/about.jpeg)
+![about.jpeg](./assets/images/readme/about.jpeg)
 
 This is the page that shows about the Hotelolet. Not only about the hotelolet, this will shows you also the review of the users
 
-![about-review.jpeg](./src/assets/images/readme/about-review.jpeg)
+![about-review.jpeg](./assets/images/readme/about-review.jpeg)
 
 # booked.html
 
-![booked.jpeg](./src/assets/images/readme/booked.jpeg)
+![booked.jpeg](./assets/images/readme/booked.jpeg)
 
 This is the booking section of the page, it's the third thing that will be shown when the page is loaded. This section is the form for the user to book a room.
 
@@ -381,7 +381,7 @@ roomName.value = paramValue;
 
 # success.html
 
-![success.jpeg](./src/assets/images/readme/success.jpeg)
+![success.jpeg](./assets/images/readme/success.jpeg)
 
 This page will show after users submit the form, and will show the name and email that already been submitted. For make it happens, i'm using below javascript simple code to generated that.
 
@@ -402,14 +402,14 @@ successText.textContent = `hi ${name}, you have booked ${roomName} room, we have
 
 # career.html
 
-![career.jpeg](./src/assets/images/readme/career.jpeg)
+![career.jpeg](./assets/images/readme/career.jpeg)
 This should be show the career opportunity.
 
 Because this only demo, I don't have an enough time to generate this page well, so I only put sample information.
 
 # privacy.html
 
-![privacy.jpeg](./src/assets/images/readme/privacy.jpeg)
+![privacy.jpeg](./assets/images/readme/privacy.jpeg)
 
 This should be show the Privacy and Policy.
 
@@ -417,7 +417,7 @@ Because this only demo, I don't have an enough time to generate this page well, 
 
 # tnc.html
 
-![tnc.jpeg](./src/assets/images/readme/tnc.jpeg)
+![tnc.jpeg](./assets/images/readme/tnc.jpeg)
 
 This should be show the terms and conditions.
 
@@ -866,38 +866,38 @@ burgerBtn.addEventListener("click", () => {
 
 ### Home - Mobile View
 
-<img src="./src/assets/images/readme/mobile-home.jpeg" alt="mobile-home.jpeg" width="200">
+<img src="./assets/images/readme/mobile-home.jpeg" alt="mobile-home.jpeg" width="200">
 
 ### Burger Navigation
 
 I created a Mobile burger navigation and helped by javascript to implemented how it's worked.
 
-<img src="./src/assets/images/readme/mobile-nav.png" alt="mobile-nav.png" width="200">
+<img src="./assets/images/readme/mobile-nav.png" alt="mobile-nav.png" width="200">
 
 ### Footer - Mobile View
 
-<img src="./src/assets/images/readme/mobile-footer.png" alt="mobile-footer.png" width="200">
+<img src="./assets/images/readme/mobile-footer.png" alt="mobile-footer.png" width="200">
 
 ### Booking - Mobile View
 
-<img src="./src/assets/images/readme/mobile-booking.png" alt="mobile-booking.png" width="200">
+<img src="./assets/images/readme/mobile-booking.png" alt="mobile-booking.png" width="200">
 
 ### Success - Mobile View
 
-<img src="./src/assets/images/readme/mobile-success.png" alt="mobile-success.png" width="200">
+<img src="./assets/images/readme/mobile-success.png" alt="mobile-success.png" width="200">
 
 ### About Us - Mobile View
 
-<img src="./src/assets/images/readme/mobile-about.png" alt="mobile-about.png" width="200">
+<img src="./assets/images/readme/mobile-about.png" alt="mobile-about.png" width="200">
 
 ### Career - Mobile View
 
-![mobile-career.png](./src/assets/images/readme/mobile-career.png)
+<img src="./assets/images/readme/mobile-career.png" alt="mobile-career.png" width="200">
 
 ### Privacy - Mobile View
 
-![mobile-privacy.png](./src/assets/images/readme/mobile-privacy.png)
+<img src="./assets/images/readme/mobile-privacy.png" alt="mobile-privacy.png" width="200">
 
 ### Terms and Conditions - Mobile View
 
-![mobile-tnc.png](./src/assets/images/readme/mobile-tnc.png)
+<img src="./assets/images/readme/mobile-tnc.png" alt="mobile-tnc.png" width="200">
