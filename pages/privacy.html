@@ -93,19 +93,34 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   </head>
   <body class="text-primary md:text-2xl">
-    <div class="container px-auto lg:px-[2vw] flex flex-col">
+    <div class="max-md:container px-auto flex flex-col">
       <header
-        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen rounded-none"
+        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] shadow-2xl lg:rounded-[10vw] lg:left-[10vw] rounded-none lg:text-sm"
       >
         <nav
-          class="grid grid-cols-2 border-none px-[6vw] py-0 w-full h-[8vh] gap-2"
+          class="grid grid-cols-2 border-none px-[6vw] lg:px-[4vw] py-0 w-full h-[8vh] gap-2 xl:rounded-[10vw]"
         >
           <div class="nav-container">
             <a class="company-logo text-bold" href="../index.html">
               <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
-          <div class="nav-container">
+          <div class="hidden lg:flex justify-end items-center gap-[2vw]">
+            <a href="../index.html">
+              <p>Home</p>
+            </a>
+            <a href="../index.html#rooms">
+              <p>Rooms</p>
+            </a>
+            <a href="../index.html#facilities">
+              <p>Facilities</p>
+            </a>
+            <a href="./pages/about.html">
+              <p>About</p>
+            </a>
+          </div>
+          <!-- burger -->
+          <div class="nav-container lg:hidden">
             <div class="burger-btn">
               <span></span>
               <span></span>
@@ -116,7 +131,7 @@
             <div
               class="flex flex-col items-end h-full w-full px-6 md:px-12 py-24 md:py-36 gap-4 md:gap-8"
             >
-              <a href="../index.html">
+              <a href="#">
                 <div>
                   <p class="text-xl md:text-3xl">Home</p>
                 </div>
@@ -127,12 +142,13 @@
               <a href="../index.html#facilities">
                 <p class="text-xl md:text-3xl">Facilities</p>
               </a>
-              <a href="../pages/about.html">
+              <a href="./about.html">
                 <p class="text-xl md:text-3xl">About</p>
               </a>
             </div>
           </div>
           <div class="burger-menu-outer lg:hidden"></div>
+          <!-- burger -->
         </nav>
       </header>
       <main class="min-h-[386px] md:min-h-[440px]">
@@ -140,7 +156,9 @@
           <div
             class="flex flex-col w-screen px-[10vw] gap-4 items-center py-[4vh]"
           >
-            <h1 class="text-2xl font-bold text-shadow md:text-4xl md:mb-[2vh]">
+            <h1
+              class="text-2xl font-bold text-shadow md:text-4xl md:mb-[2vh] xl:text-2xl lg:pt-[4vh]"
+            >
               Privacy and Policy
             </h1>
             <article class="text-shadow">
@@ -335,17 +353,17 @@
       </main>
       <footer>
         <div
-          class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff] rounded-t-3xl"
+          class="flex flex-col w-screen lg:w-full px-[6vw] py-[2vh] lg:py-[6vh] gap-4 bg-[#ffffff] rounded-t-3xl lg:rounded-none lg:text-sm"
         >
-          <div class="footer-detail">
+          <div class="lg:flex lg:justify-between lg:gap-2">
             <div class="flex flex-col">
               <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
-              <p>
+              <p class="lg:w-[24vw]">
                 We owe you a memorable experience and recharge your happiness
               </p>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Information</h2>
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
               <ul>
                 <li>
                   <a href="./about.html">About us </a>
@@ -362,7 +380,7 @@
               </ul>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Find Us</h2>
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Find Us</h2>
               <ul>
                 <li>
                   <a href="mailto:septalonika@gmail.com"
@@ -380,42 +398,38 @@
               </ul>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Subscribe</h2>
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Subscribe</h2>
               <p>Save 15% on your first reserve</p>
-              <div class="footer-container">
-                <h2 class="font-semibold md:text-2xl">Subscribe</h2>
-                <p>Save 15% on your first reserve</p>
-                <div class="footer-form-container">
-                  <form
-                    name="reservation"
-                    class="flex"
-                    id="reservation-form"
-                    action="./success.html"
-                    method="GET"
-                    target="_self"
+              <div class="footer-form-container">
+                <form
+                  name="reservation"
+                  class="flex"
+                  id="reservation-form"
+                  action="./success.html"
+                  method="GET"
+                  target="_self"
+                >
+                  <input
+                    class="flex h-8 md:h-12 lg:h-8 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] lg:pr-[4vw] lg:w-[18vw] border-none focus:outline-none"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    form="reservation-form"
+                    class="btn flex h-8 md:h-12 lg:h-8 justify-center items-center px-[2vw] md:px-[4vw] lg:px-[2vw] absolute max-sm:left-[56vw] max-md:left-[58vw] lg:right-[4vw] rounded"
                   >
-                    <input
-                      class="flex h-8 md:h-12 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] border-none focus:outline-none"
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                      required
-                    />
-                    <button
-                      type="submit"
-                      form="reservation-form"
-                      class="btn flex h-8 md:h-12 justify-center items-center px-[2vw] md:px-[4vw] absolute left-[56vw] md:left-[58vw] rounded"
-                    >
-                      Send
-                    </button>
-                  </form>
-                </div>
+                    Send
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="copyleft">
+        <div class="copyleft md:text-2xl lg:text-base">
           <p>Copyright &copy; 2024 • Hotelolet •</p>
         </div>
       </footer>
