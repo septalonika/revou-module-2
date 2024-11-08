@@ -8,75 +8,80 @@
     <meta name="author" content="Andi" />
     <meta name="keywords" content="Booking Hotels, Hotelolet, Hotel" />
     <title>Booking | HOTELOLET</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="./public/icons/apple-icon-57x57.png"
+      href="../public/icons/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="./public/icons/apple-icon-60x60.png"
+      href="../public/icons/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="./public/icons/apple-icon-72x72.png"
+      href="../public/icons/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="./public/icons/apple-icon-76x76.png"
+      href="../public/icons/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="./public/icons/apple-icon-114x114.png"
+      href="../public/icons/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="./public/icons/apple-icon-120x120.png"
+      href="../public/icons/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="./public/icons/apple-icon-144x144.png"
+      href="../public/icons/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="./public/icons/apple-icon-152x152.png"
+      href="../public/icons/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./public/icons/apple-icon-180x180.png"
+      href="../public/icons/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="./public/icons/android-icon-192x192.png"
+      href="../public/icons/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./public/icons/favicon-32x32.png"
+      href="../public/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./public/icons/favicon-96x96.png"
+      href="../public/icons/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./public/icons/favicon-16x16.png"
+      href="../public/icons/favicon-16x16.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,7 +91,6 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="text-primary">
     <div class="container px-auto lg:px-[2vw] flex flex-col">
@@ -97,7 +101,7 @@
           class="grid grid-cols-2 border-none px-[6vw] py-0 w-full h-[8vh] gap-2"
         >
           <div class="nav-container">
-            <a class="company-logo text-bold" href="./index.html">
+            <a class="company-logo text-bold" href="../index.html">
               <h2 class="text-2xl">Hotel<span>olet</span>.</h2>
             </a>
           </div>
@@ -110,18 +114,18 @@
           </div>
           <div class="burger-menu">
             <div class="flex flex-col items-end h-full w-full px-6 py-24 gap-4">
-              <a href="#">
+              <a href="../index.html">
                 <div>
                   <p class="text-xl">Home</p>
                 </div>
               </a>
-              <a href="./index.html#rooms">
+              <a href="../index.html#rooms">
                 <p class="text-xl">Rooms</p>
               </a>
-              <a href="./index.html#facilities">
+              <a href="../index.html#facilities">
                 <p class="text-xl">Facilities</p>
               </a>
-              <a href="/hotelolet/src/pages/about.html">
+              <a href="./about.html">
                 <p class="text-xl">About</p>
               </a>
             </div>
@@ -129,441 +133,204 @@
           <div class="burger-menu-outer"></div>
         </nav>
       </header>
-      <main>
-        <section id="welcome">
-          <div
-            class="flex absolute z-10 bg-white/50 top-[8vh] hero-text w-full h-[30vh]"
-          >
+      <main class="min-h-[386px]">
+        <section
+          id="hero-room"
+          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[2vh] gap-4"
+        >
+          <div class="flex absolute z-10 top-[8vh] hero-text h-[30vh]">
             <div class="flex flex-col text-start px-[6vw] py-[2vh] gap-4">
-              <h1 class="font-bold text-3xl typewriter">Tired of Jakarta?</h1>
-              <h2 class="lg:typewriter text-xl">
-                Let's skip the traffic and bring the positive morning
-              </h2>
-              <a
-                class="flex justify-center btn py-2 px-2 w-44"
-                href="/hotelolet/index.html#rooms"
-                >Check Now</a
-              >
               <div
-                class="flex absolute z-10 top-[25vh] justify-between items-center w-[90vw] h-[10vh] px-6"
+                class="grid grid-cols-5 grid-rows-4 absolute left-0 z-10 top-[24vh] items-center h-[10vh] w-[88vw] px-6"
               >
-                <div class="flex flex-col items-start">
-                  <img
-                    class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/bed.svg"
-                    alt="hotel"
-                  />
-                  <p class="fade-in-image">200+ Beds</p>
+                <div
+                  class="grid h-full col-span-2 row-span-4 justify-center items-center"
+                >
+                  <p id="hotelName" class="font-semibold">Hotel Room 1</p>
                 </div>
-                <div class="flex flex-col items-start">
-                  <img
-                    class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/room.svg"
-                    alt="hotel"
-                  />
-                  <p class="fade-in-image">40+ Rooms</p>
+                <div
+                  class="grid h-full col-span-3 row-span-2 justify-end items-end"
+                >
+                  <p class="font-semibold">
+                    Rp299.<span class="text-xs text-[#768a96]"
+                      >000,- /Night</span
+                    >
+                  </p>
                 </div>
-                <div class="flex flex-col items-start">
-                  <img
-                    class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/user.svg"
-                    alt="hotel"
-                  />
-                  <p class="fade-in-image">800+ Booked</p>
+                <div class="grid h-full col-span-3 row-span-2 justify-end">
+                  <p class="text-xs text-[#768a96]">
+                    <span class="fa-solid fa-star"></span>4.9 (224 Reviews)
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex hero-img">
+          <div class="flex hero-img rounded-xl">
             <img
-              class="slide-in-right w-screen"
-              src="./assets/images/hero-hotel.jpg"
+              id="dynamicImg"
+              class="slide-in-right w-screen min-h-[26vh] max-h-[20vh] rounded-xl"
+              src="../assets/images/hero-hotel.jpg"
               alt="hotel"
             />
             <div
-              class="bg-white absolute z-1 w-[90vw] h-[10vh] top-[33vh] left-[5vw] rounded-[6vw] shadow-lg lg:hidden"
+              class="bg-white absolute z-1 w-[84vw] h-[10vh] top-[32vh] left-[8vw] rounded-[6vw] shadow-lg lg:hidden"
             ></div>
           </div>
         </section>
-        <section
-          id="most-picked"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
-        >
-          <h2 class="text-2xl font-semibold">Most Picked</h2>
-          <div class="relative overflow-x-auto scrollbar-none">
-            <ul class="flex gap-2">
-              <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="relative w-60 h-80 rounded-xl shadow-lg">
-                  <img
-                    class="rounded-xl object-cover h-full w-full"
-                    src="./assets/images/rooms/double.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
-                  >
-                    <div class="flex flex-col h-16 p-2">
-                      <p>Double Bed</p>
-                      <p>Rp2.999.999</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+        <section id="description" class="bg-[#ffffff] rounded-2xl">
+          <div
+            class="flex flex-col w-screen px-[6vw] py-[2vh] mt-[8vh] mb-[4vh] gap-4"
+          >
+            <h2 class="text-xl font-semibold">Description</h2>
+
+            <article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                adipisci at velit nihil impedit blanditiis repudiandae explicabo
+                quidem. Aut, facilis?
+              </p>
+            </article>
           </div>
         </section>
         <section
-          id="rooms"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
+          id="booking-room"
+          class="bg-[#ffffff] rounded-2xl my-[2vh] py-[2vh]"
         >
-          <ul class="flex flex-col gap-8">
-            <li>
-              <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold">Single Bed Rooms</h2>
-                <div class="flex">
-                  <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
+          <div class="flex flex-col px-[6vw] my-[2vh]">
+            <div class="flex flex-col">
+              <h2 class="text-xl font-bold">Plan your booking</h2>
+              <p>Organize your upcoming reservation efficiently</p>
+            </div>
+            <div class="flex book-site">
+              <div class="w-full">
+                <form
+                  name="booking-form"
+                  id="booking-form"
+                  class="flex flex-col gap-[1vh]"
+                  method="GET"
+                  target="_blank"
+                >
+                  <input
+                    id="roomName"
+                    name="roomName"
+                    type="text"
+                    value=""
+                    class="hidden"
+                  />
+                  <label for="name">Name </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  />
+                  <label for="email">Email </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  />
+                  <label for="phone">Phone </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="081234567890"
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  />
+                  <label for="check-in">Check-in </label>
+                  <input
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  />
+                  <label for="check-out">Check-out </label>
+                  <input
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  />
+                  <div class="flex gap-[1vw]">
+                    <div class="flex justify-center items-center gap-[1vw]">
+                      <p>Gender</p>
+                      <input
+                        type="radio"
+                        id="single"
+                        name="room"
+                        value="single"
+                        checked
+                      />
+                      <label for="single">Men</label>
+                    </div>
+                    <div class="flex justify-center items-center gap-[1vw]">
+                      <input
+                        type="radio"
+                        id="double"
+                        name="room"
+                        value="double"
+                      />
+                      <label for="double">Women</label>
+                    </div>
+                    <div
+                      class="flex justify-center items-center gap-[1vw]"
+                    ></div>
+                  </div>
+                  <label for="extra">Extra</label>
+                  <div
+                    class="flex extra-book justify-start items-center gap-[4vw]"
                   >
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold">Single Bed Rooms</h2>
-                <div class="flex">
-                  <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
-                  >
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold">Single Bed Rooms</h2>
-                <div class="flex">
-                  <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
-                  >
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                      >
-                        <img
-                          class="rounded-2xl object-cover h-full w-full p-2"
-                          src="./assets/images/rooms/double.jpg"
-                          alt=""
-                        />
-                        <div class="rounded-b-xl w-full">
-                          <div class="flex flex-col p-2 gap-2">
-                            <h3 class="text-lg">Double Bed</h3>
-                            <p>Rp2.999.999</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section
-          id="facilities"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
-        >
-          <div class="flex flex-col gap-8">
-            <div class="flex flex-col gap-2">
-              <h2 class="text-2xl font-semibold">Facilities</h2>
-              <div class="flex">
-                <ul class="grid grid-rows-4 lg:grid-cols-4 grid-flow-col gap-2">
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="extra-bed"
+                        name="extra"
+                        value="extra-bed"
                       />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
+                      <label for="extra-bed">Bed</label>
                     </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="extra-breakfast"
+                        name="extra"
+                        value="breakfast-1"
                       />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
+                      <label for="breakfast-1">Breakfast</label>
                     </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="dinner"
+                        name="extra"
+                        value="dinner"
                       />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
+                      <label for="dinner">Dinner</label>
                     </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
-                    >
-                      <img
-                        class="rounded-2xl object-cover h-full w-full p-2"
-                        src="./assets/images/facilities/swimming-pools.jpg"
-                        alt=""
-                      />
-                      <div class="rounded-b-xl w-full">
-                        <div class="flex flex-col p-2 gap-2">
-                          <h3 class="text-lg">Swimming Pool</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                  </div>
+                  <label for="message">Message </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Your Special Request here..."
+                    required
+                    class="border border-[#176b87] outline-none p-2 rounded"
+                  ></textarea>
+                  <button class="btn p-2" type="submit" form="booking-form">
+                    Booking
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -571,10 +338,10 @@
       </main>
       <footer>
         <div
-          class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff]"
+          class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff] rounded-t-3xl"
         >
           <div class="footer-detail">
-            <div class="footer-container company-slogan flex flex-col">
+            <div class="flex flex-col">
               <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
               <p>
                 We owe you a memorable experience and recharge your happiness
@@ -584,18 +351,16 @@
               <h2 class="font-semibold">Information</h2>
               <ul>
                 <li>
-                  <a href="/hotelolet/src/pages/about.html">About us </a>
+                  <a href="./about.html">About us </a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/career.html">Our Careers</a>
+                  <a href="./career.html">Our Careers</a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/privacy.html">Privacy</a>
+                  <a href="./privacy.html">Privacy</a>
                 </li>
                 <li>
-                  <a href="/hotelolet/src/pages/tnc.html"
-                    >Terms and Conditions</a
-                  >
+                  <a href="./tnc.html">Terms and Conditions</a>
                 </li>
               </ul>
             </div>
@@ -638,6 +403,7 @@
                     required
                   />
                   <button
+                    onclick="(e)=>{e.preventDefault()}"
                     type="submit"
                     form="booking-form"
                     class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
@@ -654,6 +420,6 @@
         </div>
       </footer>
     </div>
-    <script src="./assets/js/index.js"></script>
+    <script src="../assets/js/booking.js"></script>
   </body>
 </html>
