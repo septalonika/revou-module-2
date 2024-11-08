@@ -92,7 +92,7 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   </head>
-  <body class="text-primary">
+  <body class="text-primary md:text-2xl">
     <div class="container px-auto lg:px-[2vw] flex flex-col">
       <header
         class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen rounded-none"
@@ -138,7 +138,9 @@
           id="hero-room"
           class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[2vh] gap-4"
         >
-          <div class="flex absolute z-10 top-[8vh] hero-text h-[30vh]">
+          <div
+            class="flex absolute z-10 top-[8vh] md:top-[16vh] hero-text h-[30vh]"
+          >
             <div class="flex flex-col text-start px-[6vw] py-[2vh] gap-4">
               <div
                 class="grid grid-cols-5 grid-rows-4 absolute left-0 z-10 top-[24vh] items-center h-[10vh] w-[88vw] px-6"
@@ -146,19 +148,23 @@
                 <div
                   class="grid h-full col-span-2 row-span-4 justify-center items-center"
                 >
-                  <p id="hotelName" class="font-semibold">Hotel Room 1</p>
+                  <p id="hotelName" class="font-semibold md:text-2xl">
+                    Hotel Room 1
+                  </p>
                 </div>
                 <div
-                  class="grid h-full col-span-3 row-span-2 justify-end items-end"
+                  class="grid h-full col-span-3 row-span-2 justify-end items-end md:pr-[8vw]"
                 >
-                  <p class="font-semibold">
-                    Rp299.<span class="text-xs text-[#768a96]"
+                  <p class="font-semibold md:text-2xl">
+                    Rp299.<span class="text-xs md:text-lg text-[#768a96]"
                       >000,- /Night</span
                     >
                   </p>
                 </div>
-                <div class="grid h-full col-span-3 row-span-2 justify-end">
-                  <p class="text-xs text-[#768a96]">
+                <div
+                  class="grid h-full col-span-3 row-span-2 justify-end md:pr-[8vw]"
+                >
+                  <p class="text-xs md:text-lg text-[#768a96]">
                     <span class="fa-solid fa-star"></span>4.9 (224 Reviews)
                   </p>
                 </div>
@@ -168,20 +174,18 @@
           <div class="flex hero-img rounded-xl">
             <img
               id="dynamicImg"
-              class="slide-in-right w-screen min-h-[26vh] max-h-[20vh] rounded-xl"
+              class="slide-in-right w-screen min-h-[26vh] max-h-[20vh] md:max-h-[34vh] rounded-xl"
               src="../assets/images/hero-hotel.jpg"
               alt="hotel"
             />
             <div
-              class="bg-white absolute z-1 w-[84vw] h-[10vh] top-[32vh] left-[8vw] rounded-[6vw] shadow-lg lg:hidden"
+              class="bg-white absolute z-1 w-[84vw] h-[10vh] top-[32vh] md:top-[40vh] left-[8vw] rounded-[6vw] md:rounded-[4vw] shadow-lg lg:hidden"
             ></div>
           </div>
         </section>
-        <section id="description" class="bg-[#ffffff] rounded-2xl">
-          <div
-            class="flex flex-col w-screen px-[6vw] py-[2vh] mt-[8vh] mb-[4vh] gap-4"
-          >
-            <h2 class="text-xl font-semibold">Description</h2>
+        <section id="description" class="bg-[#ffffff] rounded-2xl w-screen">
+          <div class="flex flex-col px-[6vw] py-[2vh] mt-[8vh] mb-[4vh] gap-4">
+            <h2 class="text-xl font-semibold md:text-3xl">Description</h2>
 
             <article>
               <p>
@@ -193,12 +197,12 @@
           </div>
         </section>
         <section
-          id="booking-room"
-          class="bg-[#ffffff] rounded-2xl my-[2vh] py-[2vh]"
+          id="booking-room "
+          class="bg-[#ffffff] rounded-2xl my-[2vh] py-[2vh] w-screen"
         >
           <div class="flex flex-col px-[6vw] my-[2vh]">
             <div class="flex flex-col">
-              <h2 class="text-xl font-bold">Plan your booking</h2>
+              <h2 class="text-xl font-bold md:text-3xl">Plan your booking</h2>
               <p>Organize your upcoming reservation efficiently</p>
             </div>
             <div class="flex book-site">
@@ -386,32 +390,35 @@
             <div class="footer-container">
               <h2 class="font-semibold">Subscribe</h2>
               <p>Save 15% on your first reserve</p>
-              <div class="footer-form-container">
-                <form
-                  name="reservation"
-                  class="flex"
-                  id="reservation-form"
-                  action="./success.html"
-                  method="GET"
-                  target="_self"
-                >
-                  <input
-                    class="flex h-8 bg-[#e6e6e6] rounded pl-2 pr-8 border-none focus:outline-none"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    onclick="(e)=>{e.preventDefault()}"
-                    type="submit"
-                    form="reservation-form"
-                    class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
+              <div class="footer-container">
+                <h2 class="font-semibold md:text-2xl">Subscribe</h2>
+                <p>Save 15% on your first reserve</p>
+                <div class="footer-form-container">
+                  <form
+                    name="reservation"
+                    class="flex"
+                    id="reservation-form"
+                    action="./success.html"
+                    method="GET"
+                    target="_self"
                   >
-                    Send
-                  </button>
-                </form>
+                    <input
+                      class="flex h-8 md:h-12 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] border-none focus:outline-none"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      form="reservation-form"
+                      class="btn flex h-8 md:h-12 justify-center items-center px-[2vw] md:px-[4vw] absolute left-[56vw] md:left-[58vw] rounded"
+                    >
+                      Send
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

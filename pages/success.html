@@ -92,7 +92,7 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   </head>
-  <body class="text-primary">
+  <body class="text-primary md:text-2xl">
     <div class="container px-auto lg:px-[2vw] flex flex-col">
       <header
         class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen rounded-none"
@@ -191,32 +191,35 @@
             <div class="footer-container">
               <h2 class="font-semibold">Subscribe</h2>
               <p>Save 15% on your first reserve</p>
-              <div class="footer-form-container">
-                <form
-                  name="reservation"
-                  class="flex"
-                  id="reservation-form"
-                  action="./success.html"
-                  method="GET"
-                  target="_self"
-                >
-                  <input
-                    class="flex h-8 bg-[#e6e6e6] rounded pl-2 pr-8 border-none focus:outline-none"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <button
-                    onclick="(e)=>{e.preventDefault()}"
-                    type="submit"
-                    form="booking-form"
-                    class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
+              <div class="footer-container">
+                <h2 class="font-semibold md:text-2xl">Subscribe</h2>
+                <p>Save 15% on your first reserve</p>
+                <div class="footer-form-container">
+                  <form
+                    name="reservation"
+                    class="flex"
+                    id="reservation-form"
+                    action="./success.html"
+                    method="GET"
+                    target="_self"
                   >
-                    Send
-                  </button>
-                </form>
+                    <input
+                      class="flex h-8 md:h-12 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] border-none focus:outline-none"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      form="reservation-form"
+                      class="btn flex h-8 md:h-12 justify-center items-center px-[2vw] md:px-[4vw] absolute left-[56vw] md:left-[58vw] rounded"
+                    >
+                      Send
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
