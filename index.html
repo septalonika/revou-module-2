@@ -102,7 +102,7 @@
         >
           <div class="nav-container">
             <a class="company-logo text-bold" href="./index.html">
-              <h2 class="text-2xl">Hotel<span>olet</span>.</h2>
+              <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
           <div class="nav-container">
@@ -113,20 +113,22 @@
             </div>
           </div>
           <div class="burger-menu">
-            <div class="flex flex-col items-end h-full w-full px-6 py-24 gap-4">
+            <div
+              class="flex flex-col items-end h-full w-full px-6 md:px-12 py-24 md:py-36 gap-4 md:gap-8"
+            >
               <a href="#">
                 <div>
-                  <p class="text-xl">Home</p>
+                  <p class="text-xl md:text-3xl">Home</p>
                 </div>
               </a>
               <a href="./index.html#rooms">
-                <p class="text-xl">Rooms</p>
+                <p class="text-xl md:text-3xl">Rooms</p>
               </a>
               <a href="./index.html#facilities">
-                <p class="text-xl">Facilities</p>
+                <p class="text-xl md:text-3xl">Facilities</p>
               </a>
               <a href="./pages/about.html">
-                <p class="text-xl">About</p>
+                <p class="text-xl md:text-3xl">About</p>
               </a>
             </div>
           </div>
@@ -138,54 +140,75 @@
           <div
             class="flex absolute z-10 bg-white/50 top-[8vh] hero-text w-full h-[30vh]"
           >
-            <div class="flex flex-col text-start px-[6vw] py-[2vh] gap-4">
-              <h1 class="font-bold text-3xl typewriter text-shadow">
+            <div
+              class="flex flex-col text-start px-[6vw] py-[2vh] md:py-[4vh] gap-4"
+            >
+              <h1 class="font-bold text-2xl md:text-4xl typewriter text-shadow">
                 Tired of Jakarta?
               </h1>
-              <h2 class="lg:typewriter text-xl text-shadow">
+              <h2 class="lg:typewriter text-xl md:text-2xl text-shadow">
                 Let's skip the traffic and bring the positive morning
               </h2>
               <a
-                class="flex justify-center btn py-2 px-2 w-44"
+                class="flex justify-center btn py-2 px-2 w-44 md:px-6 md:py-4 md:text-xl md:w-56"
                 href="./index.html#rooms"
                 >Check Now</a
               >
               <div
-                class="flex absolute z-10 top-[25vh] justify-between items-center w-[90vw] h-[10vh] px-6"
+                class="flex absolute z-10 top-[25vh] justify-between items-center w-[90vw] h-[10vh] px-6 md:justify-center md:gap-[20vw]"
               >
-                <div class="flex flex-col items-start">
+                <div class="flex flex-col items-start md:gap-2">
                   <img
                     class="fade-in-image hero-info-img"
                     src="./assets/images/icons/bed.svg"
                     alt="hotel"
                   />
-                  <p class="fade-in-image">200+ Beds</p>
+                  <p class="fade-in-image md:text-lg">200+ Beds</p>
                 </div>
-                <div class="flex flex-col items-start">
+                <div class="flex flex-col items-start md:gap-2">
                   <img
                     class="fade-in-image hero-info-img"
                     src="./assets/images/icons/room.svg"
                     alt="hotel"
                   />
-                  <p class="fade-in-image">40+ Rooms</p>
+                  <p class="fade-in-image md:text-lg">40+ Rooms</p>
                 </div>
-                <div class="flex flex-col items-start">
+                <div class="flex flex-col items-start md:gap-2">
                   <img
                     class="fade-in-image hero-info-img"
                     src="./assets/images/icons/user.svg"
                     alt="hotel"
                   />
-                  <p class="fade-in-image">800+ Booked</p>
+                  <p class="fade-in-image md:text-lg">800+ Booked</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex hero-img">
-            <img
-              class="slide-in-right w-screen min-h-[30vh]"
-              src="./assets/images/hero-hotel.jpg"
-              alt="hotel"
-            />
+          <div class="flex w-screen">
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="./assets/images/hero-hotel-small.jpg 1x"
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./assets/images/hero-hotel-medium.jpg 1x"
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="./assets/images/hero-hotel-large.jpg 1x"
+                type="image/jpeg"
+              />
+              <img
+                class="slide-in-right object-center min-h-[30vh] max-h-[30vh]"
+                src="./assets/images/hero-hotel-large.jpg"
+                alt="Beautiful view of the hotel"
+                width="1200"
+                height="800"
+              />
+            </picture>
             <div
               class="bg-white absolute z-1 w-[90vw] h-[10vh] top-[33vh] left-[5vw] rounded-[6vw] shadow-lg lg:hidden"
             ></div>
@@ -195,21 +218,28 @@
           id="most-picked"
           class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
         >
-          <h2 class="text-2xl font-semibold text-shadow">Most Picked</h2>
+          <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
+            Most Picked
+          </h2>
           <div class="relative overflow-x-auto scrollbar-none">
             <ul class="flex gap-2">
               <li>
                 <a href="./pages/booking.html?room=double-1">
-                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg"
+                  >
                     <img
                       class="rounded-xl object-cover h-full w-full"
                       src="./assets/images/rooms/double-1.jpg"
                       alt=""
                     />
+
                     <div
                       class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
                     >
-                      <div class="flex flex-col h-16 p-2">
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl"
+                      >
                         <p>Double-1 Bed Room</p>
                         <p>Rp299.000</p>
                       </div>
@@ -219,7 +249,9 @@
               </li>
               <li>
                 <a href="./pages/booking.html?room=luxury-1">
-                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg"
+                  >
                     <img
                       class="rounded-xl object-cover h-full w-full"
                       src="./assets/images/rooms/luxury-1.jpg"
@@ -228,7 +260,9 @@
                     <div
                       class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
                     >
-                      <div class="flex flex-col h-16 p-2">
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl"
+                      >
                         <p>Luxury-1 Bed Room</p>
                         <p>Rp299.000</p>
                       </div>
@@ -238,7 +272,9 @@
               </li>
               <li>
                 <a href="./pages/booking.html?room=twin-4">
-                  <div class="relative w-60 h-80 rounded-xl shadow-lg">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg"
+                  >
                     <img
                       class="rounded-xl object-cover h-full w-full"
                       src="./assets/images/rooms/twin-4.jpg"
@@ -247,7 +283,9 @@
                     <div
                       class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
                     >
-                      <div class="flex flex-col h-16 p-2">
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl"
+                      >
                         <p>Twin-4 Bed Room</p>
                         <p>Rp299.000</p>
                       </div>
@@ -262,30 +300,30 @@
           id="rooms"
           class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4"
         >
-          <ul class="flex flex-col gap-8">
+          <ul class="flex flex-col gap-8 w-full">
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold text-shadow">
+                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
                   Single Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
+                    class="grid grid-rows-2 w-full lg:grid-cols-4 grid-flow-col gap-2"
                   >
                     <li>
                       <a href="./pages/booking.html?room=single-1">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/single-1.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Single-1 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Single-1 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -294,17 +332,17 @@
                     <li>
                       <a href="./pages/booking.html?room=single-2">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/single-2.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Single-2 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Single-2 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -313,17 +351,17 @@
                     <li>
                       <a href="./pages/booking.html?room=single-3">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/single-3.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Single-3 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Single-3 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -332,17 +370,17 @@
                     <li>
                       <a href="./pages/booking.html?room=single-4">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/single-4.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Single-4 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Single-4 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -354,27 +392,27 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold text-shadow">
+                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
                   Double Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
+                    class="grid grid-rows-2 w-full lg:grid-cols-4 grid-flow-col gap-2"
                   >
                     <li>
                       <a href="./pages/booking.html?room=double-1">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/double-1.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Double-1 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Double-1 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -383,17 +421,17 @@
                     <li>
                       <a href="./pages/booking.html?room=double-2">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/double-2.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Double-2 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Double-2 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -402,17 +440,17 @@
                     <li>
                       <a href="./pages/booking.html?room=double-3">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/double-3.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Double-3 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Double-3 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -421,17 +459,17 @@
                     <li>
                       <a href="./pages/booking.html?room=luxury-1">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/luxury-1.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Luxury-1 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Luxury-1 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -443,27 +481,27 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold text-shadow">
+                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
                   Twin Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-cols-4 grid-flow-col gap-2"
+                    class="grid grid-rows-2 w-full lg:grid-cols-4 grid-flow-col gap-2"
                   >
                     <li>
                       <a href="./pages/booking.html?room=twin-1">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/twin-1.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Twin-1 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Twin-1 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -472,17 +510,17 @@
                     <li>
                       <a href="./pages/booking.html?room=twin-2">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/twin-2.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Twin-2 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Twin-2 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -491,17 +529,17 @@
                     <li>
                       <a href="./pages/booking.html?room=twin-3">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/twin-3.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Twin-3 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Twin-3 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -510,17 +548,17 @@
                     <li>
                       <a href="./pages/booking.html?room=twin-4">
                         <div
-                          class="flex flex-col w-90 rounded-lg shadow-lg bg-white py-2"
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] rounded-lg shadow-lg bg-white py-2"
                         >
                           <img
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] w-full p-2"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
                             src="./assets/images/rooms/twin-4.jpg"
                             alt=""
                           />
                           <div class="rounded-b-xl w-full">
                             <div class="flex flex-col p-2">
-                              <h3 class="text-lg">Twin-4 Bed</h3>
-                              <p class="text-sm">Rp299.000</p>
+                              <h3 class="text-lg md:text-xl">Twin-4 Bed</h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
                           </div>
                         </div>
@@ -540,7 +578,7 @@
             <div
               class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] rounded-2xl"
             >
-              <h2 class="text-2xl font-semibold">Facilities</h2>
+              <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
               <div class="flex">
                 <div class="grid grid-cols-4 grid-rows-5 w-full">
                   <div class="grid row-span-2 p-1 shadow-xlobject-center">
@@ -655,7 +693,7 @@
         <div
           class="flex flex-col w-screen px-[6vw] py-[2vh] gap-4 bg-[#ffffff] rounded-t-3xl"
         >
-          <div class="footer-detail">
+          <div class="footer-detail md:text-2xl">
             <div class="flex flex-col">
               <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
               <p>
@@ -663,7 +701,7 @@
               </p>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Information</h2>
+              <h2 class="md:text-2xl font-semibold">Information</h2>
               <ul>
                 <li>
                   <a href="./pages/about.html">About us </a>
@@ -680,7 +718,7 @@
               </ul>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Find Us</h2>
+              <h2 class="font-semibold md:text-2xl">Find Us</h2>
               <ul>
                 <li>
                   <a href="mailto:septalonika@gmail.com"
@@ -698,7 +736,7 @@
               </ul>
             </div>
             <div class="footer-container">
-              <h2 class="font-semibold">Subscribe</h2>
+              <h2 class="font-semibold md:text-2xl">Subscribe</h2>
               <p>Save 15% on your first reserve</p>
               <div class="footer-form-container">
                 <form
@@ -710,7 +748,7 @@
                   target="_self"
                 >
                   <input
-                    class="flex h-8 bg-[#e6e6e6] rounded pl-2 pr-8 border-none focus:outline-none"
+                    class="flex h-8 md:h-12 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] border-none focus:outline-none"
                     type="email"
                     id="email"
                     name="email"
@@ -720,7 +758,7 @@
                   <button
                     type="submit"
                     form="reservation-form"
-                    class="btn flex h-8 justify-center items-center px-[2vw] absolute left-[56vw] rounded"
+                    class="btn flex h-8 md:h-12 justify-center items-center px-[2vw] md:px-[4vw] absolute left-[56vw] md:left-[58vw] rounded"
                   >
                     Send
                   </button>
@@ -729,7 +767,7 @@
             </div>
           </div>
         </div>
-        <div class="copyleft">
+        <div class="copyleft md:text-2xl">
           <p>Copyright &copy; 2024 • Hotelolet •</p>
         </div>
       </footer>
