@@ -95,27 +95,27 @@
   <body class="text-primary md:text-2xl lg:text-sm">
     <div class="max-md:container px-auto flex flex-col">
       <header
-        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none"
+        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none fade-in-bottom"
       >
         <nav
           class="grid grid-cols-2 border-none px-[6vw] lg:px-[4vw] py-0 w-full h-[8vh] gap-2 xl:rounded-[10vw]"
         >
           <div class="nav-container">
-            <a class="company-logo text-bold" href="./index.html">
+            <a class="company-logo text-bold hovertrue" href="./index.html">
               <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
           <div class="hidden lg:flex justify-end items-center gap-[2vw]">
-            <a href="#">
+            <a class="hovertrue" href="#">
               <p>Home</p>
             </a>
-            <a href="./index.html#rooms">
+            <a class="hovertrue" href="./index.html#rooms">
               <p>Rooms</p>
             </a>
-            <a href="./index.html#facilities">
+            <a class="hovertrue" href="./index.html#facilities">
               <p>Facilities</p>
             </a>
-            <a href="./pages/about.html">
+            <a class="hovertrue" href="./pages/about.html">
               <p>About</p>
             </a>
           </div>
@@ -169,13 +169,13 @@
                   Tired of Jakarta?
                 </h1>
                 <h2
-                  class="lg:typewriter text-xl md:text-2xl lg:text-lg text-shadow"
+                  class="typewriter text-xl md:text-2xl lg:text-lg text-shadow"
                 >
                   Let's skip the traffic and bring the positive morning
                 </h2>
               </div>
 
-              <article class="max-sm:hidden md:hidden lg:flex">
+              <article class="fade-in-bottom max-sm:hidden md:hidden lg:flex">
                 <p class="animate-from-top pr-6">
                   We are the best hotel in
                   <span class="font-semibold">Jakarta</span> with so many
@@ -186,7 +186,7 @@
                 </p>
               </article>
               <a
-                class="flex justify-center btn py-2 px-2 w-44 md:px-6 md:py-4 md:text-xl md:w-56 lg:w-40 lg:text-base lg:py-2 lg:px-4"
+                class="flex justify-center btn py-2 px-2 w-44 md:px-6 md:py-4 md:text-xl md:w-56 lg:w-40 lg:text-base lg:py-2 lg:px-4 slide-in-left"
                 href="./index.html#rooms"
                 >Check Now</a
               >
@@ -256,7 +256,7 @@
         </section>
         <section
           id="most-picked"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4"
+          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4 fade-in-bottom"
         >
           <h2
             class="text-2xl font-semibold text-shadow md:text-3xl lg:text-2xl"
@@ -265,7 +265,7 @@
           </h2>
           <div class="relative overflow-x-auto scrollbar-none">
             <ul class="flex gap-2 lg:gap-8">
-              <li>
+              <li class="hoverimg">
                 <a href="./pages/booking.html?room=double-1">
                   <div
                     class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
@@ -289,7 +289,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="hoverimg">
                 <a href="./pages/booking.html?room=luxury-1">
                   <div
                     class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
@@ -312,7 +312,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="hoverimg">
                 <a href="./pages/booking.html?room=twin-4">
                   <div
                     class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
@@ -340,7 +340,7 @@
         </section>
         <section
           id="rooms"
-          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4"
+          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 slide-in-left"
         >
           <ul class="flex flex-col gap-8 w-full">
             <li>
@@ -354,7 +354,7 @@
                   <ul
                     class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
                   >
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=single-1">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -375,7 +375,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=single-2">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -396,7 +396,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=single-3">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -417,7 +417,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=single-4">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -451,7 +451,7 @@
                   <ul
                     class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
                   >
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=double-1">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -472,7 +472,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=double-2">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -493,7 +493,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=double-3">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -514,7 +514,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=luxury-1">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -548,7 +548,7 @@
                   <ul
                     class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
                   >
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=twin-1">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -569,7 +569,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=twin-2">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -590,7 +590,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=twin-3">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -611,7 +611,7 @@
                         </div>
                       </a>
                     </li>
-                    <li>
+                    <li class="hoverimg">
                       <a href="./pages/booking.html?room=twin-4">
                         <div
                           class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
@@ -640,7 +640,7 @@
         </section>
         <section
           id="facilities"
-          class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4"
+          class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4 slide-in-right"
         >
           <div class="flex flex-col gap-8">
             <div
@@ -649,7 +649,9 @@
               <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
               <div class="flex">
                 <div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6">
-                  <div class="grid row-span-2 p-1 shadow-xlobject-center">
+                  <div
+                    class="grid row-span-2 p-1 shadow-xl object-center hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/basketball-court.jpg"
@@ -657,7 +659,7 @@
                     />
                   </div>
                   <div
-                    class="grid col-span-1 justify-center items-center p-1 shadow-xl"
+                    class="grid col-span-1 justify-center items-center p-1 shadow-xl hoverimg"
                   >
                     <img
                       class="object-cover h-full w-full"
@@ -666,7 +668,7 @@
                     />
                   </div>
                   <div
-                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
                   >
                     <img
                       class="object-cover h-full w-full"
@@ -675,35 +677,45 @@
                     />
                   </div>
 
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/fashion-2.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/gym-2.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover object-center h-full w-full"
                       src="./assets/images/facilities/omakase.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover object-top h-full w-full"
                       src="./assets/images/facilities/fashion.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/groceries.jpg"
@@ -711,7 +723,7 @@
                     />
                   </div>
                   <div
-                    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl"
+                    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl hoverimg"
                   >
                     <img
                       class="object-cover h-full w-full"
@@ -720,7 +732,7 @@
                     />
                   </div>
                   <div
-                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
                   >
                     <img
                       class="object-cover h-full w-full"
@@ -729,7 +741,7 @@
                     />
                   </div>
                   <div
-                    class="grid col-span-2 justify-center items-center p-1 shadow-xl"
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
                   >
                     <img
                       class="object-cover object-right h-full w-full"
@@ -737,14 +749,18 @@
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/gym.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="grid justify-center items-center p-1 shadow-xl">
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
                     <img
                       class="object-cover h-full w-full"
                       src="./assets/images/facilities/zumba.png"
@@ -757,7 +773,7 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="fade-in-bottom">
         <div
           class="flex flex-col w-screen lg:w-full px-[6vw] py-[2vh] lg:py-[6vh] gap-4 bg-[#ffffff] md:rounded-t-3xl lg:rounded-none"
         >
