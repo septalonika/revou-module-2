@@ -8,13 +8,347 @@ link: https://septalonika.github.io/revou-module-2/index.html
 
 > _"The idea is to make a website that is simple, clean, and easy to use."_
 
-### style.css
+<details> <summary>Checkpoint #1</summary>
+ 
+1. Applying custom font using @font-face or embed
 
 ```html
-<link rel="stylesheet" href="/hotelolet/src/assets/styles/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+  rel="stylesheet"
+/>
+```
+
+```css
+:root {
+  --background-color: #d2dce6;
+  --primary: #192524;
+  --secondary: #d1ebdb;
+  --font-family: "Instrument Sans", sans-serif;
+  --font-color: #44576d;
+}
+
+html {
+  font-family: var(--font-family);
+}
+```
+
+###
+
+2. Applying text-shadow to text and list-style to the list
+
+> text-shadow
+
+```css
+.text-shadow {
+  text-shadow: 2px 2px 4px #ffffff;
+}
+```
+
+I'm using `text-shadow` property in the most heading tag, for the example About Us Heading in the page of about.html to make it more clear
+
+![alt text](./assets/images/readme/text-shadow.png)
+![alt text](./assets/images/readme/text-shadow2.png)
+
+3. Applying 1 responsive background image, (using contain or cover, suit your needs)
+
+```html
+<div
+  class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+>
+  <img
+    class="rounded-xl object-cover h-full w-full"
+    src="./assets/images/rooms/double-1.jpg"
+    alt=""
+  />
+
+  <div class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full">
+    <div
+      class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+    >
+      <p>Double-1 Bed Room</p>
+      <p>Rp299.000</p>
+    </div>
+  </div>
+</div>
+```
+
+![alt text](./assets/images/readme/object-cover.png)
+
+4. Applying 1 responsive image with picture + source + srcset method
+
+```html
+<picture>
+  <source
+    media="(max-width: 600px)"
+    srcset="./assets/images/hero-hotel-small.jpg 1x"
+    type="image/jpeg"
+  />
+  <source
+    media="(max-width: 1200px)"
+    srcset="./assets/images/hero-hotel-medium.jpg 1x"
+    type="image/jpeg"
+  />
+  <source
+    media="(min-width: 1201px)"
+    srcset="./assets/images/hero-hotel-large.jpg 1x"
+    type="image/jpeg"
+  />
+  <img
+    class="slide-in-right lg:absolute object-center min-h-[30vh] max-h-[30vh] lg:h-[40vh] lg:w-[36vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl lg:rounded-bl-xl lg:rounded-br-[10vw]"
+    src="./assets/images/hero-hotel-large.jpg"
+    alt="Beautiful view of the hotel"
+    width="1200"
+    height="800"
+  />
+</picture>
+```
+
+I'm using 3 different pictures to handling 3 different viewports such
+
+5. Creating one Asymmetrical Grid → layouting grid, both container and item (children)
+
+<details> <summary>Code</summary>
+
+```html
+<div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6">
+  <div class="grid row-span-2 p-1 shadow-xl object-center hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/basketball-court.jpg"
+      alt=""
+    />
+  </div>
+  <div
+    class="grid col-span-1 justify-center items-center p-1 shadow-xl hoverimg"
+  >
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/foodhall.jpg"
+      alt=""
+    />
+  </div>
+  <div
+    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+  >
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/fashion-3.jpg"
+      alt=""
+    />
+  </div>
+
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/fashion-2.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/gym-2.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover object-center h-full w-full"
+      src="./assets/images/facilities/omakase.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover object-top h-full w-full"
+      src="./assets/images/facilities/fashion.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/groceries.jpg"
+      alt=""
+    />
+  </div>
+  <div
+    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+  >
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/restaurant.jpg"
+      alt=""
+    />
+  </div>
+  <div
+    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+  >
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/swimming-pools.jpg"
+      alt=""
+    />
+  </div>
+  <div
+    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+  >
+    <img
+      class="object-cover object-right h-full w-full"
+      src="./assets/images/facilities/working-space.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/gym.jpg"
+      alt=""
+    />
+  </div>
+  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+    <img
+      class="object-cover h-full w-full"
+      src="./assets/images/facilities/zumba.png"
+      alt=""
+    />
+  </div>
+</div>
+```
+
+</details>
+
+###
+
+<img style="height:400px" src="./assets/images/readme/asymetric.png"/>
+
+###
+
+6. Creating simple animation with two methods: animation and transition
+
+```css
+.hovertrue:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.hoverimg:hover {
+  box-shadow: 0 0 10px 0 #9cabb4;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.fade-in-image {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in-bottom {
+  animation: fadeInBottom 0.5s ease-out;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+```
+
+![alt text](assets/images/readme/animation.gif)
+
+###
+
+> list-style
+
+```html
+<article>
+  <p>We may collect personal information from you when you:</p>
+  <ul class="list-disc px-4">
+    <li>Make a reservation or inquiry</li>
+    <li>Check-in or check-out</li>
+    <li>Use our services and facilities</li>
+    <li>Participate in surveys or promotions</li>
+  </ul>
+  <p>The types of personal data we may collect include:</p>
+  <ul class="list-disc px-4">
+    <li>Name</li>
+    <li>Contact information (email address, phone number)</li>
+    <li>Payment information</li>
+    <li>Preferences and feedback</li>
+    <li>Any other information you provide to us</li>
+  </ul>
+</article>
+```
+
+I'm using list-disc to give a styling for my list on Privacy Page
+
+</details>
+
+### Styling
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./dist/output.css" />
 ```
 
 > I put the css in the head tag because it's the first thing that will be loaded when the page is loaded.
+> I'm using both cdn embed and from the output.css to prevent tailwindcss from error
 
 ---
 
@@ -24,71 +358,71 @@ link: https://septalonika.github.io/revou-module-2/index.html
 <link
   rel="apple-touch-icon"
   sizes="57x57"
-  href="/public/apple-icon-57x57.png"
+  href="./public/icons/apple-icon-57x57.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="60x60"
-  href="/public/apple-icon-60x60.png"
+  href="./public/icons/apple-icon-60x60.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="72x72"
-  href="/public/apple-icon-72x72.png"
+  href="./public/icons/apple-icon-72x72.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="76x76"
-  href="/public/apple-icon-76x76.png"
+  href="./public/icons/apple-icon-76x76.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="114x114"
-  href="/public/apple-icon-114x114.png"
+  href="./public/icons/apple-icon-114x114.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="120x120"
-  href="/public/apple-icon-120x120.png"
+  href="./public/icons/apple-icon-120x120.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="144x144"
-  href="/public/apple-icon-144x144.png"
+  href="./public/icons/apple-icon-144x144.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="152x152"
-  href="/public/apple-icon-152x152.png"
+  href="./public/icons/apple-icon-152x152.png"
 />
 <link
   rel="apple-touch-icon"
   sizes="180x180"
-  href="/public/apple-icon-180x180.png"
+  href="./public/icons/apple-icon-180x180.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="192x192"
-  href="/public/android-icon-192x192.png"
+  href="./public/icons/android-icon-192x192.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="/public/favicon-32x32.png"
+  href="./public/icons/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="96x96"
-  href="/public/favicon-96x96.png"
+  href="./public/icons/favicon-96x96.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="/public/favicon-16x16.png"
+  href="./public/icons/favicon-16x16.png"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,7 +432,6 @@ link: https://septalonika.github.io/revou-module-2/index.html
 />
 <meta name="msapplication-TileColor" content="#ffffff" />
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-<meta name="theme-color" content="#ffffff" />
 ```
 
 </details>
@@ -168,17 +501,10 @@ link: https://septalonika.github.io/revou-module-2/index.html
 
 ### Applied Sticky Nav Header
 
-```css
-.header {
-  color: #44576d;
-  position: sticky;
-  z-index: 10;
-  top: 2vh;
-  justify-self: center;
-  display: flex;
-  width: 84vw;
-  border-radius: 10vw;
-}
+```html
+<header
+  class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none fade-in-bottom"
+></header>
 ```
 
 Regarding the Criterias of the Checkpoint need it to use sticky for the Nav Header, so I set the position of my Nav Header as `position: sticky`.
@@ -195,11 +521,61 @@ There are 4 navigation I included here, which are:
 
 Home is to get back to the index.html file which is the root .
 
+### Nav Logo
+
+```html
+<a class="company-logo text-bold hovertrue" href="./index.html">
+  <h2>Hotel<span>olet</span>.</h2>
+</a>
+```
+
+### Nav Header
+
+```html
+<a class="hovertrue" href="./index.html">
+  <p>Home</p>
+</a>
+```
+
+### Burger Menu
+
+```html
+<a href="./index.html">
+  <div>
+    <p class="text-xl md:text-3xl">Home</p>
+  </div>
+</a>
+```
+
+---
+
+###
+
 2. Rooms
 
 ---
 
 Rooms will brings you to the section of Rooms which still inside of the root file. This section will show the information about all of the rooms that Hotelolet has.
+
+### Nav Header
+
+```html
+<a class="hovertrue" href="./index.html#rooms">
+  <p>Rooms</p>
+</a>
+```
+
+### Burger Menu
+
+```html
+<a href="./index.html#rooms">
+  <p class="text-xl md:text-3xl">Rooms</p>
+</a>
+```
+
+---
+
+###
 
 3. Facilties
 
@@ -207,16 +583,43 @@ Rooms will brings you to the section of Rooms which still inside of the root fil
 
 Facilties will brings you to the section of Facilties which still inside of the root files. This section will show the information about all of the facilties that Hotelolet has.
 
+### Nav Header
+
+```html
+<a href="../index.html#facilities">
+  <p>Facilities</p>
+</a>
+```
+
+### Burger Menu
+
+```html
+<a href="../index.html#facilities">
+  <p class="text-xl md:text-3xl">Facilities</p>
+</a>
+```
+
+---
+
+###
+
 4. About
    If you click this, it will redirect you to About page which is about.html. It will show you what is Hotelolet about, and also all the reviews of hotelolet from some users.
 
-```css
-.header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  z-index: 20;
-}
+### Nav Header
+
+```html
+<a href="./about.html">
+  <p class="text-xl md:text-3xl">About</p>
+</a>
+```
+
+### Burger Menu
+
+```html
+<a href="./pages/about.html">
+  <p>About</p>
+</a>
 ```
 
 I'm using the `display` property to create the navigation bar and the `position` property to create the fixed navigation bar at the top of the page.
@@ -224,37 +627,6 @@ I'm using the `display` property to create the navigation bar and the `position`
 ###
 
 ---
-
----
-
-###
-
-For the `navtab` class, I'm using the `display` property so the navigation tab will be displayed as a flex container and the `align-items` property to create the navigation tab in the center of the page.
-
-```css
-.navtab {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-a.navtab {
-  display: flex;
-  text-decoration: none;
-  color: #176b87;
-}
-
-a.navtab:hover {
-  background-color: #eef5ff;
-}
-
-a.navtab {
-  padding: 10px;
-  border-radius: 10px;
-}
-```
-
-> I'm giving `:hover` effect to the `a.navtab` class so that when the user hovers on the navigation tab, it will change the background color of the navigation tab to `#eef5ff`.
 
 ---
 
@@ -268,7 +640,7 @@ each section has a unique id so that when the user clicks on the navigation tab,
 
 ---
 
-![welcome](./assets/images/readme/welcome.jpeg)
+![welcome](./assets/images/readme/welcome.png)
 this is the welcome section of the page, it's the first thing that will be shown when the page is loaded.
 
 ###
@@ -279,11 +651,11 @@ this is the welcome section of the page, it's the first thing that will be shown
 
 ### Rooms Section
 
-![Rooms](./assets/images/readme/rooms.jpeg)
+![Rooms](./assets/images/readme/room.png)
 
 ### Facilities Section
 
-![facilties](./assets/images/readme/facilties.jpeg)
+![facilties](./assets/images/readme/fasilities.png)
 
 ---
 
@@ -292,20 +664,24 @@ this is the welcome section of the page, it's the first thing that will be shown
 This is the facilities section of the page, it's the second thing that will be shown when the page is loaded. There are 3 facilities that will be shown in this section, the first facility is the rooms, the second facility is the dining, and the third facility is the events.
 
 ```html
-<div
-  class="w-full h-full"
-  style="
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1vw;
-  "
+<section
+  id="facilities"
+  class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4 slide-in-right"
 >
-  <div class="flex flex-col justify-center items-center h-full"></div>
-</div>
+  <div class="flex flex-col gap-8">
+    <div
+      class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh] rounded-2xl"
+    >
+      <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
+      <div class="flex">
+        <div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6"></div>
+      </div>
+    </div>
+  </div>
+</section>
 ```
 
-I'm using the `grid-template-columns` property to create the grid layout for the facilities section, so that the facilities section will be displayed in a 3 column layout.
+I'm using the `grid grid-cols-4 grid-rows-5` class to create the grid layout for the facilities section, so that the facilities section will be displayed in a 4 column layout with 5 rows so that the task to build asymetric grid will be done.
 
 ---
 
