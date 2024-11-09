@@ -134,7 +134,7 @@ h6 {
 
 @media (min-width: 1024px) {
   .hero-shadow {
-    @apply absolute z-auto border border-[#768a96] top-[20vh] right-[10vw] w-[36vw] h-[30vh] rounded-tl-[10vw] rounded-tr-2xl rounded-bl-2xl rounded-br-[10vw];
+    @apply absolute z-auto border border-[#768a96] top-[25vh] right-[10vw] w-[36vw] h-[40vh] rounded-tl-[10vw] rounded-tr-2xl rounded-bl-2xl rounded-br-[10vw];
   }
   /* animation */
 
@@ -152,7 +152,6 @@ h6 {
   .typewriter {
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto;
     letter-spacing: 0.15em;
     animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
   }

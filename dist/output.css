@@ -606,10 +606,6 @@ video {
   top: 50%;
 }
 
-.top-\[20vh\] {
-  top: 20vh;
-}
-
 .top-\[25\%\] {
   top: 25%;
 }
@@ -712,6 +708,10 @@ video {
 
 .h-\[40px\] {
   height: 40px;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
 }
 
 .h-\[4vh\] {
@@ -1356,10 +1356,10 @@ h6 {
 
   .hero-shadow {
     position: absolute;
-    top: 20vh;
+    top: 25vh;
     right: 10vw;
     z-index: auto;
-    height: 30vh;
+    height: 40vh;
     width: 36vw;
     border-top-left-radius: 10vw;
     border-top-right-radius: 1rem;
@@ -1386,7 +1386,6 @@ h6 {
   .typewriter {
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto;
     letter-spacing: 0.15em;
     animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
   }
