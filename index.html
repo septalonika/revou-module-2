@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,10 +7,7 @@
     <meta name="description" content="Booking Hotels | Hotelolet" />
     <meta name="author" content="Andi" />
     <meta name="keywords" content="Booking Hotels, Hotelolet, Hotel" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+
     <title>HOTELOLET - #1 Hotel in Jakarta</title>
     <link
       rel="apple-touch-icon"
@@ -89,22 +86,22 @@
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body class="text-primary md:text-2xl lg:text-sm">
-    <div class="max-md:container px-auto flex flex-col">
+    <div class="px-auto flex flex-col max-md:container">
       <header
-        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none fade-in-bottom"
+        class="fade-in-bottom sticky top-0 z-20 w-screen flex-col rounded-none bg-[#ffffff] shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw]"
       >
         <nav
-          class="grid grid-cols-2 border-none px-[6vw] lg:px-[4vw] py-0 w-full h-[8vh] gap-2 xl:rounded-[10vw]"
+          class="grid h-[8vh] w-full grid-cols-2 gap-2 border-none px-[6vw] py-0 lg:px-[4vw] xl:rounded-[10vw]"
         >
           <div class="nav-container">
             <a class="company-logo text-bold hovertrue" href="./index.html">
               <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
-          <div class="hidden lg:flex justify-end items-center gap-[2vw]">
+          <div class="hidden items-center justify-end gap-[2vw] lg:flex">
             <a class="hovertrue" href="#">
               <p>Home</p>
             </a>
@@ -114,7 +111,7 @@
             <a class="hovertrue" href="./index.html#facilities">
               <p>Facilities</p>
             </a>
-            <a class="hovertrue" href="./pages/about.html">
+            <a class="hovertrue" href="./src/pages/about.html">
               <p>About</p>
             </a>
           </div>
@@ -128,7 +125,7 @@
           </div>
           <div class="burger-menu lg:hidden">
             <div
-              class="flex flex-col items-end h-full w-full px-6 md:px-12 py-24 md:py-36 gap-4 md:gap-8"
+              class="flex h-full w-full flex-col items-end gap-4 px-6 py-24 md:gap-8 md:px-12 md:py-36"
             >
               <a href="#">
                 <div>
@@ -141,7 +138,7 @@
               <a href="./index.html#facilities">
                 <p class="text-xl md:text-3xl">Facilities</p>
               </a>
-              <a href="./pages/about.html">
+              <a href="./src/pages/about.html">
                 <p class="text-xl md:text-3xl">About</p>
               </a>
             </div>
@@ -153,21 +150,23 @@
       <main class="min-h-[386px]">
         <section
           id="welcome"
-          class="lg:grid lg:grid-cols-2 lg:mt-[6vh] lg:mx-[6vw]"
+          class="lg:mx-[6vw] lg:mt-[6vh] lg:grid lg:grid-cols-2"
         >
           <div
-            class="flex absolute z-10 bg-white/50 top-[8vh] lg:static lg:z-0 lg:bg-transparent lg:top-0 w-full h-[30vh] md:h-[40vh] lg:h-full"
+            class="absolute top-[8vh] z-10 flex h-[30vh] w-full bg-white/50 md:h-[40vh] lg:static lg:top-0 lg:z-0 lg:h-full lg:bg-transparent"
           >
             <div
-              class="flex flex-col text-start px-[6vw] md:gap-10 lg:px-0 py-[2vh] gap-4 lg:gap-8"
+              class="flex flex-col px-[6vw] py-[2vh] text-start md:gap-10 md:py-[6vh] lg:px-0 lg:py-0"
             >
-              <div class="flex flex-col gap-[2vh]">
+              <div class="flex flex-col">
                 <h1
-                  class="font-bold text-2xl md:text-3xl lg:text-2xl typewriter text-shadow"
+                  class="typewriter text-shadow my-[1vh] text-xl font-bold md:text-4xl lg:text-2xl"
                 >
                   Tired of Jakarta?
                 </h1>
-                <h2 class="typewriter text-xl lg:text-lg text-shadow">
+                <h2
+                  class="typewriter text-shadow my-[1.4vh] text-lg md:text-3xl lg:text-lg"
+                >
                   Let's skip the traffic and bring the positive morning
                 </h2>
               </div>
@@ -183,19 +182,19 @@
                 </p>
               </article>
               <a
-                class="flex justify-center btn py-2 px-2 w-44 md:px-6 md:py-4 md:text-xl md:w-56 lg:w-40 lg:text-base lg:py-2 lg:px-4 slide-in-left"
+                class="btn slide-in-left flex w-44 justify-center px-2 py-2 md:w-56 md:px-6 md:py-4 md:text-2xl lg:w-40 lg:px-4 lg:py-2 lg:text-base"
                 href="./index.html#rooms"
                 >Check Now</a
               >
 
               <div
-                class="flex absolute lg:static z-10 lg:z-0 top-[25vh] md:top-[34vh] lg:top-0 justify-between items-center w-[90vw] lg:w-full h-[10vh] px-6 lg:px-0 md:px-20 lg:gap-4 lg:justify-start"
+                class="absolute top-[25vh] z-10 flex h-[10vh] w-[90vw] items-center justify-between px-6 md:top-[34vh] md:px-20 lg:static lg:top-0 lg:z-0 lg:w-full lg:justify-start lg:gap-10 lg:px-0"
               >
                 <div class="flex flex-col items-start md:gap-2">
                   <img
                     loading="lazy"
                     class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/bed.svg"
+                    src="./src/assets/images/icons/bed.svg"
                     alt="hotel"
                   />
                   <p class="fade-in-image md:text-lg">200+ Beds</p>
@@ -204,7 +203,7 @@
                   <img
                     loading="lazy"
                     class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/room.svg"
+                    src="./src/assets/images/icons/room.svg"
                     alt="hotel"
                   />
                   <p class="fade-in-image md:text-lg">40+ Rooms</p>
@@ -213,7 +212,7 @@
                   <img
                     loading="lazy"
                     class="fade-in-image hero-info-img"
-                    src="./assets/images/icons/user.svg"
+                    src="./src/assets/images/icons/user.svg"
                     alt="hotel"
                   />
                   <p class="fade-in-image md:text-lg">800+ Booked</p>
@@ -223,66 +222,94 @@
           </div>
 
           <div class="flex max-md:w-screen lg:items-start">
-            <div class="slide-in-right hero-shadow"></div>
-
+            <div class="slide-in-right hero-shadow object-center"></div>
             <picture>
               <source
+                loading="lazy"
                 media="(max-width: 600px)"
-                srcset="./assets/images/hero-hotel-small.webp 1x"
+                srcset="./src/assets/images/hero/hero-hotel-small.webp 1x"
                 type="image/webp"
               />
               <source
+                loading="lazy"
                 media="(max-width: 1200px)"
-                srcset="./assets/images/hero-hotel-medium.webp 1x"
+                srcset="./src/assets/images/hero/hero-hotel-medium.webp 1x"
                 type="image/webp"
               />
               <source
+                loading="lazy"
                 media="(min-width: 1201px)"
-                srcset="./assets/images/hero-hotel-large.webp 1x"
+                srcset="./src/assets/images/hero/hero-hotel-large.webp 1x"
                 type="image/webp"
               />
               <img
                 loading="lazy"
-                class="slide-in-right lg:absolute object-center min-h-[30vh] max-h-[30vh] md:max-h-[40vh] lg:max-h-[50vh] lg:w-[36vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl lg:rounded-bl-xl lg:rounded-br-[10vw]"
-                src="./assets/images/hero-hotel-large.webp"
+                class="slide-in-right max-h-[30vh] min-h-[30vh] object-center md:max-h-[40vh] lg:absolute lg:max-h-[50vh] lg:w-[36vw] lg:rounded-bl-xl lg:rounded-br-[10vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl"
+                src="./src/assets/images/hero/hero-hotel-large.webp"
                 alt="Beautiful view of the hotel"
                 width="1200"
                 height="800"
               />
             </picture>
             <div
-              class="bg-white absolute z-1 w-[90vw] h-[10vh] top-[33vh] md:top-[42vh] left-[5vw] rounded-[6vw] shadow-lg lg:hidden"
+              class="z-1 absolute left-[5vw] top-[33vh] h-[10vh] w-[90vw] rounded-[6vw] bg-white shadow-lg md:top-[42vh] lg:hidden"
             ></div>
           </div>
         </section>
         <section
           id="most-picked"
-          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4 fade-in-bottom"
+          class="fade-in-bottom mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4 px-[6vw]"
         >
-          <h2
-            class="text-2xl font-semibold text-shadow md:text-3xl lg:text-2xl"
-          >
+          <h2 class="text-shadow text-xl font-semibold md:text-3xl lg:text-2xl">
             Most Picked
           </h2>
-          <div class="relative overflow-x-auto scrollbar-none">
+          <div class="scrollbar-none relative overflow-x-auto">
             <ul class="flex gap-2 lg:gap-8">
               <li class="hoverimg">
-                <a href="./pages/booking.html?room=double-1">
+                <a href="./src/pages/booking.html?room=double-1">
                   <div
-                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                    class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
                   >
-                    <img
-                      loading="lazy"
-                      class="rounded-xl object-cover h-full w-full"
-                      src="./assets/images/rooms/double-1.webp"
-                      alt=""
-                    />
+                    <picture>
+                      <source
+                        loading="lazy"
+                        media="(max-width: 600px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-1-small.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(max-width: 1200px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-1-medium.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(min-width: 1201px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-1-large.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        class="h-full w-full rounded-xl object-cover"
+                        src="./src/assets/images/rooms/double/double-1-large.webp"
+                        alt="Beautiful view of the hotel"
+                        width="1200"
+                        height="800"
+                      />
+                    </picture>
 
                     <div
-                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
-                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                        class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
                       >
                         <p>Double-1 Bed Room</p>
                         <p>Rp299.000</p>
@@ -292,23 +319,51 @@
                 </a>
               </li>
               <li class="hoverimg">
-                <a href="./pages/booking.html?room=luxury-1">
+                <a href="./src/pages/booking.html?room=double-3">
                   <div
-                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                    class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
                   >
-                    <img
-                      loading="lazy"
-                      class="rounded-xl object-cover h-full w-full"
-                      src="./assets/images/rooms/luxury-1.webp"
-                      alt=""
-                    />
+                    <picture>
+                      <source
+                        loading="lazy"
+                        media="(max-width: 600px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-3-small.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(max-width: 1200px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-3-medium.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(min-width: 1201px)"
+                        srcset="
+                          ./src/assets/images/rooms/double/double-3-large.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        class="h-full w-full rounded-xl object-cover"
+                        src="./src/assets/images/rooms/double/double-3-large.webp"
+                        alt="Beautiful view of the hotel"
+                        width="1200"
+                        height="800"
+                      />
+                    </picture>
                     <div
-                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
-                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                        class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
                       >
-                        <p>Luxury-1 Bed Room</p>
+                        <p>Double-3 Bed Room</p>
                         <p>Rp299.000</p>
                       </div>
                     </div>
@@ -316,21 +371,49 @@
                 </a>
               </li>
               <li class="hoverimg">
-                <a href="./pages/booking.html?room=twin-4">
+                <a href="./src/pages/booking.html?room=twin-4">
                   <div
-                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                    class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
                   >
-                    <img
-                      loading="lazy"
-                      class="rounded-xl object-cover h-full w-full"
-                      src="./assets/images/rooms/twin-4.webp"
-                      alt=""
-                    />
+                    <picture>
+                      <source
+                        loading="lazy"
+                        media="(max-width: 600px)"
+                        srcset="
+                          ./src/assets/images/rooms/twin/twin-4-small.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(max-width: 1200px)"
+                        srcset="
+                          ./src/assets/images/rooms/twin/twin-4-medium.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        loading="lazy"
+                        media="(min-width: 1201px)"
+                        srcset="
+                          ./src/assets/images/rooms/twin/twin-4-large.webp 1x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        class="h-full w-full rounded-xl object-cover"
+                        src="./src/assets/images/rooms/twin/twin-4-large.webp"
+                        alt="Beautiful view of the hotel"
+                        width="1200"
+                        height="800"
+                      />
+                    </picture>
                     <div
-                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
-                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                        class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
                       >
                         <p>Twin-4 Bed Room</p>
                         <p>Rp299.000</p>
@@ -344,32 +427,60 @@
         </section>
         <section
           id="rooms"
-          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 slide-in-left"
+          class="slide-in-left mb-[4vh] mt-[2vh] flex w-screen flex-col gap-4 px-[6vw]"
         >
-          <ul class="flex flex-col gap-8 w-full">
+          <ul class="flex w-full flex-col gap-8">
             <li>
               <div class="flex flex-col gap-2">
                 <h2
-                  class="text-2xl font-semibold text-shadow md:text-3xl lg:text-2xl"
+                  class="text-shadow text-xl font-semibold md:text-3xl lg:text-2xl"
                 >
                   Single Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                    class="grid w-full grid-flow-col grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-none lg:gap-4"
                   >
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=single-1">
+                      <a href="./src/pages/booking.html?room=single-1">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/single-1.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-1-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-1-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-1-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-1-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Single-1 Bed
@@ -381,17 +492,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=single-2">
+                      <a href="./src/pages/booking.html?room=single-2">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/single-2.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-2-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-2-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-2-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/single/single-2-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Single-2 Bed
@@ -403,17 +542,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=single-3">
+                      <a href="./src/pages/booking.html?room=single-3">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/single-3.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-3-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-3-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-3-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-1-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Single-3 Bed
@@ -425,17 +592,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=single-4">
+                      <a href="./src/pages/booking.html?room=single-4">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/single-4.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-4-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-4-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/single/single-4-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/single/single-1-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Single-4 Bed
@@ -452,25 +647,53 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
+                <h2 class="text-shadow text-xl font-semibold md:text-3xl">
                   Double Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                    class="grid w-full grid-flow-col grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-none lg:gap-4"
                   >
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=double-1">
+                      <a href="./src/pages/booking.html?room=double-1">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/double-1.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-1-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-1-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-1-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-1-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Double-1 Bed
@@ -482,17 +705,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=double-2">
+                      <a href="./src/pages/booking.html?room=double-2">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/double-2.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-2-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-2-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-2-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-2-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Double-2 Bed
@@ -504,17 +755,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=double-3">
+                      <a href="./src/pages/booking.html?room=double-3">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/double-3.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-3-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-3-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-3-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-3-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Double-3 Bed
@@ -526,20 +805,48 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=luxury-1">
+                      <a href="./src/pages/booking.html?room=double-4">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/luxury-1.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-4-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-4-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/double/double-4-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/double/double-4-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
-                                Luxury-1 Bed
+                                Double-4 Bed
                               </h3>
                               <p class="text-sm md:text-base">Rp299.000</p>
                             </div>
@@ -553,25 +860,53 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
+                <h2 class="text-shadow text-xl font-semibold md:text-3xl">
                   Twin Bed Rooms
                 </h2>
                 <div class="flex">
                   <ul
-                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                    class="grid w-full grid-flow-col grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-none lg:gap-4"
                   >
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=twin-1">
+                      <a href="./src/pages/booking.html?room=twin-1">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/twin-1.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-1-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-1-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-1-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/twin/twin-1-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Twin-1 Bed
@@ -583,17 +918,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=twin-2">
+                      <a href="./src/pages/booking.html?room=twin-2">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/twin-2.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-2-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-2-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-2-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/twin/twin-2-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Twin-2 Bed
@@ -605,17 +968,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=twin-3">
+                      <a href="./src/pages/booking.html?room=twin-3">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/twin-3.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-3-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-3-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-3-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/twin/twin-3-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Twin-3 Bed
@@ -627,17 +1018,45 @@
                       </a>
                     </li>
                     <li class="hoverimg">
-                      <a href="./pages/booking.html?room=twin-4">
+                      <a href="./src/pages/booking.html?room=twin-4">
                         <div
-                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
                         >
-                          <img
-                            loading="lazy"
-                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
-                            src="./assets/images/rooms/twin-4.webp"
-                            alt=""
-                          />
-                          <div class="rounded-b-xl w-full">
+                          <picture>
+                            <source
+                              loading="lazy"
+                              media="(max-width: 600px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-4-small.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(max-width: 1200px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-4-medium.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              loading="lazy"
+                              media="(min-width: 1201px)"
+                              srcset="
+                                ./src/assets/images/rooms/twin/twin-4-large.webp 1x
+                              "
+                              type="image/webp"
+                            />
+                            <img
+                              loading="lazy"
+                              class="h-full max-h-[124px] min-h-[124px] w-full rounded-2xl object-cover p-2 md:max-h-[300px]"
+                              src="./src/assets/images/rooms/twin/twin-4-large.webp"
+                              alt="Beautiful view of the hotel"
+                              width="1200"
+                              height="800"
+                            />
+                          </picture>
+                          <div class="w-full rounded-b-xl">
                             <div class="flex flex-col p-2">
                               <h3 class="text-lg md:text-xl lg:text-lg">
                                 Twin-4 Bed
@@ -656,72 +1075,72 @@
         </section>
         <section
           id="facilities"
-          class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4 slide-in-right"
+          class="slide-in-right mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4"
         >
           <div class="flex flex-col gap-8">
             <div
-              class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh] rounded-2xl"
+              class="flex flex-col gap-2 rounded-2xl bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh]"
             >
-              <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
+              <h2 class="text-xl font-semibold md:text-3xl">Facilities</h2>
               <div class="flex">
                 <div
-                  class="grid grid-cols-3 grid-rows-5 md:grid-cols-4 md:grid-rows-5 lg:grid-cols-5 lg:grid-rows-3 w-full lg:gap-6"
+                  class="grid w-full grid-cols-3 grid-rows-5 md:grid-cols-4 md:grid-rows-5 lg:grid-cols-5 lg:grid-rows-3 lg:gap-6"
                 >
                   <div
-                    class="p-2 col-span-1 row-span-1 md:col-span-2 md:row-span-2 md:h-[30vh] lg:col-span-3 lg:row-span-1 min-h-[14vh] lg:h-[24vh]"
+                    class="col-span-1 row-span-1 min-h-[14vh] p-2 md:col-span-2 md:row-span-2 md:h-[30vh] lg:col-span-3 lg:row-span-1 lg:h-[24vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/basketball-court.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/basketball-court.webp"
                       alt=""
                     />
                   </div>
                   <div
-                    class="p-2 col-span-1 row-span-1 md:col-span-1 md:row-span-1 md:h-[15vh] lg:h-[24vh] lg:col-span-1 lg:row-span-1"
+                    class="col-span-1 row-span-1 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:row-span-1 lg:h-[24vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/foodhall.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/foodhall.webp"
                       alt=""
                     />
                   </div>
                   <div
-                    class="p-2 col-span-1 row-span-2 md:col-span-1 md:row-span-3 md:h-[45vh] lg:col-span-1 lg:row-span-2 lg:h-[51vh]"
+                    class="col-span-1 row-span-2 p-2 md:col-span-1 md:row-span-3 md:h-[45vh] lg:col-span-1 lg:row-span-2 lg:h-[51vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/groceries.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/groceries.webp"
                       alt=""
                     />
                   </div>
                   <div
-                    class="p-2 col-span-2 row-span-3 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-2 lg:row-span-2 lg:h-[51vh]"
+                    class="col-span-2 row-span-3 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-2 lg:row-span-2 lg:h-[51vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/fashion-2.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/fashion-2.webp"
                       alt=""
                     />
                   </div>
                   <div class="p-2 md:h-[15vh] lg:h-[24vh]">
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/omakase.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/omakase.webp"
                       alt=""
                     />
                   </div>
                   <div
-                    class="p-2 md:col-span-2 md:row-span-1 md:h-[15vh] lg:h-[24vh] lg:col-span-1"
+                    class="p-2 md:col-span-2 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:h-[24vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/swimming-pools.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/swimming-pools.webp"
                       alt=""
                     />
                   </div>
@@ -730,18 +1149,18 @@
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/gym.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/gym.webp"
                       alt=""
                     />
                   </div>
                   <div
-                    class="p-2 col-span-2 row-span-1 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 lg:h-[24vh]"
+                    class="col-span-2 row-span-1 p-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 lg:h-[24vh]"
                   >
                     <img
                       loading="lazy"
-                      class="object-cover h-full w-full rounded-lg hoverimg"
-                      src="./assets/images/facilities/working-space.webp"
+                      class="hoverimg h-full w-full rounded-lg object-cover"
+                      src="./src/assets/images/facilities/working-space.webp"
                       alt=""
                     />
                   </div>
@@ -753,7 +1172,7 @@
       </main>
       <footer class="fade-in-bottom">
         <div
-          class="flex flex-col w-screen lg:w-full px-[6vw] py-[2vh] lg:py-[6vh] gap-4 bg-[#ffffff] md:rounded-t-3xl lg:rounded-none"
+          class="flex w-screen flex-col gap-4 bg-[#ffffff] px-[6vw] py-[2vh] md:rounded-t-3xl lg:w-full lg:rounded-none lg:py-[6vh]"
         >
           <div class="lg:flex lg:justify-between lg:gap-2">
             <div class="flex flex-col">
@@ -766,16 +1185,16 @@
               <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
               <ul>
                 <li>
-                  <a href="./pages/about.html">About us </a>
+                  <a href="./src/pages/about.html">About us </a>
                 </li>
                 <li>
-                  <a href="./pages/career.html">Our Careers</a>
+                  <a href="./src/pages/career.html">Our Careers</a>
                 </li>
                 <li>
-                  <a href="./pages/privacy.html">Privacy</a>
+                  <a href="./src/pages/privacy.html">Privacy</a>
                 </li>
                 <li>
-                  <a href="./pages/tnc.html">Terms and Conditions</a>
+                  <a href="./src/pages/tnc.html">Terms and Conditions</a>
                 </li>
               </ul>
             </div>
@@ -810,7 +1229,7 @@
                   target="_self"
                 >
                   <input
-                    class="flex h-8 md:h-12 lg:h-8 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] lg:pr-[4vw] lg:w-[18vw] border-none focus:outline-none"
+                    class="flex h-8 rounded border-none bg-[#e6e6e6] pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw]"
                     type="email"
                     id="email"
                     name="email"
@@ -820,7 +1239,7 @@
                   <button
                     type="submit"
                     form="reservation-form"
-                    class="btn flex h-8 md:h-12 lg:h-8 justify-center items-center px-[2vw] md:px-[4vw] lg:px-[2vw] absolute max-sm:left-[56vw] max-md:left-[58vw] lg:right-[4vw] rounded"
+                    class="btn absolute flex h-8 items-center justify-center rounded px-[2vw] max-md:left-[58vw] max-sm:left-[56vw] md:h-12 md:px-[4vw] lg:right-[4vw] lg:h-8 lg:px-[2vw]"
                   >
                     Send
                   </button>
@@ -834,6 +1253,6 @@
         </div>
       </footer>
     </div>
-    <script src="./assets/js/index.js"></script>
+    <script src="./src/assets/js/index.js"></script>
   </body>
 </html>

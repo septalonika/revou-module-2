@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #d2dce6;
+  --primary: #192524;
+  --secondary: #d1ebdb;
+  --font-family: "Instrument Sans", sans-serif;
+  --font-color: #44576d;
+}
+
+html {
+  font-family: var(--font-family);
+
+  /* remove scroll bar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+body {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  border-radius: 4px;
+  border: none;
+  color: #dfebf6;
+  background-color: #44576d;
+}
+
+.btn:hover {
+  background-color: #768a96;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #efece9;
+}
+
+.hero-info-img {
+  @apply h-[4vh] w-[6vw] lg:h-[3vh] lg:w-[3vw];
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-container {
+  @apply flex h-full w-full items-center justify-start;
+}
+
+.company-logo {
+  @apply text-xl font-bold md:text-4xl lg:text-2xl;
+}
+
+.company-logo span {
+  @apply text-[#86373e];
+}
+.burger-btn {
+  @apply relative ml-auto flex h-[40px] w-[40px];
+}
+
+.burger-btn span {
+  @apply absolute left-1/2 top-1/2 z-[30] h-[5px] w-full -translate-x-1/2 -translate-y-1/2 rounded-[25px] bg-[#44576d] transition-all duration-300;
+}
+
+.burger-btn span:nth-child(1) {
+  @apply top-[25%];
+}
+
+.burger-btn span:nth-child(3) {
+  @apply top-[75%];
+}
+
+.burger-btn.active span:nth-child(1) {
+  @apply top-[50%] rotate-45;
+}
+
+.burger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.active span:nth-child(3) {
+  @apply top-[50%] -rotate-45;
+}
+
+.burger-menu {
+  @apply fixed -right-[120%] top-0 z-20 flex h-screen w-full max-w-[50%] flex-col items-center justify-center bg-[#aac7d8] transition-all duration-300;
+}
+
+.burger-menu.active {
+  @apply right-0;
+}
+
+.burger-menu-outer.active {
+  @apply right-0;
+}
+
+.burger-menu-outer {
+  @apply fixed -right-[130%] top-0 z-10 h-screen w-full bg-[#29353c90];
+}
+
+.btn:hover {
+  background-color: #768a96;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #efece9;
+}
+
+.copyleft {
+  @apply flex h-12 w-screen items-center justify-center bg-[#44576d] leading-5 text-[#e6e6e6] md:h-16 lg:h-10 lg:w-auto;
+}
+
+@media (min-width: 1024px) {
+  .text-shadow {
+    text-shadow: none;
+  }
+  .hero-shadow {
+    @apply absolute right-[10vw] top-[25vh] z-auto h-[40vh] w-[36vw] rounded-bl-2xl rounded-br-[10vw] rounded-tl-[10vw] rounded-tr-2xl border border-[#768a96];
+  }
+  /* animation */
+
+  .hovertrue:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .hoverimg:hover {
+    box-shadow: 0 0 10px 0 #9cabb4;
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation:
+      typing 1s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 1s ease-out;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+  }
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .fade-in-image {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .fade-in-bottom {
+    animation: fadeInBottom 0.5s ease-out;
+  }
+
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

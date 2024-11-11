@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Booking Hotels | Hotelolet" />
+    <meta name="author" content="Andi" />
+    <meta name="keywords" content="Booking Hotels, Hotelolet, Hotel" />
+    <title>Booking | HOTELOLET</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../public/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../public/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../public/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../public/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../public/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../public/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../public/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../public/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../public/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../public/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../public/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../public/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../public/icons/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  </head>
+  <body class="text-primary md:text-2xl lg:text-xl">
+    <div class="px-auto flex flex-col max-md:container">
+      <header
+        class="fade-in-bottom sticky top-0 z-20 w-screen flex-col rounded-none bg-[#ffffff] shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw]"
+      >
+        <nav
+          class="grid h-[8vh] w-full grid-cols-2 gap-2 border-none px-[6vw] py-0 lg:px-[4vw] xl:rounded-[10vw]"
+        >
+          <div class="nav-container">
+            <a class="company-logo text-bold" href="../../index.html">
+              <h2>Hotel<span>olet</span>.</h2>
+            </a>
+          </div>
+          <div class="hidden items-center justify-end gap-[2vw] lg:flex">
+            <a href="../../index.html">
+              <p>Home</p>
+            </a>
+            <a href="../../index.html#rooms">
+              <p>Rooms</p>
+            </a>
+            <a href="../../index.html#facilities">
+              <p>Facilities</p>
+            </a>
+            <a href="./about.html">
+              <p>About</p>
+            </a>
+          </div>
+          <!-- burger -->
+          <div class="nav-container lg:hidden">
+            <div class="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="burger-menu lg:hidden">
+            <div
+              class="flex h-full w-full flex-col items-end gap-4 px-6 py-24 md:gap-8 md:px-12 md:py-36"
+            >
+              <a href="#">
+                <div>
+                  <p class="text-xl md:text-3xl">Home</p>
+                </div>
+              </a>
+              <a href="../../index.html#rooms">
+                <p class="text-xl md:text-3xl">Rooms</p>
+              </a>
+              <a href="../../index.html#facilities">
+                <p class="text-xl md:text-3xl">Facilities</p>
+              </a>
+              <a href="./about.html">
+                <p class="text-xl md:text-3xl">About</p>
+              </a>
+            </div>
+          </div>
+          <div class="burger-menu-outer lg:hidden"></div>
+          <!-- burger -->
+        </nav>
+      </header>
+      <main class="min-h-[386px] md:min-h-[440px]">
+        <section
+          id="hero-room"
+          class="mb-[2vh] mt-[2vh] flex w-screen flex-col gap-4 px-[6vw] lg:pt-[6vh]"
+        >
+          <div
+            class="hero-text absolute top-[8vh] z-10 flex h-[30vh] md:top-[16vh]"
+          >
+            <div class="flex flex-col gap-4 px-[6vw] py-[2vh] text-start">
+              <div
+                class="absolute left-0 top-[24vh] z-10 grid h-[10vh] w-[88vw] grid-cols-5 grid-rows-4 items-center px-6 md:top-[28vh] lg:left-[42vw] lg:top-[18vh] lg:w-[52vw]"
+              >
+                <div
+                  class="col-span-2 row-span-4 grid h-full items-center justify-center"
+                >
+                  <p id="hotelName" class="font-semibold md:text-2xl">
+                    Hotel Room 1
+                  </p>
+                </div>
+                <div
+                  class="col-span-3 row-span-2 grid h-full items-end justify-end md:pr-[8vw]"
+                >
+                  <p class="font-semibold md:text-2xl">
+                    Rp299.<span class="text-xs text-[#768a96] md:text-lg"
+                      >000,- /Night</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="col-span-3 row-span-2 grid h-full justify-end md:pr-[8vw]"
+                >
+                  <p class="text-xs text-[#768a96] md:text-lg">
+                    <span class="fa-solid fa-star"></span>4.9 (224 Reviews)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img flex rounded-xl">
+            <picture>
+              <source
+                loading="lazy"
+                id="booking-img-small"
+                media="(max-width: 600px)"
+                srcset="../assets/images/rooms/double/double-1-large.webp 1x"
+                type="image/webp"
+              />
+              <source
+                loading="lazy"
+                id="booking-img-medium"
+                media="(max-width: 1200px)"
+                srcset="../assets/images/rooms/double/double-1-large.webp 1x"
+                type="image/webp"
+              />
+              <source
+                loading="lazy"
+                id="booking-img-large"
+                media="(min-width: 1201px)"
+                srcset="../assets/images/rooms/double/double-1-large.webp 1x"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                id="booking-img-default"
+                class="slide-in-right max-h-[20vh] min-h-[26vh] w-screen rounded-xl object-cover object-center sm:min-h-[40vh] md:max-h-[40vh] lg:max-h-[60vh] lg:min-h-[50vh] lg:max-w-[40vw]"
+                src="../assets/images/rooms/double/double-1-large.webp"
+                alt="Beautiful view of the hotel"
+                width="1200"
+                height="800"
+              />
+            </picture>
+            <div
+              class="z-1 absolute left-[8vw] top-[32vh] h-[10vh] w-[84vw] rounded-[6vw] bg-white shadow-lg md:top-[44vh] md:rounded-[4vw] lg:left-[50vw] lg:top-[30vh] lg:h-[20vh] lg:w-[44vw]"
+            ></div>
+          </div>
+        </section>
+        <section id="description" class="w-screen rounded-2xl bg-[#ffffff]">
+          <div class="mb-[4vh] mt-[8vh] flex flex-col gap-4 px-[6vw] py-[2vh]">
+            <h2 class="text-xl font-semibold md:text-3xl">Description</h2>
+
+            <article>
+              <p id="room-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                adipisci at velit nihil impedit blanditiis repudiandae explicabo
+                quidem. Aut, facilis?
+              </p>
+            </article>
+          </div>
+        </section>
+        <section
+          id="booking-room "
+          class="my-[2vh] w-screen rounded-2xl bg-[#ffffff] py-[2vh]"
+        >
+          <div class="my-[2vh] flex flex-col px-[6vw]">
+            <div class="flex flex-col">
+              <h2 class="text-xl font-bold md:text-3xl">Plan your booking</h2>
+              <p>Organize your upcoming reservation efficiently</p>
+            </div>
+            <div class="book-site flex">
+              <div class="w-full">
+                <form
+                  name="booking-form"
+                  id="booking-form"
+                  class="flex flex-col gap-[1vh]"
+                  action="./success.html"
+                  method="GET"
+                  target="_blank"
+                >
+                  <input
+                    id="roomName"
+                    name="roomName"
+                    type="text"
+                    value=""
+                    class="hidden"
+                  />
+                  <label for="name">Name </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  />
+                  <label for="email">Email </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  />
+                  <label for="phone">Phone </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="081234567890"
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  />
+                  <label for="check-in">Check-in </label>
+                  <input
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  />
+                  <label for="check-out">Check-out </label>
+                  <input
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  />
+                  <div class="flex gap-[1vw]">
+                    <div class="flex items-center justify-center gap-[1vw]">
+                      <p>Gender</p>
+                      <input
+                        type="radio"
+                        id="single"
+                        name="room"
+                        value="single"
+                        checked
+                      />
+                      <label for="single">Men</label>
+                    </div>
+                    <div class="flex items-center justify-center gap-[1vw]">
+                      <input
+                        type="radio"
+                        id="double"
+                        name="room"
+                        value="double"
+                      />
+                      <label for="double">Women</label>
+                    </div>
+                    <div
+                      class="flex items-center justify-center gap-[1vw]"
+                    ></div>
+                  </div>
+                  <label for="extra">Extra</label>
+                  <div
+                    class="extra-book flex items-center justify-start gap-[4vw]"
+                  >
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="extra-bed"
+                        name="extra"
+                        value="extra-bed"
+                      />
+                      <label for="extra-bed">Bed</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="extra-breakfast"
+                        name="extra"
+                        value="breakfast-1"
+                      />
+                      <label for="breakfast-1">Breakfast</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="dinner"
+                        name="extra"
+                        value="dinner"
+                      />
+                      <label for="dinner">Dinner</label>
+                    </div>
+                  </div>
+                  <label for="message">Message </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Your Special Request here..."
+                    required
+                    class="rounded border border-[#176b87] p-2 outline-none"
+                  ></textarea>
+                  <button class="btn p-2" type="submit" form="booking-form">
+                    Booking
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div
+          class="flex w-screen flex-col gap-4 rounded-t-3xl bg-[#ffffff] px-[6vw] py-[2vh] lg:w-full lg:rounded-none lg:py-[6vh] lg:text-sm"
+        >
+          <div class="lg:flex lg:justify-between lg:gap-2">
+            <div class="flex flex-col">
+              <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
+              <p class="lg:w-[24vw]">
+                We owe you a memorable experience and recharge your happiness
+              </p>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
+              <ul>
+                <li>
+                  <a href="./about.html">About us </a>
+                </li>
+                <li>
+                  <a href="./career.html">Our Careers</a>
+                </li>
+                <li>
+                  <a href="./privacy.html">Privacy</a>
+                </li>
+                <li>
+                  <a href="./tnc.html">Terms and Conditions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Find Us</h2>
+              <ul>
+                <li>
+                  <a href="mailto:septalonika@gmail.com"
+                    >support@hotelolet.xyz</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/6285156513102">021 - 1414 - 0045</a>
+                </li>
+                <li>
+                  <a href="https://g.co/kgs/56hMk2L">
+                    Hotelolet, Sudirman, Jakarta</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Subscribe</h2>
+              <p>Save 15% on your first reserve</p>
+              <div class="footer-form-container">
+                <form
+                  name="reservation"
+                  class="flex"
+                  id="reservation-form"
+                  action="./success.html"
+                  method="GET"
+                  target="_self"
+                >
+                  <input
+                    class="flex h-8 rounded border-none bg-[#e6e6e6] pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw]"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    form="reservation-form"
+                    class="btn absolute flex h-8 items-center justify-center rounded px-[2vw] max-md:left-[58vw] max-sm:left-[56vw] md:h-12 md:px-[4vw] lg:right-[4vw] lg:h-8 lg:px-[2vw]"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyleft md:text-2xl lg:text-base">
+          <p>Copyright &copy; 2024 • Hotelolet •</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../assets/js/booking.js"></script>
+  </body>
+</html>

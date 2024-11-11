@@ -2,7 +2,7 @@
 
 Hotelolet is a company profile website for it's hotel.
 
-![alt text](./assets/images/readme/hotelolet.png)
+![alt text](./src/assets/images/readme/hotelolet.png)
 
 link: https://septalonika.github.io/revou-module-2/index.html
 
@@ -49,24 +49,24 @@ html {
 
 I'm using `text-shadow` property in the most heading tag, for the example About Us Heading in the page of about.html to make it more clear
 
-![alt text](./assets/images/readme/text-shadow.png)
-![alt text](./assets/images/readme/text-shadow2.png)
+![alt text](./src/assets/images/readme/text-shadow.png)
+![alt text](./src/assets/images/readme/text-shadow2.png)
 
 3. Applying 1 responsive background image, (using contain or cover, suit your needs)
 
 ```html
 <div
-  class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+  class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
 >
   <img
-    class="rounded-xl object-cover h-full w-full"
-    src="./assets/images/rooms/double-1.jpg"
+    class="h-full w-full rounded-xl object-cover"
+    src="./src/assets/images/rooms/double-1.jpg"
     alt=""
   />
 
-  <div class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full">
+  <div class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white">
     <div
-      class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+      class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
     >
       <p>Double-1 Bed Room</p>
       <p>Rp299.000</p>
@@ -75,7 +75,7 @@ I'm using `text-shadow` property in the most heading tag, for the example About 
 </div>
 ```
 
-![alt text](./assets/images/readme/object-cover.png)
+![alt text](./src/assets/images/readme/object-cover.png)
 
 4. Applying 1 responsive image with picture + source + srcset method
 
@@ -83,21 +83,21 @@ I'm using `text-shadow` property in the most heading tag, for the example About 
 <picture>
   <source
     media="(max-width: 600px)"
-    srcset="./assets/images/hero-hotel-small.jpg 1x"
+    srcset="./src/assets/images/hero-hotel-small.jpg 1x"
     type="image/jpeg"
   />
   <source
     media="(max-width: 1200px)"
-    srcset="./assets/images/hero-hotel-medium.jpg 1x"
+    srcset="./src/assets/images/hero-hotel-medium.jpg 1x"
     type="image/jpeg"
   />
   <source
     media="(min-width: 1201px)"
-    srcset="./assets/images/hero-hotel-large.jpg 1x"
+    srcset="./src/assets/images/hero-hotel-large.jpg 1x"
     type="image/jpeg"
   />
   <img
-    class="slide-in-right lg:absolute object-center min-h-[30vh] max-h-[30vh] lg:h-[40vh] lg:w-[36vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl lg:rounded-bl-xl lg:rounded-br-[10vw]"
+    class="slide-in-right max-h-[30vh] min-h-[30vh] object-center lg:absolute lg:h-[40vh] lg:w-[36vw] lg:rounded-bl-xl lg:rounded-br-[10vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl"
     src="./assets/images/hero-hotel-large.jpg"
     alt="Beautiful view of the hotel"
     width="1200"
@@ -113,105 +113,105 @@ I'm using 3 different pictures to handling 3 different viewports such
 <details> <summary>Code</summary>
 
 ```html
-<div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6">
-  <div class="grid row-span-2 p-1 shadow-xl object-center hoverimg">
+<div class="grid w-full grid-cols-4 grid-rows-5 lg:gap-6">
+  <div class="hoverimg row-span-2 grid object-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/basketball-court.jpg"
       alt=""
     />
   </div>
   <div
-    class="grid col-span-1 justify-center items-center p-1 shadow-xl hoverimg"
+    class="hoverimg col-span-1 grid items-center justify-center p-1 shadow-xl"
   >
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/foodhall.jpg"
       alt=""
     />
   </div>
   <div
-    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+    class="hoverimg col-span-2 grid items-center justify-center p-1 shadow-xl"
   >
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/fashion-3.jpg"
       alt=""
     />
   </div>
 
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/fashion-2.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/gym-2.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover object-center h-full w-full"
+      class="h-full w-full object-cover object-center"
       src="./assets/images/facilities/omakase.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover object-top h-full w-full"
+      class="h-full w-full object-cover object-top"
       src="./assets/images/facilities/fashion.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/groceries.jpg"
       alt=""
     />
   </div>
   <div
-    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+    class="hoverimg col-span-2 row-span-2 grid items-center justify-center p-1 shadow-xl"
   >
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/restaurant.jpg"
       alt=""
     />
   </div>
   <div
-    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+    class="hoverimg col-span-2 grid items-center justify-center p-1 shadow-xl"
   >
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/swimming-pools.jpg"
       alt=""
     />
   </div>
   <div
-    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+    class="hoverimg col-span-2 grid items-center justify-center p-1 shadow-xl"
   >
     <img
-      class="object-cover object-right h-full w-full"
+      class="h-full w-full object-cover object-right"
       src="./assets/images/facilities/working-space.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/gym.jpg"
       alt=""
     />
   </div>
-  <div class="grid justify-center items-center p-1 shadow-xl hoverimg">
+  <div class="hoverimg grid items-center justify-center p-1 shadow-xl">
     <img
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
       src="./assets/images/facilities/zumba.png"
       alt=""
     />
@@ -223,7 +223,7 @@ I'm using 3 different pictures to handling 3 different viewports such
 
 ###
 
-<img style="height:400px" src="./assets/images/readme/asymetric.png"/>
+<img style="height:400px" src="./src/assets/images/readme/asymetric.png"/>
 
 ###
 
@@ -246,7 +246,9 @@ I'm using 3 different pictures to handling 3 different viewports such
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation:
+    typing 1s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
@@ -310,7 +312,7 @@ I'm using 3 different pictures to handling 3 different viewports such
 }
 ```
 
-![alt text](assets/images/readme/animation.gif)
+![alt text](./src/assets/images/readme/animation.gif)
 
 ###
 
@@ -503,7 +505,7 @@ I'm using list-disc to give a styling for my list on Privacy Page
 
 ```html
 <header
-  class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none fade-in-bottom"
+  class="fade-in-bottom sticky top-0 z-20 w-screen flex-col rounded-none bg-[#ffffff] shadow-2xl lg:left-[10vw] lg:top-[2vh] lg:w-[84vw] lg:rounded-[10vw]"
 ></header>
 ```
 
@@ -640,22 +642,22 @@ each section has a unique id so that when the user clicks on the navigation tab,
 
 ---
 
-![welcome](./assets/images/readme/welcome.png)
+![welcome](./src/assets/images/readme/welcome.png)
 this is the welcome section of the page, it's the first thing that will be shown when the page is loaded.
 
 ###
 
 ```html
-<section id="welcome" class="flex flex-col w-screen h-full"></section>
+<section id="welcome" class="flex h-full w-screen flex-col"></section>
 ```
 
 ### Rooms Section
 
-![Rooms](./assets/images/readme/room.png)
+![Rooms](./src/assets/images/readme/room.png)
 
 ### Facilities Section
 
-![facilties](./assets/images/readme/fasilities.png)
+![facilties](./src/assets/images/readme/fasilities.png)
 
 ---
 
@@ -666,15 +668,15 @@ This is the facilities section of the page, it's the second thing that will be s
 ```html
 <section
   id="facilities"
-  class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4 slide-in-right"
+  class="slide-in-right mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4"
 >
   <div class="flex flex-col gap-8">
     <div
-      class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh] rounded-2xl"
+      class="flex flex-col gap-2 rounded-2xl bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh]"
     >
       <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
       <div class="flex">
-        <div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6"></div>
+        <div class="grid w-full grid-cols-4 grid-rows-5 lg:gap-6"></div>
       </div>
     </div>
   </div>
@@ -687,7 +689,7 @@ I'm using the `grid grid-cols-4 grid-rows-5` class to create the grid layout for
 
 ## Footer
 
-![footer.jpeg](./assets/images/readme/footer.jpeg)
+![footer.jpeg](./src/assets/images/readme/footer.jpeg)
 
 at the end of the page, I'm using the `footer` tag to create the footer of the page.
 it's a simple footer that includes a copyright text.
@@ -698,11 +700,11 @@ it's a simple footer that includes a copyright text.
 
 # about.html
 
-![about.jpeg](./assets/images/readme/about.jpeg)
+![about.jpeg](./src/assets/images/readme/about.jpeg)
 
 This is the page that shows about the Hotelolet. Not only about the hotelolet, this will shows you also the review of the users
 
-![about-review.jpeg](./assets/images/readme/about-review.jpeg)
+![about-review.jpeg](./src/assets/images/readme/about-review.jpeg)
 
 # booked.html
 
@@ -757,7 +759,7 @@ roomName.value = paramValue;
 
 # success.html
 
-![success.jpeg](./assets/images/readme/success.jpeg)
+![success.jpeg](./src/assets/images/readme/success.jpeg)
 
 This page will show after users submit the form, and will show the name and email that already been submitted. For make it happens, i'm using below javascript simple code to generated that.
 
@@ -778,14 +780,14 @@ successText.textContent = `hi ${name}, you have booked ${roomName} room, we have
 
 # career.html
 
-![career.jpeg](./assets/images/readme/career.jpeg)
+![career.jpeg](./src/assets/images/readme/career.jpeg)
 This should be show the career opportunity.
 
 Because this only demo, I don't have an enough time to generate this page well, so I only put sample information.
 
 # privacy.html
 
-![privacy.jpeg](./assets/images/readme/privacy.jpeg)
+![privacy.jpeg](./src/assets/images/readme/privacy.jpeg)
 
 This should be show the Privacy and Policy.
 
@@ -793,7 +795,7 @@ Because this only demo, I don't have an enough time to generate this page well, 
 
 # tnc.html
 
-![tnc.jpeg](./assets/images/readme/tnc.jpeg)
+![tnc.jpeg](./src/assets/images/readme/tnc.jpeg)
 
 This should be show the terms and conditions.
 
@@ -936,7 +938,9 @@ Slide From Top Effect
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation:
+    typing 1s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -1242,38 +1246,38 @@ burgerBtn.addEventListener("click", () => {
 
 ### Home - Mobile View
 
-<img src="./assets/images/readme/mobile-home.jpeg" alt="mobile-home.jpeg" width="200">
+<img src="./src/assets/images/readme/mobile-home.jpeg" alt="mobile-home.jpeg" width="200">
 
 ### Burger Navigation
 
 I created a Mobile burger navigation and helped by javascript to implemented how it's worked.
 
-<img src="./assets/images/readme/mobile-nav.png" alt="mobile-nav.png" width="200">
+<img src="./src/assets/images/readme/mobile-nav.png" alt="mobile-nav.png" width="200">
 
 ### Footer - Mobile View
 
-<img src="./assets/images/readme/mobile-footer.png" alt="mobile-footer.png" width="200">
+<img src="./src/assets/images/readme/mobile-footer.png" alt="mobile-footer.png" width="200">
 
 ### Booking - Mobile View
 
-<img src="./assets/images/readme/mobile-booking.png" alt="mobile-booking.png" width="200">
+<img src="./src/assets/images/readme/mobile-booking.png" alt="mobile-booking.png" width="200">
 
 ### Success - Mobile View
 
-<img src="./assets/images/readme/mobile-success.png" alt="mobile-success.png" width="200">
+<img src="./src/assets/images/readme/mobile-success.png" alt="mobile-success.png" width="200">
 
 ### About Us - Mobile View
 
-<img src="./assets/images/readme/mobile-about.png" alt="mobile-about.png" width="200">
+<img src="./src/assets/images/readme/mobile-about.png" alt="mobile-about.png" width="200">
 
 ### Career - Mobile View
 
-<img src="./assets/images/readme/mobile-career.png" alt="mobile-career.png" width="200">
+<img src="./src/assets/images/readme/mobile-career.png" alt="mobile-career.png" width="200">
 
 ### Privacy - Mobile View
 
-<img src="./assets/images/readme/mobile-privacy.png" alt="mobile-privacy.png" width="200">
+<img src="./src/assets/images/readme/mobile-privacy.png" alt="mobile-privacy.png" width="200">
 
 ### Terms and Conditions - Mobile View
 
-<img src="./assets/images/readme/mobile-tnc.png" alt="mobile-tnc.png" width="200">
+<img src="./src/assets/images/readme/mobile-tnc.png" alt="mobile-tnc.png" width="200">
