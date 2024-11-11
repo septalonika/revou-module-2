@@ -35,7 +35,7 @@ const hotelName = document.getElementById("hotelName");
 
 hotelName.innerText = `${capitalizedString} Bed`;
 
-imgElement.src = `../assets/images/rooms/${paramValue}.jpg`;
+imgElement.src = `../assets/images/rooms/${paramValue}.webp`;
 
 const roomName = document.getElementById("roomName");
 
