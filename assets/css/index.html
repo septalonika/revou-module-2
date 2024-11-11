@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Booking Hotels | Hotelolet" />
+    <meta name="author" content="Andi" />
+    <meta name="keywords" content="Booking Hotels, Hotelolet, Hotel" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>HOTELOLET - #1 Hotel in Jakarta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./public/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./public/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./public/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./public/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./public/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./public/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./public/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./public/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./public/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./public/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/icons/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="text-primary md:text-2xl lg:text-sm">
+    <div class="max-md:container px-auto flex flex-col">
+      <header
+        class="sticky top-0 flex-col z-20 bg-[#ffffff] w-screen lg:w-[84vw] lg:top-[2vh] lg:rounded-[10vw] shadow-2xl lg:left-[10vw] rounded-none fade-in-bottom"
+      >
+        <nav
+          class="grid grid-cols-2 border-none px-[6vw] lg:px-[4vw] py-0 w-full h-[8vh] gap-2 xl:rounded-[10vw]"
+        >
+          <div class="nav-container">
+            <a class="company-logo text-bold hovertrue" href="./index.html">
+              <h2>Hotel<span>olet</span>.</h2>
+            </a>
+          </div>
+          <div class="hidden lg:flex justify-end items-center gap-[2vw]">
+            <a class="hovertrue" href="#">
+              <p>Home</p>
+            </a>
+            <a class="hovertrue" href="./index.html#rooms">
+              <p>Rooms</p>
+            </a>
+            <a class="hovertrue" href="./index.html#facilities">
+              <p>Facilities</p>
+            </a>
+            <a class="hovertrue" href="./pages/about.html">
+              <p>About</p>
+            </a>
+          </div>
+          <!-- burger -->
+          <div class="nav-container lg:hidden">
+            <div class="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="burger-menu lg:hidden">
+            <div
+              class="flex flex-col items-end h-full w-full px-6 md:px-12 py-24 md:py-36 gap-4 md:gap-8"
+            >
+              <a href="#">
+                <div>
+                  <p class="text-xl md:text-3xl">Home</p>
+                </div>
+              </a>
+              <a href="./index.html#rooms">
+                <p class="text-xl md:text-3xl">Rooms</p>
+              </a>
+              <a href="./index.html#facilities">
+                <p class="text-xl md:text-3xl">Facilities</p>
+              </a>
+              <a href="./pages/about.html">
+                <p class="text-xl md:text-3xl">About</p>
+              </a>
+            </div>
+          </div>
+          <div class="burger-menu-outer lg:hidden"></div>
+          <!-- burger -->
+        </nav>
+      </header>
+      <main class="min-h-[386px]">
+        <section
+          id="welcome"
+          class="lg:grid lg:grid-cols-2 lg:mt-[6vh] lg:mx-[6vw]"
+        >
+          <div
+            class="flex absolute z-10 bg-white/50 top-[8vh] lg:static lg:z-0 lg:bg-transparent lg:top-0 w-full h-[30vh] md:h-[40vh] lg:h-full"
+          >
+            <div
+              class="flex flex-col text-start px-[6vw] md:gap-10 lg:px-0 py-[2vh] gap-4 lg:gap-8"
+            >
+              <div class="flex flex-col gap-[2vh]">
+                <h1
+                  class="font-bold text-2xl md:text-4xl lg:text-2xl typewriter text-shadow"
+                >
+                  Tired of Jakarta?
+                </h1>
+                <h2
+                  class="typewriter text-xl md:text-2xl lg:text-lg text-shadow"
+                >
+                  Let's skip the traffic and bring the positive morning
+                </h2>
+              </div>
+
+              <article class="fade-in-bottom max-sm:hidden md:hidden lg:flex">
+                <p class="animate-from-top pr-6">
+                  We are the best hotel in
+                  <span class="font-semibold">Jakarta</span> with so many
+                  facilities, rooms, and beds, because we know how to make you
+                  feel comfortable. We are already served
+                  <span class="font-semibold">4000+</span> people, and you are
+                  our next guest. Don't worry, We are here to help you.
+                </p>
+              </article>
+              <a
+                class="flex justify-center btn py-2 px-2 w-44 md:px-6 md:py-4 md:text-xl md:w-56 lg:w-40 lg:text-base lg:py-2 lg:px-4 slide-in-left"
+                href="./index.html#rooms"
+                >Check Now</a
+              >
+
+              <div
+                class="flex absolute lg:static z-10 lg:z-0 top-[25vh] md:top-[34vh] lg:top-0 justify-between items-center w-[90vw] lg:w-full h-[10vh] px-6 lg:px-0 md:px-20 lg:gap-4 lg:justify-start"
+              >
+                <div class="flex flex-col items-start md:gap-2">
+                  <img
+                    loading="lazy"
+                    class="fade-in-image hero-info-img"
+                    src="./assets/images/icons/bed.svg"
+                    alt="hotel"
+                  />
+                  <p class="fade-in-image md:text-lg">200+ Beds</p>
+                </div>
+                <div class="flex flex-col items-start md:gap-2">
+                  <img
+                    loading="lazy"
+                    class="fade-in-image hero-info-img"
+                    src="./assets/images/icons/room.svg"
+                    alt="hotel"
+                  />
+                  <p class="fade-in-image md:text-lg">40+ Rooms</p>
+                </div>
+                <div class="flex flex-col items-start md:gap-2">
+                  <img
+                    loading="lazy"
+                    class="fade-in-image hero-info-img"
+                    src="./assets/images/icons/user.svg"
+                    alt="hotel"
+                  />
+                  <p class="fade-in-image md:text-lg">800+ Booked</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex max-md:w-screen lg:items-start">
+            <div class="slide-in-right hero-shadow"></div>
+
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="./assets/images/hero-hotel-small.jpg 1x"
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./assets/images/hero-hotel-medium.jpg 1x"
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1201px)"
+                srcset="./assets/images/hero-hotel-large.jpg 1x"
+                type="image/jpeg"
+              />
+              <img
+                loading="lazy"
+                class="slide-in-right lg:absolute object-center min-h-[30vh] max-h-[30vh] md:max-h-[40vh] lg:max-h-[50vh] lg:w-[36vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl lg:rounded-bl-xl lg:rounded-br-[10vw]"
+                src="./assets/images/hero-hotel-large.jpg"
+                alt="Beautiful view of the hotel"
+                width="1200"
+                height="800"
+              />
+            </picture>
+            <div
+              class="bg-white absolute z-1 w-[90vw] h-[10vh] top-[33vh] md:top-[42vh] left-[5vw] rounded-[6vw] shadow-lg lg:hidden"
+            ></div>
+          </div>
+        </section>
+        <section
+          id="most-picked"
+          class="flex flex-col w-screen px-[6vw] mt-[8vh] mb-[4vh] gap-4 fade-in-bottom"
+        >
+          <h2
+            class="text-2xl font-semibold text-shadow md:text-3xl lg:text-2xl"
+          >
+            Most Picked
+          </h2>
+          <div class="relative overflow-x-auto scrollbar-none">
+            <ul class="flex gap-2 lg:gap-8">
+              <li class="hoverimg">
+                <a href="./pages/booking.html?room=double-1">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/double-1.jpg"
+                      alt=""
+                    />
+
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                      >
+                        <p>Double-1 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="hoverimg">
+                <a href="./pages/booking.html?room=luxury-1">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/luxury-1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                      >
+                        <p>Luxury-1 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="hoverimg">
+                <a href="./pages/booking.html?room=twin-4">
+                  <div
+                    class="relative w-60 h-80 md:w-[56vw] md:h-[30vh] rounded-xl shadow-lg lg:w-[40vw] lg:h-[58vh]"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rounded-xl object-cover h-full w-full"
+                      src="./assets/images/rooms/twin-4.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute rounded-b-xl bottom-0 left-0 bg-white w-full"
+                    >
+                      <div
+                        class="flex flex-col justify-center h-16 md:h-24 p-2 md:px-4 md:text-xl lg:text-lg"
+                      >
+                        <p>Twin-4 Bed Room</p>
+                        <p>Rp299.000</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          id="rooms"
+          class="flex flex-col w-screen px-[6vw] mt-[2vh] mb-[4vh] gap-4 slide-in-left"
+        >
+          <ul class="flex flex-col gap-8 w-full">
+            <li>
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-2xl font-semibold text-shadow md:text-3xl lg:text-2xl"
+                >
+                  Single Bed Rooms
+                </h2>
+                <div class="flex">
+                  <ul
+                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                  >
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=single-1">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/single-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Single-1 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=single-2">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/single-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Single-2 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=single-3">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/single-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Single-3 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=single-4">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/single-4.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Single-4 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
+                  Double Bed Rooms
+                </h2>
+                <div class="flex">
+                  <ul
+                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                  >
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=double-1">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/double-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Double-1 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=double-2">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/double-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Double-2 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=double-3">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/double-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Double-3 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=luxury-1">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/luxury-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Luxury-1 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex flex-col gap-2">
+                <h2 class="text-2xl font-semibold text-shadow md:text-3xl">
+                  Twin Bed Rooms
+                </h2>
+                <div class="flex">
+                  <ul
+                    class="grid grid-rows-2 lg:grid-rows-none w-full lg:grid-cols-4 grid-flow-col gap-2 lg:gap-4"
+                  >
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=twin-1">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/twin-1.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Twin-1 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=twin-2">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/twin-2.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Twin-2 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=twin-3">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/twin-3.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Twin-3 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="hoverimg">
+                      <a href="./pages/booking.html?room=twin-4">
+                        <div
+                          class="flex flex-col w-90 md:w-[44vw] md:h-[32vh] lg:w-[22vw] lg:h-[40vh] rounded-lg shadow-lg bg-white py-2"
+                        >
+                          <img
+                            loading="lazy"
+                            class="rounded-2xl object-cover h-full min-h-[124px] max-h-[124px] md:max-h-[300px] w-full p-2"
+                            src="./assets/images/rooms/twin-4.jpg"
+                            alt=""
+                          />
+                          <div class="rounded-b-xl w-full">
+                            <div class="flex flex-col p-2">
+                              <h3 class="text-lg md:text-xl lg:text-lg">
+                                Twin-4 Bed
+                              </h3>
+                              <p class="text-sm md:text-base">Rp299.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section
+          id="facilities"
+          class="flex flex-col w-screen mt-[8vh] mb-[4vh] gap-4 slide-in-right"
+        >
+          <div class="flex flex-col gap-8">
+            <div
+              class="flex flex-col gap-2 bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh] rounded-2xl"
+            >
+              <h2 class="text-2xl font-semibold md:text-3xl">Facilities</h2>
+              <div class="flex">
+                <div class="grid grid-cols-4 grid-rows-5 w-full lg:gap-6">
+                  <div
+                    class="grid row-span-2 p-1 shadow-xl object-center hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/basketball-court.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-1 justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/foodhall.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/fashion-3.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/fashion-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/gym-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover object-center h-full w-full"
+                      src="./assets/images/facilities/omakase.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover object-top h-full w-full"
+                      src="./assets/images/facilities/fashion.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/groceries.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 row-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/restaurant.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/swimming-pools.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid col-span-2 justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover object-right h-full w-full"
+                      src="./assets/images/facilities/working-space.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/gym.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="grid justify-center items-center p-1 shadow-xl hoverimg"
+                  >
+                    <img
+                      loading="lazy"
+                      class="object-cover h-full w-full"
+                      src="./assets/images/facilities/zumba.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="fade-in-bottom">
+        <div
+          class="flex flex-col w-screen lg:w-full px-[6vw] py-[2vh] lg:py-[6vh] gap-4 bg-[#ffffff] md:rounded-t-3xl lg:rounded-none"
+        >
+          <div class="lg:flex lg:justify-between lg:gap-2">
+            <div class="flex flex-col">
+              <h2 class="company-logo text-bold">Hotel<span>olet</span>.</h2>
+              <p class="lg:w-[24vw]">
+                We owe you a memorable experience and recharge your happiness
+              </p>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
+              <ul>
+                <li>
+                  <a href="./pages/about.html">About us </a>
+                </li>
+                <li>
+                  <a href="./pages/career.html">Our Careers</a>
+                </li>
+                <li>
+                  <a href="./pages/privacy.html">Privacy</a>
+                </li>
+                <li>
+                  <a href="./pages/tnc.html">Terms and Conditions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Find Us</h2>
+              <ul>
+                <li>
+                  <a href="mailto:septalonika@gmail.com"
+                    >support@hotelolet.xyz</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wa.me/6285156513102">021 - 1414 - 0045</a>
+                </li>
+                <li>
+                  <a href="https://g.co/kgs/56hMk2L">
+                    Hotelolet, Sudirman, Jakarta</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-container">
+              <h2 class="font-semibold md:text-2xl lg:text-lg">Subscribe</h2>
+              <p>Save 15% on your first reserve</p>
+              <div class="footer-form-container">
+                <form
+                  name="reservation"
+                  class="flex"
+                  id="reservation-form"
+                  action="./pages/success.html"
+                  method="GET"
+                  target="_self"
+                >
+                  <input
+                    class="flex h-8 md:h-12 lg:h-8 bg-[#e6e6e6] rounded pl-2 pr-8 md:w-[60vw] md:pr-[10vw] lg:pr-[4vw] lg:w-[18vw] border-none focus:outline-none"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    form="reservation-form"
+                    class="btn flex h-8 md:h-12 lg:h-8 justify-center items-center px-[2vw] md:px-[4vw] lg:px-[2vw] absolute max-sm:left-[56vw] max-md:left-[58vw] lg:right-[4vw] rounded"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyleft md:text-2xl lg:text-base">
+          <p>Copyright &copy; 2024 • Hotelolet •</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
