@@ -26,6 +26,7 @@ html {
 body {
   color: var(--font-color);
   background-color: var(--background-color);
+  @apply select-none;
 }
 
 h1,
@@ -34,24 +35,21 @@ h3,
 h4,
 h5,
 h6 {
+  @apply select-none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn {
-  border-radius: 4px;
-  border: none;
-  color: #dfebf6;
-  background-color: #44576d;
+  @apply rounded-md border-none bg-[#44576d] text-[#dfebf6];
 }
 
 .btn:hover {
-  background-color: #768a96;
+  @apply bg-[#768a96];
 }
 
 .btn:active {
-  transform: scale(0.9);
+  @apply scale-90 text-[#efece9];
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  color: #efece9;
 }
 
 .hero-info-img {
@@ -59,7 +57,7 @@ h6 {
 }
 
 .scrollbar-none::-webkit-scrollbar {
-  display: none;
+  @apply hidden;
 }
 
 .nav-container {
@@ -94,7 +92,7 @@ h6 {
 }
 
 .burger-btn.active span:nth-child(2) {
-  opacity: 0;
+  @apply opacity-0;
 }
 
 .burger-btn.active span:nth-child(3) {
@@ -118,42 +116,73 @@ h6 {
 }
 
 .btn:hover {
-  background-color: #768a96;
+  @apply bg-[#768a96];
 }
 
 .btn:active {
-  transform: scale(0.9);
+  @apply scale-90 text-[#efece9];
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  color: #efece9;
 }
 
 .copyleft {
   @apply flex h-12 w-screen items-center justify-center bg-[#44576d] leading-5 text-[#e6e6e6] md:h-16 lg:h-10 lg:w-auto;
 }
 
+.carousel-control {
+  @apply hidden;
+}
+
+.nav-link {
+  @apply select-none;
+}
+
+.nav-anchor {
+  @apply rounded-lg hover:scale-125;
+}
+
 @media (min-width: 1024px) {
+  .carousel-open:checked + .carousel-item {
+    @apply static opacity-100;
+  }
+  #carousel-1:checked ~ .control-1,
+  #carousel-2:checked ~ .control-2,
+  #carousel-3:checked ~ .control-3 {
+    @apply block;
+  }
+  .carousel-control {
+    @apply absolute z-10 hidden h-12 w-12 cursor-pointer rounded-full bg-[#44576d]/50 text-center text-4xl leading-9 text-white transition delay-100 ease-in-out;
+  }
+
+  .carousel-control.prev {
+    @apply left-[8vw] top-[172vh] select-none;
+  }
+
+  .carousel-control.next {
+    @apply right-[8vw] top-[172vh] select-none;
+  }
+
+  .carousel-control:hover {
+    @apply bg-[#44576d]/20 text-[#aaa];
+  }
+
+  .carousel-item {
+    @apply absolute opacity-0;
+  }
+
   .text-shadow {
-    text-shadow: none;
+    @apply shadow-none;
   }
   .hero-shadow {
-    @apply absolute right-[10vw] top-[25vh] z-auto h-[40vh] w-[36vw] rounded-bl-2xl rounded-br-[10vw] rounded-tl-[10vw] rounded-tr-2xl border border-[#768a96];
+    @apply absolute right-[10vw] top-[25vh] z-auto h-[40vh] w-[36vw] rounded-bl-2xl rounded-br-[10vw] rounded-tl-[10vw] rounded-tr-2xl border-[4px] border-[#768a96];
   }
   /* animation */
 
-  .hovertrue:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-
   .hoverimg:hover {
-    box-shadow: 0 0 10px 0 #9cabb4;
-    cursor: pointer;
-    transform: scale(1.01);
+    @apply scale-105 cursor-pointer rounded-xl drop-shadow-lg;
   }
 
   .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
+    @apply overflow-hidden whitespace-nowrap;
     letter-spacing: 0.15em;
     animation:
       typing 1s steps(40, end),
@@ -208,6 +237,9 @@ h6 {
   .fade-in-bottom {
     animation: fadeInBottom 0.5s ease-out;
   }
+  .fade-in-left {
+    animation: fadeInLeft 0.5s ease-out;
+  }
 
   @keyframes fadeInBottom {
     from {
@@ -217,6 +249,17 @@ h6 {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate-x-1(0);
     }
   }
 }

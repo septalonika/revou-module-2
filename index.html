@@ -96,22 +96,27 @@
         <nav
           class="grid h-[8vh] w-full grid-cols-2 gap-2 border-none px-[6vw] py-0 lg:px-[4vw] xl:rounded-[10vw]"
         >
-          <div class="nav-container">
-            <a class="company-logo text-bold hovertrue" href="./index.html">
+          <div class="nav-link nav-container">
+            <a
+              class="company-logo text-bold hover:scale-105"
+              href="./index.html"
+            >
               <h2>Hotel<span>olet</span>.</h2>
             </a>
           </div>
-          <div class="hidden items-center justify-end gap-[2vw] lg:flex">
-            <a class="hovertrue" href="#">
+          <div
+            class="nav-link hidden items-center justify-end gap-[2vw] lg:flex"
+          >
+            <a class="hover:scale-105" href="#">
               <p>Home</p>
             </a>
-            <a class="hovertrue" href="./index.html#rooms">
+            <a class="hover:scale-105" href="./index.html#rooms">
               <p>Rooms</p>
             </a>
-            <a class="hovertrue" href="./index.html#facilities">
+            <a class="hover:scale-105" href="./index.html#facilities">
               <p>Facilities</p>
             </a>
-            <a class="hovertrue" href="./src/pages/about.html">
+            <a class="hover:scale-105" href="./src/pages/about.html">
               <p>About</p>
             </a>
           </div>
@@ -125,7 +130,7 @@
           </div>
           <div class="burger-menu lg:hidden">
             <div
-              class="flex h-full w-full flex-col items-end gap-4 px-6 py-24 md:gap-8 md:px-12 md:py-36"
+              class="nav-link flex h-full w-full flex-col items-end gap-4 px-6 py-24 md:gap-8 md:px-12 md:py-36"
             >
               <a href="#">
                 <div>
@@ -203,7 +208,7 @@
                   <img
                     loading="lazy"
                     class="fade-in-image hero-info-img"
-                    src="./src/assets/images/icons/room.svg"
+                    src="./src/assets/images/icons/hotel.svg"
                     alt="hotel"
                   />
                   <p class="fade-in-image md:text-lg">40+ Rooms</p>
@@ -244,7 +249,7 @@
               />
               <img
                 loading="lazy"
-                class="slide-in-right max-h-[30vh] min-h-[30vh] object-center md:max-h-[40vh] lg:absolute lg:max-h-[50vh] lg:w-[36vw] lg:rounded-bl-xl lg:rounded-br-[10vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl"
+                class="slide-in-right max-h-[30vh] min-h-[30vh] object-center drop-shadow-xl md:max-h-[40vh] lg:absolute lg:max-h-[50vh] lg:w-[36vw] lg:rounded-bl-xl lg:rounded-br-[10vw] lg:rounded-tl-[10vw] lg:rounded-tr-xl"
                 src="./src/assets/images/hero/hero-hotel-large.webp"
                 alt="Beautiful view of the hotel"
                 width="1200"
@@ -258,7 +263,7 @@
         </section>
         <section
           id="most-picked"
-          class="fade-in-bottom mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4 px-[6vw]"
+          class="fade-in-bottom mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4 px-[6vw] lg:mt-[14vh]"
         >
           <h2 class="text-shadow text-xl font-semibold md:text-3xl lg:text-2xl">
             Most Picked
@@ -318,6 +323,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="hoverimg">
                 <a href="./src/pages/booking.html?room=double-3">
                   <div
@@ -370,6 +376,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="hoverimg">
                 <a href="./src/pages/booking.html?room=twin-4">
                   <div
@@ -1087,7 +1094,7 @@
                   class="grid w-full grid-cols-3 grid-rows-5 md:grid-cols-4 md:grid-rows-5 lg:grid-cols-5 lg:grid-rows-3 lg:gap-6"
                 >
                   <div
-                    class="col-span-1 row-span-1 min-h-[14vh] p-2 md:col-span-2 md:row-span-2 md:h-[30vh] lg:col-span-3 lg:row-span-1 lg:h-[24vh]"
+                    class="col-span-1 row-span-1 min-h-[14vh] p-2 md:col-span-2 md:row-span-2 md:h-[30vh] lg:col-span-3 lg:row-span-1 lg:h-[24vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1097,7 +1104,7 @@
                     />
                   </div>
                   <div
-                    class="col-span-1 row-span-1 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:row-span-1 lg:h-[24vh]"
+                    class="col-span-1 row-span-1 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:row-span-1 lg:h-[24vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1107,7 +1114,7 @@
                     />
                   </div>
                   <div
-                    class="col-span-1 row-span-2 p-2 md:col-span-1 md:row-span-3 md:h-[45vh] lg:col-span-1 lg:row-span-2 lg:h-[51vh]"
+                    class="col-span-1 row-span-2 p-2 md:col-span-1 md:row-span-3 md:h-[45vh] lg:col-span-1 lg:row-span-2 lg:h-[51vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1117,7 +1124,7 @@
                     />
                   </div>
                   <div
-                    class="col-span-2 row-span-3 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-2 lg:row-span-2 lg:h-[51vh]"
+                    class="col-span-2 row-span-3 p-2 md:col-span-1 md:row-span-1 md:h-[15vh] lg:col-span-2 lg:row-span-2 lg:h-[51vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1126,7 +1133,7 @@
                       alt=""
                     />
                   </div>
-                  <div class="p-2 md:h-[15vh] lg:h-[24vh]">
+                  <div class="p-2 md:h-[15vh] lg:h-[24vh] xl:p-0">
                     <img
                       loading="lazy"
                       class="hoverimg h-full w-full rounded-lg object-cover"
@@ -1135,7 +1142,7 @@
                     />
                   </div>
                   <div
-                    class="p-2 md:col-span-2 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:h-[24vh]"
+                    class="p-2 md:col-span-2 md:row-span-1 md:h-[15vh] lg:col-span-1 lg:h-[24vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1145,7 +1152,7 @@
                     />
                   </div>
                   <div
-                    class="p-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-1 lg:h-[24vh]"
+                    class="p-2 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-1 lg:h-[24vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1155,7 +1162,7 @@
                     />
                   </div>
                   <div
-                    class="col-span-2 row-span-1 p-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 lg:h-[24vh]"
+                    class="col-span-2 row-span-1 p-2 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-1 lg:h-[24vh] xl:p-0"
                   >
                     <img
                       loading="lazy"
@@ -1185,16 +1192,32 @@
               <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
               <ul>
                 <li>
-                  <a href="./src/pages/about.html">About us </a>
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="./src/pages/about.html"
+                    >About us
+                  </a>
                 </li>
                 <li>
-                  <a href="./src/pages/career.html">Our Careers</a>
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="./src/pages/career.html"
+                    >Our Careers</a
+                  >
                 </li>
                 <li>
-                  <a href="./src/pages/privacy.html">Privacy</a>
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="./src/pages/privacy.html"
+                    >Privacy</a
+                  >
                 </li>
                 <li>
-                  <a href="./src/pages/tnc.html">Terms and Conditions</a>
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="./src/pages/tnc.html"
+                    >Terms and Conditions</a
+                  >
                 </li>
               </ul>
             </div>
@@ -1202,15 +1225,24 @@
               <h2 class="font-semibold md:text-2xl lg:text-lg">Find Us</h2>
               <ul>
                 <li>
-                  <a href="mailto:septalonika@gmail.com"
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="mailto:septalonika@gmail.com"
                     >support@hotelolet.xyz</a
                   >
                 </li>
                 <li>
-                  <a href="https://wa.me/6285156513102">021 - 1414 - 0045</a>
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="https://wa.me/6285156513102"
+                    >021 - 1414 - 0045</a
+                  >
                 </li>
                 <li>
-                  <a href="https://g.co/kgs/56hMk2L">
+                  <a
+                    class="rounded-lg hover:bg-[#dfebe6]"
+                    href="https://g.co/kgs/56hMk2L"
+                  >
                     Hotelolet, Sudirman, Jakarta</a
                   >
                 </li>
