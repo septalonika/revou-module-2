@@ -154,11 +154,11 @@ h6 {
   }
 
   .carousel-control.prev {
-    @apply left-[8vw] top-[172vh] select-none;
+    @apply left-[8vw] top-[172vh] select-none 2xl:top-[150vh];
   }
 
   .carousel-control.next {
-    @apply right-[8vw] top-[172vh] select-none;
+    @apply right-[8vw] top-[172vh] select-none 2xl:top-[150vh];
   }
 
   .carousel-control:hover {

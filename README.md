@@ -4,7 +4,7 @@ Hotelolet is a company profile website for it's hotel.
 
 ![alt text](./src/assets/images/readme/hotelolet.png)
 
-link: https://septalonika.github.io/revou-module-2/index.html
+link: [cugud.com](https://cugud.com)
 
 > _"The idea is to make a website that is simple, clean, and easy to use."_
 

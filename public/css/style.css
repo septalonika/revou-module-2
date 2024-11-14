@@ -1438,12 +1438,24 @@ h6 {
             user-select: none;
   }
 
+  @media (min-width: 1536px) {
+    .carousel-control.prev {
+      top: 150vh;
+    }
+  }
+
   .carousel-control.next {
     right: 8vw;
     top: 172vh;
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+  }
+
+  @media (min-width: 1536px) {
+    .carousel-control.next {
+      top: 150vh;
+    }
   }
 
   .carousel-control:hover {
