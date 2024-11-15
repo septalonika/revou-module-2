@@ -237,36 +237,17 @@
             </div>
           </div>
           <div class="hero-img flex rounded-xl">
-            <picture>
-              <source
-                loading="lazy"
-                id="booking-img-small"
-                media="(max-width: 600px)"
-                srcset=""
-                type="image/webp"
-              />
-              <source
-                loading="lazy"
-                id="booking-img-medium"
-                media="(max-width: 1200px)"
-                srcset=""
-                type="image/webp"
-              />
-              <source
-                loading="lazy"
-                id="booking-img-large"
-                media="(min-width: 1201px)"
-                srcset=""
-                type="image/webp"
-              />
-              <img
-                loading="lazy"
-                id="booking-img-default"
-                class="slide-in-right max-h-[20vh] min-h-[26vh] w-screen rounded-xl object-cover object-center sm:min-h-[40vh] md:max-h-[40vh] lg:max-h-[60vh] lg:min-h-[50vh] lg:max-w-[40vw]"
-                src=""
-                alt="Beautiful view of the hotel"
-              />
-            </picture>
+            <img
+              id="booking-img-default"
+              class="max-h-[20vh] min-h-[26vh] w-screen rounded-xl object-cover object-center sm:min-h-[40vh] md:max-h-[40vh] lg:max-h-[60vh] lg:min-h-[50vh] lg:max-w-[40vw]"
+              src="../assets/images/"
+              srcset="
+                ../assets/images/rooms/${roomType}/${paramValue}-large.webp  360w,
+                ../assets/images/rooms/${roomType}/${paramValue}-large.webp  800w,
+                ../assets/images/rooms/${roomType}/${paramValue}-large.webp 1024w
+              "
+              alt="Puppy with balloons"
+            />
             <div
               class="z-1 bg-secondary dark:bg-dark-secondary absolute left-[8vw] top-[32vh] h-[10vh] w-[84vw] rounded-[6vw] shadow-lg md:top-[44vh] md:rounded-[4vw] lg:left-[50vw] lg:top-[30vh] lg:h-[20vh] lg:w-[44vw]"
             ></div>

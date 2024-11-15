@@ -175,16 +175,26 @@ const capitalizedString = capitalizeFirstCharacter(paramValue);
 
 const roomType = paramValue.split("-")[0];
 
-const imgSm = document.getElementById("booking-img-small");
-const imgMd = document.getElementById("booking-img-medium");
-const imgLg = document.getElementById("booking-img-large");
+// const imgSm = document.getElementById("booking-img-small");
+// const imgMd = document.getElementById("booking-img-medium");
+// const imgLg = document.getElementById("booking-img-large");
 const imgDefault = document.getElementById("booking-img-default");
 const roomDescription = document.getElementById("room-description");
 
-imgSm.srcset = `../assets/images/rooms/${roomType}/${paramValue}-small.webp`;
-imgMd.srcset = `../assets/images/rooms/${roomType}/${paramValue}-medium.webp`;
-imgLg.srcset = `../assets/images/rooms/${roomType}/${paramValue}-large.webp`;
-imgDefault.src = `../assets/images/rooms/${roomType}/${paramValue}-large.webp`;
+// imgSm.srcset = `../assets/images/rooms/${roomType}/${paramValue}-small.webp`;
+// imgMd.srcset = `../assets/images/rooms/${roomType}/${paramValue}-medium.webp`;
+// imgLg.srcset = `../assets/images/rooms/${roomType}/${paramValue}-large.webp`;
+// imgDefault.src = `../assets/images/rooms/${roomType}/${paramValue}-large.webp`;
+
+const baseImagePath = `../assets/images/rooms/${roomType}/`;
+const largeImageFile = `${paramValue}-large.webp`;
+
+imgDefault.src = `${baseImagePath}${largeImageFile}`;
+imgDefault.srcset = `
+  ${baseImagePath}${largeImageFile} 360w,
+  ${baseImagePath}${largeImageFile} 800w,
+  ${baseImagePath}${largeImageFile} 1024w
+`;
 
 roomDescription.innerText = rooms[roomType][paramValue].description;
 
