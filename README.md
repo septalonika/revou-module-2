@@ -1,12 +1,54 @@
+# 💻 Hej! I'm Andi, I'm a software engineer 💻
+
+####
+
+### Let's Connect with me 🤝
+
+<details> <summary>LinkedIn</summary>
+<hr>
+
+| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge) | [@septalonika](https://www.linkedin.com/in/septalonika/) |
+| ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+
+######
+
+---
+
+</details>
+
+<details> <summary>Email</summary>
+<hr>
+
+| ![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge) | [septalonika@gmail.com](mailto:septalonika@gmail.com) |
+| -------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+
+######
+
+---
+
+</details>
+
+<details> <summary>Instagram</summary>
+<hr>
+
+| ![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge) | [andikaiueo](https://instagram.com/andikaiueo) |
+| -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+
+######
+
+---
+
+</details>
+
+###
+
 # Welcome to Hotelolet!
 
-Hotelolet is a company profile website for it's hotel.
+Hotelolet is a company profile website which can also book a room in Jakarta.
 
-![alt text](./src/assets/images/readme/hotelolet.png)
+![alt text](./public/icons/logo.png)
 
-link: [cugud.com](https://cugud.com)
-
-> _"The idea is to make a website that is simple, clean, and easy to use."_
+link: [hotelolet.cugud.com](https://hotelolet.cugud.com)
 
 <details> <summary>Checkpoint #1</summary>
  
@@ -342,15 +384,260 @@ I'm using list-disc to give a styling for my list on Privacy Page
 
 </details>
 
+<details> <summary>Final Checkpoint</summary>
+
+1. Netlify Sign up process & connect Netlify to your Github project
+   ![alt text](public/readme/setup-1.png)
+
+2. Auto Deployment on Github with Netlify
+   ![alt text](public/readme/setup-2.png)
+
+3. How to connect your custom domain and DNS
+   ![alt text](public/readme/setup-3.png)
+
+</details>
+
+<details> <summary>Advanced Assignment </summary>
+
+1. Try to deploy your web, maybe to Github Pages or to Netlify. Make sure you get great ratings on Google Lighthouse (usually, companies aim for 90), especially for Accessibility and SEO.
+
+-
+
+2. Create night mode and day mode, make sure the setting of night mode or day mode is still saved even though the user refreshes the browser or closes the browser (hint: use one of the web storage API), you are allowed to use JS for this.
+
+![alt text](public/readme/dark-mode.jpeg)
+![alt text](public/readme/dark-mode-2.gif)
+
+3. Create image carousel without using JS
+
+![alt text](public/readme/carousel-1.gif)
+
+<details><summary>Code</summary>
+
+```html
+<div class="scrollbar-none relative overflow-x-auto">
+  <ul class="flex gap-2 px-[1vw] py-[2vh] lg:gap-8">
+    <li class="hoverimg">
+      <a href="./src/pages/booking.html?room=double-1">
+        <div
+          class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
+        >
+          <picture>
+            <source
+              loading="lazy"
+              media="(max-width: 600px)"
+              srcset="./src/assets/images/rooms/double/double-1-small.webp 1x"
+              type="image/webp"
+              width="282"
+              height="171"
+            />
+            <source
+              loading="lazy"
+              media="(max-width: 1200px)"
+              srcset="./src/assets/images/rooms/double/double-1-medium.webp 1x"
+              type="image/webp"
+              width="722"
+              height="472"
+            />
+            <source
+              loading="lazy"
+              media="(min-width: 1201px)"
+              srcset="./src/assets/images/rooms/double/double-1-large.webp 1x"
+              type="image/webp"
+              width="546"
+              height="384"
+            />
+            <img
+              loading="lazy"
+              class="h-full w-full rounded-xl object-cover"
+              src="./src/assets/images/rooms/double/double-1-medium.webp"
+              alt="Beautiful view of the hotel"
+              width="546"
+              height="384"
+            />
+          </picture>
+
+          <div
+            class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+          >
+            <div
+              class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
+            >
+              <p>Double-1 Bed Room</p>
+              <p>Rp299.000</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="hoverimg">
+      <a href="./src/pages/booking.html?room=double-3">
+        <div
+          class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
+        >
+          <picture>
+            <source
+              loading="lazy"
+              media="(max-width: 600px)"
+              srcset="./src/assets/images/rooms/double/double-3-small.webp 1x"
+              type="image/webp"
+              width="282"
+              height="171"
+            />
+            <source
+              loading="lazy"
+              media="(max-width: 1200px)"
+              srcset="./src/assets/images/rooms/double/double-3-medium.webp 1x"
+              type="image/webp"
+              width="722"
+              height="472"
+            />
+            <source
+              loading="lazy"
+              media="(min-width: 1201px)"
+              srcset="./src/assets/images/rooms/double/double-3-large.webp 1x"
+              type="image/webp"
+              width="546"
+              height="384"
+            />
+            <img
+              loading="lazy"
+              class="h-full w-full rounded-xl object-cover"
+              src="./src/assets/images/rooms/double/double-3-medium.webp"
+              alt="Beautiful view of the hotel"
+              width="546"
+              height="384"
+            />
+          </picture>
+          <div
+            class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+          >
+            <div
+              class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
+            >
+              <p>Double-3 Bed Room</p>
+              <p>Rp299.000</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li class="hoverimg">
+      <a href="./src/pages/booking.html?room=twin-4">
+        <div
+          class="relative h-80 w-60 rounded-xl shadow-lg md:h-[30vh] md:w-[56vw] lg:h-[58vh] lg:w-[40vw]"
+        >
+          <picture>
+            <source
+              loading="lazy"
+              media="(max-width: 600px)"
+              srcset="./src/assets/images/rooms/twin/twin-4-small.webp 1x"
+              type="image/webp"
+              width="282"
+              height="171"
+            />
+            <source
+              loading="lazy"
+              media="(max-width: 1200px)"
+              srcset="./src/assets/images/rooms/twin/twin-4-medium.webp 1x"
+              type="image/webp"
+              width="722"
+              height="472"
+            />
+            <source
+              loading="lazy"
+              media="(min-width: 1201px)"
+              srcset="./src/assets/images/rooms/twin/twin-4-large.webp 1x"
+              type="image/webp"
+              width="546"
+              height="384"
+            />
+            <img
+              loading="lazy"
+              class="h-full w-full rounded-xl object-cover"
+              src="./src/assets/images/rooms/twin/twin-4-medium.webp"
+              alt="Beautiful view of the hotel"
+              width="546"
+              height="384"
+            />
+          </picture>
+          <div
+            class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+          >
+            <div
+              class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
+            >
+              <p>Twin-4 Bed Room</p>
+              <p>Rp299.000</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+```css
+.carousel-open:checked + .carousel-item {
+  @apply static opacity-100;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  @apply block;
+}
+.carousel-control {
+  @apply text-secondary absolute z-10 hidden h-12 w-12 cursor-pointer rounded-full bg-primary/50 text-center text-4xl leading-9 transition delay-100 ease-in-out;
+}
+
+.carousel-control.prev {
+  @apply left-[8vw] top-[172vh] select-none 2xl:top-[150vh];
+}
+
+.carousel-control.next {
+  @apply right-[8vw] top-[172vh] select-none 2xl:top-[150vh];
+}
+
+.carousel-control:hover {
+  @apply bg-primary/20 text-[#aaa];
+}
+
+.carousel-item {
+  @apply absolute opacity-0;
+}
+```
+
+</details>
+
+![alt text](public/readme/carousel-2.gif)
+
+<details>
+
+</details><summary>code</summary>
+
+```html
+
+```
+
+</details>
+
 ### Styling
 
 ```html
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./dist/output.css" />
+<link rel="stylesheet" href="./public/css/style.css" />
 ```
 
+how to generate the folder:
+
+1. Prepare 1 css files on ~/src/assets/css/style.css
+2. Open terminal
+3. Write `npx tailwindcss -i ./src/assets/css/style.css -o ./public/css/style.css`
+
 > I put the css in the head tag because it's the first thing that will be loaded when the page is loaded.
-> I'm using both cdn embed and from the output.css to prevent tailwindcss from error
+> I'm using generated css using tailwind and put it on the ~/public/css/style.css
 
 ---
 
@@ -449,7 +736,6 @@ I'm using list-disc to give a styling for my list on Privacy Page
 ## Header
 
 ```html
-<
 <header class="header slide-in-left">
   <nav class="nav">
     <div class="header-left">
@@ -642,7 +928,7 @@ each section has a unique id so that when the user clicks on the navigation tab,
 
 ---
 
-![welcome](./src/assets/images/readme/welcome.png)
+![alt text](public/readme/welcome.jpeg)
 this is the welcome section of the page, it's the first thing that will be shown when the page is loaded.
 
 ###
@@ -657,7 +943,7 @@ this is the welcome section of the page, it's the first thing that will be shown
 
 ### Facilities Section
 
-![facilties](./src/assets/images/readme/fasilities.png)
+![facilities](./public/readme/facilities.jpeg)
 
 ---
 
@@ -703,12 +989,13 @@ it's a simple footer that includes a copyright text.
 ![about.jpeg](./src/assets/images/readme/about.jpeg)
 
 This is the page that shows about the Hotelolet. Not only about the hotelolet, this will shows you also the review of the users
+![alt text](./public/readme/about-review.jpeg)
 
-![about-review.jpeg](./src/assets/images/readme/about-review.jpeg)
+# booking.html
 
-# booked.html
+![alt text](public/readme/booking.jpeg)
 
-![booked.jpeg](./assets/images/readme/booked.jpeg)
+![alt text](public/readme/booking-form.jpeg)
 
 This is the booking section of the page, it's the third thing that will be shown when the page is loaded. This section is the form for the user to book a room.
 
@@ -759,125 +1046,59 @@ roomName.value = paramValue;
 
 # success.html
 
-![success.jpeg](./src/assets/images/readme/success.jpeg)
+![alt text](public/readme/success.jpeg)
 
 This page will show after users submit the form, and will show the name and email that already been submitted. For make it happens, i'm using below javascript simple code to generated that.
 
 ```js
+function capitalizeFirstCharacter(str) {
+  if (str.length === 0) return str;
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 
-const name = urlParams.get("name");
+const username = urlParams.get("name") || "";
+const email = urlParams.get("email") || "";
+const room = urlParams.get("room") || "";
+const message = document.getElementById("successMessage");
+const capitalizedUsername = capitalizeFirstCharacter(username);
+const capitalizedRoom = capitalizeFirstCharacter(room);
 
-const roomName = urlParams.get("roomName");
-
-const email = urlParams.get("email");
-
-const successText = document.getElementById("success-text");
-successText.textContent = `hi ${name}, you have booked ${roomName} room, we have sent you an email to ${email}, thank you!`;
+if (username) {
+  const capitalizedUsername = capitalizeFirstCharacter(username);
+  const capitalizedRoom = capitalizeFirstCharacter(room);
+  message.innerText = `Hi ${capitalizedUsername}, we have received your request and we already sent your booking code on ${email}, hope you will enjoy your ${capitalizedRoom}`;
+} else {
+  message.innerText = `we have sent an email to ${email}`;
+}
 ```
 
 # career.html
 
-![career.jpeg](./src/assets/images/readme/career.jpeg)
+![alt text](public/readme/career.jpeg)
+
 This should be show the career opportunity.
 
-Because this only demo, I don't have an enough time to generate this page well, so I only put sample information.
+Because this only demo, I only put sample information.
 
 # privacy.html
 
-![privacy.jpeg](./src/assets/images/readme/privacy.jpeg)
+![alt text](public/readme/privacy.jpeg)
 
 This should be show the Privacy and Policy.
 
-Because this only demo, I don't have an enough time to generate this page well, so I only put sample information.
+Because this only demo, I only put sample information.
 
 # tnc.html
 
-![tnc.jpeg](./src/assets/images/readme/tnc.jpeg)
+![alt text](public/readme/tnc.jpeg)
 
 This should be show the terms and conditions.
 
-Because this only demo, I don't have an enough time to generate this page well, so I only put sample information.
-
-# CSS
-
-For CSS I created some of the general css which I use often to help me define a styling for some element which is will using it for the remain time. Here are the CSS:
-
-```css
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.grid {
-  display: grid;
-}
-
-.rounded-2xl {
-  border-radius: 1rem; /* 16px */
-}
-
-.grid-template-rows-2 {
-  grid-template-rows: 1fr 1fr;
-}
-
-.grid-template-columns-2 {
-  grid-template-columns: 1fr 1fr;
-}
-
-.px-1 {
-  padding-left: 1vw;
-  padding-right: 1vw;
-}
-
-.carousel-lists {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.carousel-items {
-  display: flex;
-  height: 20vh;
-  justify-content: center;
-  padding: 4vh 0;
-}
-
-.carousel-img {
-  width: 20vw;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 1vw;
-}
-```
+Because this only demo, I only put sample information.
 
 ## Animation
 
