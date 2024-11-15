@@ -741,6 +741,10 @@ video {
   max-height: 491px;
 }
 
+.max-h-\[432px\] {
+  max-height: 432px;
+}
+
 .min-h-\[124px\] {
   min-height: 124px;
 }
@@ -759,6 +763,10 @@ video {
 
 .min-h-\[386px\] {
   min-height: 386px;
+}
+
+.min-h-\[171px\] {
+  min-height: 171px;
 }
 
 .w-20 {
