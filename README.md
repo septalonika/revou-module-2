@@ -401,7 +401,9 @@ I'm using list-disc to give a styling for my list on Privacy Page
 
 1. Try to deploy your web, maybe to Github Pages or to Netlify. Make sure you get great ratings on Google Lighthouse (usually, companies aim for 90), especially for Accessibility and SEO.
 
--
+- ![alt text](public/readme/seo-home.jpeg)
+- ![alt text](public/readme/seo-about.jpeg)
+- ![alt text](public/readme/seo-about-phone.jpeg)
 
 2. Create night mode and day mode, make sure the setting of night mode or day mode is still saved even though the user refreshes the browser or closes the browser (hint: use one of the web storage API), you are allowed to use JS for this.
 
