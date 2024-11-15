@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-color: #d2dce6;
-  --primary: #192524;
-  --secondary: #d1ebdb;
-  --font-family: "Instrument Sans", sans-serif;
-  --font-color: #44576d;
-}
-
 html {
-  font-family: var(--font-family);
+  @apply text-primary;
 
   /* remove scroll bar */
   -ms-overflow-style: none; /* IE and Edge */
@@ -23,10 +15,12 @@ html {
   text-shadow: 2px 2px 4px #ffffff;
 }
 
+html.dark .text-shadow:not(#welcome .text-shadow) {
+  text-shadow: 2px 2px 4px #27374d;
+}
+
 body {
-  color: var(--font-color);
-  background-color: var(--background-color);
-  @apply select-none;
+  @apply bg-info dark:text-accent dark:bg-dark-primary select-none text-primary;
 }
 
 h1,
@@ -40,15 +34,28 @@ h6 {
 }
 
 .btn {
-  @apply rounded-md border-none bg-[#44576d] text-[#dfebf6];
+  @apply text-info rounded-md border-none bg-primary;
 }
 
 .btn:hover {
-  @apply bg-[#768a96];
+  @apply bg-neutral;
 }
 
 .btn:active {
-  @apply scale-90 text-[#efece9];
+  @apply text-active scale-90;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-booking {
+  @apply dark:bg-dark-primary;
+}
+
+.btn-booking:hover {
+  @apply dark:bg-dark-accent text-dark-primary;
+}
+
+.btn-booking:active {
+  @apply text-dark-primary scale-90;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -65,18 +72,18 @@ h6 {
 }
 
 .company-logo {
-  @apply text-xl font-bold md:text-4xl lg:text-2xl;
+  @apply dark:text-secondary text-xl font-bold md:text-4xl lg:text-2xl;
 }
 
 .company-logo span {
-  @apply text-[#86373e];
+  @apply text-company-accent dark:text-dark-company-accent;
 }
 .burger-btn {
   @apply relative ml-auto flex h-[40px] w-[40px];
 }
 
 .burger-btn span {
-  @apply absolute left-1/2 top-1/2 z-[30] h-[5px] w-full -translate-x-1/2 -translate-y-1/2 rounded-[25px] bg-[#44576d] transition-all duration-300;
+  @apply dark:bg-dark-accent absolute left-1/2 top-1/2 z-[30] h-[5px] w-full -translate-x-1/2 -translate-y-1/2 rounded-[25px] bg-primary transition-all duration-300;
 }
 
 .burger-btn span:nth-child(1) {
@@ -100,7 +107,7 @@ h6 {
 }
 
 .burger-menu {
-  @apply fixed -right-[120%] top-0 z-20 flex h-screen w-full max-w-[50%] flex-col items-center justify-center bg-[#aac7d8] transition-all duration-300;
+  @apply bg-sky dark:bg-dark-primary fixed -right-[120%] top-0 z-20 flex h-screen w-full max-w-[50%] flex-col items-center justify-center transition-all duration-300;
 }
 
 .burger-menu.active {
@@ -115,17 +122,21 @@ h6 {
   @apply fixed -right-[130%] top-0 z-10 h-screen w-full bg-[#29353c90];
 }
 
+.dark-btn-mobile {
+  @apply absolute bottom-0 right-0 flex;
+}
+
 .btn:hover {
-  @apply bg-[#768a96];
+  @apply bg-neutral;
 }
 
 .btn:active {
-  @apply scale-90 text-[#efece9];
+  @apply text-active scale-90;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .copyleft {
-  @apply flex h-12 w-screen items-center justify-center bg-[#44576d] leading-5 text-[#e6e6e6] md:h-16 lg:h-10 lg:w-auto;
+  @apply text-placeholder-text dark:bg-dark-secondary flex h-12 w-screen items-center justify-center bg-primary leading-5 md:h-16 lg:h-10 lg:w-auto;
 }
 
 .carousel-control {
@@ -140,6 +151,23 @@ h6 {
   @apply rounded-lg hover:scale-125;
 }
 
+#toggleDark:checked ~ label div.toggle-circle {
+  @apply translate-x-2; /* Applies translate-x-3 when checked */
+}
+
+/* dark mode hero icons */
+.fill-current {
+  fill: currentColor; /* Use current text color */
+}
+
+.dark .fill-current {
+  color: #ffffff; /* White fill for dark mode */
+}
+
+.fill-current {
+  color: #1e1e1e; /* Default fill color */
+}
+
 @media (min-width: 1024px) {
   .carousel-open:checked + .carousel-item {
     @apply static opacity-100;
@@ -150,7 +178,7 @@ h6 {
     @apply block;
   }
   .carousel-control {
-    @apply absolute z-10 hidden h-12 w-12 cursor-pointer rounded-full bg-[#44576d]/50 text-center text-4xl leading-9 text-white transition delay-100 ease-in-out;
+    @apply text-secondary absolute z-10 hidden h-12 w-12 cursor-pointer rounded-full bg-primary/50 text-center text-4xl leading-9 transition delay-100 ease-in-out;
   }
 
   .carousel-control.prev {
@@ -162,7 +190,7 @@ h6 {
   }
 
   .carousel-control:hover {
-    @apply bg-[#44576d]/20 text-[#aaa];
+    @apply bg-primary/20 text-[#aaa];
   }
 
   .carousel-item {
@@ -170,11 +198,15 @@ h6 {
   }
 
   .text-shadow {
-    @apply shadow-none;
+    text-shadow: none;
   }
   .hero-shadow {
-    @apply absolute right-[10vw] top-[25vh] z-auto h-[40vh] w-[36vw] rounded-bl-2xl rounded-br-[10vw] rounded-tl-[10vw] rounded-tr-2xl border-[4px] border-[#768a96];
+    @apply border-neutral absolute right-[10vw] top-[25vh] z-auto h-[40vh] w-[36vw] rounded-bl-2xl rounded-br-[10vw] rounded-tl-[10vw] rounded-tr-2xl border-[4px];
   }
+  .dark-btn-mobile {
+    @apply hidden;
+  }
+
   /* animation */
 
   .hoverimg:hover {

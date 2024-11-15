@@ -94,7 +94,7 @@
   <body class="text-primary md:text-2xl lg:text-xl">
     <div class="px-auto flex flex-col max-md:container">
       <header
-        class="fade-in-bottom sticky top-0 z-20 w-screen flex-col rounded-none bg-[#ffffff] shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw]"
+        class="fade-in-bottom bg-secondary dark:shadow-accent dark:bg-third sticky top-0 z-20 w-screen flex-col rounded-none shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw] dark:shadow-md"
       >
         <nav
           class="grid h-[8vh] w-full grid-cols-2 gap-2 border-none px-[6vw] py-0 lg:px-[4vw] xl:rounded-[10vw]"
@@ -108,17 +108,40 @@
             class="nav-link hidden items-center justify-end gap-[2vw] lg:flex lg:text-sm"
           >
             <a href="../../index.html">
-              <p class="hover:scale-105">Home</p>
+              <p class="nav-anchor">Home</p>
             </a>
             <a href="../../index.html#rooms">
-              <p class="hover:scale-105">Rooms</p>
+              <p class="nav-anchor">Rooms</p>
             </a>
             <a href="../../index.html#facilities">
-              <p class="hover:scale-105">Facilities</p>
+              <p class="nav-anchor">Facilities</p>
             </a>
             <a href="./about.html">
-              <p class="hover:scale-105">About</p>
+              <p class="nav-anchor">About</p>
             </a>
+            <div class="dark-btn">
+              <input id="toggleDark" type="checkbox" class="hidden" />
+              <label for="toggleDark">
+                <div
+                  class="dark:bg-dark-neutral flex h-5 w-9 cursor-pointer items-center rounded-full border-4 p-1 dark:border-none"
+                >
+                  <div
+                    class="dark-toggle toggle-circle absolute transition-all delay-100"
+                  >
+                    <img
+                      src="../assets/images/icons/sun.svg"
+                      alt="sun"
+                      class="w-[3.2vw] -translate-x-[1.4vw] transition-opacity delay-150 dark:hidden"
+                    />
+                    <img
+                      src="../assets/images/icons/moon.svg"
+                      alt="moon"
+                      class="hidden w-[1.6vw] transition-opacity delay-150 dark:block"
+                    />
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
           <!-- burger -->
           <div class="nav-container lg:hidden">
@@ -132,7 +155,7 @@
             <div
               class="nav-link flex h-full w-full flex-col items-end gap-4 px-6 py-24 md:gap-8 md:px-12 md:py-36"
             >
-              <a href="#">
+              <a href="../../index.html">
                 <div>
                   <p class="text-xl md:text-3xl">Home</p>
                 </div>
@@ -146,6 +169,29 @@
               <a href="./about.html">
                 <p class="text-xl md:text-3xl">About</p>
               </a>
+              <div class="dark-btn-mobile">
+                <input id="toggleDark" type="checkbox" class="hidden" />
+                <label for="toggleDark">
+                  <div
+                    class="flex h-[16vh] w-[16vw] cursor-pointer items-center rounded-full p-1"
+                  >
+                    <div
+                      class="dark-toggle toggle-circle absolute transition-all delay-100"
+                    >
+                      <img
+                        src="../assets/images/icons/sun.svg"
+                        alt="sun"
+                        class="w-[14vw] -translate-x-[1vw] transition-opacity delay-150 dark:hidden"
+                      />
+                      <img
+                        src="../assets/images/icons/moon.svg"
+                        alt="moon"
+                        class="hidden w-[10vw] transition-opacity delay-150 dark:block"
+                      />
+                    </div>
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
           <div class="burger-menu-outer lg:hidden"></div>
@@ -175,7 +221,7 @@
                   class="col-span-3 row-span-2 grid h-full items-end justify-end md:pr-[8vw]"
                 >
                   <p class="font-semibold md:text-2xl">
-                    Rp299.<span class="text-xs text-[#768a96] md:text-lg"
+                    Rp299.<span class="text-neutral text-xs md:text-lg"
                       >000,- /Night</span
                     >
                   </p>
@@ -183,7 +229,7 @@
                 <div
                   class="col-span-3 row-span-2 grid h-full justify-end md:pr-[8vw]"
                 >
-                  <p class="text-xs text-[#768a96] md:text-lg">
+                  <p class="text-neutral text-xs md:text-lg">
                     <span class="fa-solid fa-star"></span>4.9 (224 Reviews)
                   </p>
                 </div>
@@ -224,13 +270,13 @@
               />
             </picture>
             <div
-              class="z-1 absolute left-[8vw] top-[32vh] h-[10vh] w-[84vw] rounded-[6vw] bg-white shadow-lg md:top-[44vh] md:rounded-[4vw] lg:left-[50vw] lg:top-[30vh] lg:h-[20vh] lg:w-[44vw]"
+              class="z-1 bg-secondary dark:bg-dark-secondary absolute left-[8vw] top-[32vh] h-[10vh] w-[84vw] rounded-[6vw] shadow-lg md:top-[44vh] md:rounded-[4vw] lg:left-[50vw] lg:top-[30vh] lg:h-[20vh] lg:w-[44vw]"
             ></div>
           </div>
         </section>
         <section
           id="description"
-          class="fade-in-left w-screen rounded-2xl bg-[#ffffff]"
+          class="fade-in-left bg-secondary dark:bg-dark-secondary w-screen rounded-2xl"
         >
           <div class="mb-[4vh] mt-[8vh] flex flex-col gap-4 px-[6vw] py-[2vh]">
             <h2 class="text-xl font-semibold md:text-3xl lg:text-2xl">
@@ -248,7 +294,7 @@
         </section>
         <section
           id="booking-room "
-          class="my-[2vh] w-screen rounded-2xl bg-[#ffffff] py-[2vh] xl:flex xl:h-full"
+          class="bg-secondary dark:bg-dark-secondary my-[2vh] w-screen rounded-2xl py-[2vh] xl:flex xl:h-full"
         >
           <div
             class="my-[2vh] flex flex-col px-[6vw] xl:w-5/12 xl:pl-[6vw] xl:pr-0"
@@ -283,7 +329,7 @@
                     name="name"
                     placeholder="Your Name"
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   />
                   <label for="email">Email </label>
                   <input
@@ -292,7 +338,7 @@
                     name="email"
                     placeholder="email@example.com"
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   />
                   <label for="phone">Phone </label>
                   <input
@@ -301,7 +347,7 @@
                     name="phone"
                     placeholder="081234567890"
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   />
                   <label for="check-in">Check-in </label>
                   <input
@@ -309,7 +355,7 @@
                     id="check-in"
                     name="check-in"
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   />
                   <label for="check-out">Check-out </label>
                   <input
@@ -317,7 +363,7 @@
                     id="check-out"
                     name="check-out"
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   />
                   <div class="flex gap-[1vw]">
                     <div class="flex items-center justify-center gap-[1vw]">
@@ -384,9 +430,13 @@
                     rows="10"
                     placeholder="Your Special Request here..."
                     required
-                    class="rounded border border-[#176b87] p-2 outline-none"
+                    class="rounded border border-[#176b87] p-2 outline-none dark:text-primary"
                   ></textarea>
-                  <button class="btn p-2" type="submit" form="booking-form">
+                  <button
+                    class="btn btn-booking p-2"
+                    type="submit"
+                    form="booking-form"
+                  >
                     Booking
                   </button>
                 </form>
@@ -455,7 +505,7 @@
       </main>
       <footer>
         <div
-          class="flex w-screen flex-col gap-4 rounded-t-3xl bg-[#ffffff] px-[6vw] py-[2vh] lg:w-full lg:rounded-none lg:py-[6vh] lg:text-sm"
+          class="bg-secondary dark:bg-third flex w-screen flex-col gap-4 rounded-t-3xl px-[6vw] py-[2vh] lg:w-full lg:rounded-none lg:py-[6vh] lg:text-sm"
         >
           <div class="lg:flex lg:justify-between lg:gap-2">
             <div class="flex flex-col">
@@ -468,22 +518,30 @@
               <h2 class="font-semibold md:text-2xl lg:text-lg">Information</h2>
               <ul>
                 <li>
-                  <a class="rounded-lg hover:bg-[#dfebe6]" href="./about.html"
+                  <a
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
+                    href="./about.html"
                     >About us
                   </a>
                 </li>
                 <li>
-                  <a class="rounded-lg hover:bg-[#dfebe6]" href="./career.html"
+                  <a
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
+                    href="./career.html"
                     >Our Careers</a
                   >
                 </li>
                 <li>
-                  <a class="rounded-lg hover:bg-[#dfebe6]" href="./privacy.html"
+                  <a
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
+                    href="./privacy.html"
                     >Privacy</a
                   >
                 </li>
                 <li>
-                  <a class="rounded-lg hover:bg-[#dfebe6]" href="./tnc.html"
+                  <a
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
+                    href="./tnc.html"
                     >Terms and Conditions</a
                   >
                 </li>
@@ -494,21 +552,21 @@
               <ul>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="mailto:septalonika@gmail.com"
                     >support@hotelolet.xyz</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="https://wa.me/6285156513102"
                     >021 - 1414 - 0045</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="https://g.co/kgs/56hMk2L"
                   >
                     Hotelolet, Sudirman, Jakarta</a
@@ -529,7 +587,7 @@
                   target="_self"
                 >
                   <input
-                    class="flex h-8 rounded border-none bg-[#e6e6e6] pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw]"
+                    class="bg-placeholder-text flex h-8 rounded border-none pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw] dark:text-primary"
                     type="email"
                     id="email"
                     name="email"
@@ -554,5 +612,6 @@
       </footer>
     </div>
     <script src="../assets/js/booking.js"></script>
+    <script src="../assets/js/dark-mode.js"></script>
   </body>
 </html>

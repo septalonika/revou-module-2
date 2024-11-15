@@ -88,10 +88,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
-  <body class="text-primary md:text-2xl lg:text-sm">
+  <body class="md:text-2xl lg:text-sm">
     <div class="px-auto flex flex-col max-md:container">
       <header
-        class="fade-in-bottom sticky top-0 z-20 w-screen flex-col rounded-none bg-[#ffffff] shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw]"
+        class="fade-in-bottom bg-secondary dark:shadow-accent dark:bg-third sticky top-0 z-30 w-screen flex-col rounded-none shadow-2xl lg:left-[6vw] lg:top-[2vh] lg:w-[88vw] lg:rounded-[10vw] dark:shadow-md"
       >
         <nav
           class="grid h-[8vh] w-full grid-cols-2 gap-2 border-none px-[6vw] py-0 lg:px-[4vw] xl:rounded-[10vw]"
@@ -119,6 +119,29 @@
             <a class="hover:scale-105" href="./src/pages/about.html">
               <p>About</p>
             </a>
+            <div class="dark-btn">
+              <input id="toggleDark" type="checkbox" class="hidden" />
+              <label for="toggleDark">
+                <div
+                  class="dark:bg-dark-neutral flex h-5 w-9 cursor-pointer items-center rounded-full border-4 p-1 dark:border-none"
+                >
+                  <div
+                    class="dark-toggle toggle-circle absolute transition-all delay-100"
+                  >
+                    <img
+                      src="./src/assets/images/icons/sun.svg"
+                      alt="sun"
+                      class="w-[3.2vw] -translate-x-[1.4vw] transition-opacity delay-150 dark:hidden"
+                    />
+                    <img
+                      src="./src/assets/images/icons/moon.svg"
+                      alt="moon"
+                      class="hidden w-[1.6vw] transition-opacity delay-150 dark:block"
+                    />
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
           <!-- burger -->
           <div class="nav-container lg:hidden">
@@ -147,6 +170,29 @@
                 <p class="text-xl md:text-3xl">About</p>
               </a>
             </div>
+            <div class="dark-btn-mobile">
+              <input id="toggleDark" type="checkbox" class="hidden" />
+              <label for="toggleDark">
+                <div
+                  class="flex h-[16vh] w-[16vw] cursor-pointer items-center rounded-full p-1"
+                >
+                  <div
+                    class="dark-toggle toggle-circle absolute transition-all delay-100"
+                  >
+                    <img
+                      src="./src/assets/images/icons/sun.svg"
+                      alt="sun"
+                      class="w-[14vw] -translate-x-[1vw] transition-opacity delay-150 dark:hidden"
+                    />
+                    <img
+                      src="./src/assets/images/icons/moon.svg"
+                      alt="moon"
+                      class="hidden w-[10vw] transition-opacity delay-150 dark:block"
+                    />
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
           <div class="burger-menu-outer lg:hidden"></div>
           <!-- burger -->
@@ -158,19 +204,19 @@
           class="lg:mx-[6vw] lg:mt-[6vh] lg:grid lg:grid-cols-2"
         >
           <div
-            class="absolute top-[8vh] z-10 flex h-[30vh] w-full bg-white/50 md:h-[40vh] lg:static lg:top-0 lg:z-0 lg:h-full lg:bg-transparent"
+            class="dark:bg-third/10 absolute top-[8vh] z-20 flex h-[30vh] w-full bg-white/50 md:h-[40vh] lg:static lg:top-0 lg:z-0 lg:h-full lg:bg-transparent"
           >
             <div
               class="flex flex-col px-[6vw] py-[2vh] text-start md:gap-10 md:py-[6vh] lg:px-0 lg:py-0"
             >
               <div class="flex flex-col">
                 <h1
-                  class="typewriter text-shadow my-[1vh] text-xl font-bold md:text-4xl lg:text-2xl"
+                  class="text-shadow heading-shadow typewriter dark:text-third lg:dark:text-dark-accent my-[1vh] text-xl font-bold md:text-4xl lg:text-2xl"
                 >
                   Tired of Jakarta?
                 </h1>
                 <h2
-                  class="typewriter text-shadow my-[1.4vh] text-lg md:text-3xl lg:text-lg"
+                  class="text-shadow heading-shadow typewriter dark:text-third lg:dark:text-dark-accent my-[1.4vh] text-lg md:text-3xl lg:text-lg"
                 >
                   Let's skip the traffic and bring the positive morning
                 </h2>
@@ -193,33 +239,81 @@
               >
 
               <div
-                class="absolute top-[25vh] z-10 flex h-[10vh] w-[90vw] items-center justify-between px-6 md:top-[34vh] md:px-20 lg:static lg:top-0 lg:z-0 lg:w-full lg:justify-start lg:gap-10 lg:px-0"
+                class="absolute top-[25vh] z-20 flex h-[10vh] w-[90vw] items-center justify-between px-6 md:top-[34vh] md:px-20 lg:static lg:top-0 lg:z-0 lg:w-full lg:justify-start lg:gap-10 lg:px-0"
               >
                 <div class="flex flex-col items-start md:gap-2">
-                  <img
-                    loading="lazy"
-                    class="fade-in-image hero-info-img"
-                    src="./src/assets/images/icons/bed.svg"
-                    alt="hotel"
-                  />
+                  <svg
+                    viewBox="0 0 307 218"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hero-info-img fill-current"
+                  >
+                    <path
+                      d="M274.708 89.7656H31.9427C14.3333 89.7656 0 104.156 0 121.828V211.589C0 215.13 2.85938 218 6.38542 218C9.91146 218 12.776 215.13 12.776 211.589V192.354H293.87V211.589C293.87 215.13 296.734 218 300.26 218C303.786 218 306.651 215.13 306.651 211.589V121.828C306.651 104.156 292.313 89.7656 274.708 89.7656ZM293.87 179.531H12.776V166.708H293.87V179.531ZM31.9427 76.9427H63.8854C61.9167 76.9427 60.0625 76.0313 58.849 74.4792C57.6354 72.9271 57.2135 70.901 57.6875 68.9792L61.6615 53.0417C63.7969 44.4635 71.4479 38.474 80.25 38.474H121.38C131.948 38.474 140.547 47.1042 140.547 57.7083V70.5313C140.547 74.0729 137.682 76.9427 134.156 76.9427H172.49C168.964 76.9427 166.099 74.0729 166.099 70.5313V57.7083C166.099 47.1042 174.698 38.474 185.266 38.474H226.396C235.198 38.474 242.854 44.4635 244.984 53.0417L248.958 68.9792C249.448 70.8906 249.01 72.9271 247.797 74.4792C246.583 76.0313 244.729 76.9427 242.766 76.9427H274.708C278.234 76.9427 281.094 74.0729 281.094 70.5313V32.0625C281.094 14.3906 266.76 0 249.151 0H57.4948C39.8906 0 25.5521 14.3906 25.5521 32.0625V70.5313C25.5521 74.0729 28.4167 76.9427 31.9427 76.9427Z"
+                    />
+                  </svg>
                   <p class="fade-in-image md:text-lg">200+ Beds</p>
                 </div>
                 <div class="flex flex-col items-start md:gap-2">
-                  <img
-                    loading="lazy"
-                    class="fade-in-image hero-info-img"
-                    src="./src/assets/images/icons/hotel.svg"
-                    alt="hotel"
-                  />
+                  <svg
+                    viewBox="0 0 500 502"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hero-info-img fill-current"
+                  >
+                    <path
+                      d="M249.849 0C221.469 0 195.771 11.5461 177.177 30.2196C158.578 48.893 147.078 74.6887 147.078 103.183C147.078 109.327 149.526 114.812 153.521 118.828C157.438 122.756 162.74 125.213 168.693 125.297C181.01 125.543 191.042 115.225 191.125 102.858C191.286 69.6896 218.854 42.9108 252.219 44.307C282.969 45.5359 307.844 70.9184 308.495 101.792C309.312 135.039 282.724 162.147 249.771 162.147H205.724C173.26 162.147 147 188.518 147 221.112V501.177H352.542V104.249C352.625 47.089 306.781 0 249.849 0Z"
+                    />
+                  </svg>
                   <p class="fade-in-image md:text-lg">40+ Rooms</p>
                 </div>
                 <div class="flex flex-col items-start md:gap-2">
-                  <img
-                    loading="lazy"
-                    class="fade-in-image hero-info-img"
-                    src="./src/assets/images/icons/user.svg"
-                    alt="hotel"
-                  />
+                  <svg
+                    viewBox="0 0 280 307"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hero-info-img fill-current"
+                  >
+                    <mask
+                      id="mask0_15_10649"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="65"
+                      y="0"
+                      width="150"
+                      height="161"
+                    >
+                      <path
+                        d="M65.3281 0H214.661V160.161H65.3281V0Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_15_10649)">
+                      <path
+                        d="M140 159.245C181.135 159.245 214.594 115.63 214.594 74.5365C214.594 33.4427 181.135 0 140 0C98.8646 0 65.4062 33.4427 65.4062 74.5365C65.4115 115.625 98.8698 159.245 140 159.245Z"
+                      />
+                    </g>
+                    <mask
+                      id="mask1_15_10649"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="158"
+                      width="280"
+                      height="149"
+                    >
+                      <path
+                        d="M0 158.828H279.995V307H0V158.828Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask1_15_10649)">
+                      <path
+                        d="M196 160.01C181.531 171.026 163.479 177.578 143.927 177.578H136.073C116.516 177.578 98.4637 171.021 83.995 160.01C36.7502 167.641 0.677246 208.552 0.677246 257.906C0.677246 285.016 63.0522 307 140 307C216.943 307 279.323 285.016 279.323 257.906C279.323 208.552 243.245 167.641 196 160.01Z"
+                      />
+                    </g>
+                  </svg>
+
                   <p class="fade-in-image md:text-lg">800+ Booked</p>
                 </div>
               </div>
@@ -257,7 +351,7 @@
               />
             </picture>
             <div
-              class="z-1 absolute left-[5vw] top-[33vh] h-[10vh] w-[90vw] rounded-[6vw] bg-white shadow-lg md:top-[42vh] lg:hidden"
+              class="dark:bg-dark-secondary absolute left-[5vw] top-[33vh] z-10 h-[10vh] w-[90vw] rounded-[6vw] bg-white shadow-lg md:top-[42vh] lg:hidden"
             ></div>
           </div>
         </section>
@@ -265,11 +359,13 @@
           id="most-picked"
           class="fade-in-bottom mb-[4vh] mt-[8vh] flex w-screen flex-col gap-4 px-[6vw] lg:mt-[14vh]"
         >
-          <h2 class="text-shadow text-xl font-semibold md:text-3xl lg:text-2xl">
+          <h2
+            class="text-shadow heading-shadow text-xl font-semibold md:text-3xl lg:text-2xl"
+          >
             Most Picked
           </h2>
           <div class="scrollbar-none relative overflow-x-auto">
-            <ul class="flex gap-2 lg:gap-8">
+            <ul class="flex gap-2 px-[1vw] py-[2vh] lg:gap-8">
               <li class="hoverimg">
                 <a href="./src/pages/booking.html?room=double-1">
                   <div
@@ -311,7 +407,7 @@
                     </picture>
 
                     <div
-                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+                      class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
                         class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
@@ -364,7 +460,7 @@
                       />
                     </picture>
                     <div
-                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+                      class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
                         class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
@@ -417,7 +513,7 @@
                       />
                     </picture>
                     <div
-                      class="absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
+                      class="dark:bg-dark-secondary absolute bottom-0 left-0 w-full rounded-b-xl bg-white"
                     >
                       <div
                         class="flex h-16 flex-col justify-center p-2 md:h-24 md:px-4 md:text-xl lg:text-lg"
@@ -440,7 +536,7 @@
             <li>
               <div class="flex flex-col gap-2">
                 <h2
-                  class="text-shadow text-xl font-semibold md:text-3xl lg:text-2xl"
+                  class="text-shadow heading-shadow text-xl font-semibold md:text-3xl lg:text-2xl"
                 >
                   Single Bed Rooms
                 </h2>
@@ -451,7 +547,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=single-1">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -501,7 +597,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=single-2">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -551,7 +647,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=single-3">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -601,7 +697,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=single-4">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -654,7 +750,9 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-shadow text-xl font-semibold md:text-3xl">
+                <h2
+                  class="text-shadow heading-shadow text-xl font-semibold md:text-3xl"
+                >
                   Double Bed Rooms
                 </h2>
                 <div class="flex">
@@ -664,7 +762,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=double-1">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -714,7 +812,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=double-2">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -764,7 +862,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=double-3">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -814,7 +912,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=double-4">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -867,7 +965,9 @@
             </li>
             <li>
               <div class="flex flex-col gap-2">
-                <h2 class="text-shadow text-xl font-semibold md:text-3xl">
+                <h2
+                  class="text-shadow heading-shadow text-xl font-semibold md:text-3xl"
+                >
                   Twin Bed Rooms
                 </h2>
                 <div class="flex">
@@ -877,7 +977,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=twin-1">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -927,7 +1027,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=twin-2">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -977,7 +1077,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=twin-3">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -1027,7 +1127,7 @@
                     <li class="hoverimg">
                       <a href="./src/pages/booking.html?room=twin-4">
                         <div
-                          class="w-90 flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[22vw]"
+                          class="w-90 dark:bg-dark-secondary flex flex-col rounded-lg bg-white py-2 shadow-lg md:h-[28vh] md:w-[44vw] lg:h-[40vh] lg:w-[21vw]"
                         >
                           <picture>
                             <source
@@ -1086,7 +1186,7 @@
         >
           <div class="flex flex-col gap-8">
             <div
-              class="flex flex-col gap-2 rounded-2xl bg-[#ffffff] px-[6vw] py-[2vh] lg:py-[4vh]"
+              class="bg-secondary dark:bg-dark-secondary flex flex-col gap-2 rounded-2xl px-[6vw] py-[2vh] lg:py-[4vh]"
             >
               <h2 class="text-xl font-semibold md:text-3xl">Facilities</h2>
               <div class="flex">
@@ -1179,7 +1279,7 @@
       </main>
       <footer class="fade-in-bottom">
         <div
-          class="flex w-screen flex-col gap-4 bg-[#ffffff] px-[6vw] py-[2vh] md:rounded-t-3xl lg:w-full lg:rounded-none lg:py-[6vh]"
+          class="bg-secondary dark:bg-third flex w-screen flex-col gap-4 px-[6vw] py-[2vh] md:rounded-t-3xl lg:w-full lg:rounded-none lg:py-[6vh]"
         >
           <div class="lg:flex lg:justify-between lg:gap-2">
             <div class="flex flex-col">
@@ -1193,28 +1293,28 @@
               <ul>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="./src/pages/about.html"
                     >About us
                   </a>
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="./src/pages/career.html"
                     >Our Careers</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="./src/pages/privacy.html"
                     >Privacy</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="./src/pages/tnc.html"
                     >Terms and Conditions</a
                   >
@@ -1226,21 +1326,21 @@
               <ul>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="mailto:septalonika@gmail.com"
                     >support@hotelolet.xyz</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="https://wa.me/6285156513102"
                     >021 - 1414 - 0045</a
                   >
                 </li>
                 <li>
                   <a
-                    class="rounded-lg hover:bg-[#dfebe6]"
+                    class="hover:bg-info rounded-lg hover:dark:bg-primary"
                     href="https://g.co/kgs/56hMk2L"
                   >
                     Hotelolet, Sudirman, Jakarta</a
@@ -1261,7 +1361,7 @@
                   target="_self"
                 >
                   <input
-                    class="flex h-8 rounded border-none bg-[#e6e6e6] pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw]"
+                    class="flex h-8 rounded border-none bg-[#e6e6e6] pl-2 pr-8 focus:outline-none md:h-12 md:w-[60vw] md:pr-[10vw] lg:h-8 lg:w-[18vw] lg:pr-[4vw] dark:text-primary"
                     type="email"
                     id="email"
                     name="email"
@@ -1286,5 +1386,6 @@
       </footer>
     </div>
     <script src="./src/assets/js/index.js"></script>
+    <script src="./src/assets/js/dark-mode.js"></script>
   </body>
 </html>
