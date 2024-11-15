@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>http://cugud.com/</loc>
+  <loc>https://cugud.com/</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/#rooms</loc>
+  <loc>https://cugud.com/#rooms</loc>
   <priority>0.8</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/#facilities</loc>
+  <loc>https://cugud.com/#facilities</loc>
   <priority>0.1</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/about</loc>
+  <loc>https://cugud.com/src/pages/about</loc>
   <priority>1.0</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=double-1</loc>
+  <loc>https://cugud.com/src/pages/booking?room=double-1</loc>
   <priority>1.0</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=double-3</loc>
+  <loc>https://cugud.com/src/pages/booking?room=double-3</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=twin-4</loc>
+  <loc>https://cugud.com/src/pages/booking?room=twin-4</loc>
   <priority>0.4</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=single-1</loc>
+  <loc>https://cugud.com/src/pages/booking?room=single-1</loc>
   <priority>0.6</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=single-2</loc>
+  <loc>https://cugud.com/src/pages/booking?room=single-2</loc>
   <priority>0.9</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=single-3</loc>
+  <loc>https://cugud.com/src/pages/booking?room=single-3</loc>
   <priority>0.7</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=single-4</loc>
+  <loc>https://cugud.com/src/pages/booking?room=single-4</loc>
   <priority>0.3</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=double-2</loc>
+  <loc>https://cugud.com/src/pages/booking?room=double-2</loc>
   <priority>0.1</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=double-4</loc>
+  <loc>https://cugud.com/src/pages/booking?room=double-4</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=twin-1</loc>
+  <loc>https://cugud.com/src/pages/booking?room=twin-1</loc>
   <priority>0.8</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=twin-2</loc>
+  <loc>https://cugud.com/src/pages/booking?room=twin-2</loc>
   <priority>0.6</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/booking?room=twin-3</loc>
+  <loc>https://cugud.com/src/pages/booking?room=twin-3</loc>
   <priority>0.8</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/career</loc>
+  <loc>https://cugud.com/src/pages/career</loc>
   <priority>0.2</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/privacy</loc>
+  <loc>https://cugud.com/src/pages/privacy</loc>
   <priority>0.2</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://cugud.com/src/pages/tnc</loc>
+  <loc>https://cugud.com/src/pages/tnc</loc>
   <priority>0.2</priority>
   <changefreq>monthly</changefreq>
 </url>

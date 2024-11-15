@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hotelolet.cugud.com/sitemap.xml
