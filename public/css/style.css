@@ -737,10 +737,6 @@ video {
   max-height: 20vh;
 }
 
-.max-h-\[30vh\] {
-  max-height: 30vh;
-}
-
 .max-h-\[491px\] {
   max-height: 491px;
 }
@@ -757,16 +753,12 @@ video {
   min-height: 26vh;
 }
 
-.min-h-\[30vh\] {
-  min-height: 30vh;
+.min-h-\[327px\] {
+  min-height: 327px;
 }
 
 .min-h-\[386px\] {
   min-height: 386px;
-}
-
-.min-h-\[327px\] {
-  min-height: 327px;
 }
 
 .w-20 {
@@ -1466,9 +1458,15 @@ h6 {
 
 .dark-btn-mobile {
   position: absolute;
-  bottom: 0px;
   right: 0px;
+  top: 240px;
   display: flex;
+}
+
+@media (min-width: 768px) {
+  .dark-btn-mobile {
+    top: 360px;
+  }
 }
 
 .btn:hover {
@@ -2294,16 +2292,12 @@ h6 {
     height: 100%;
   }
 
-  .lg\:max-h-\[50vh\] {
-    max-height: 50vh;
+  .lg\:max-h-\[327px\] {
+    max-height: 327px;
   }
 
   .lg\:max-h-\[60vh\] {
     max-height: 60vh;
-  }
-
-  .lg\:max-h-\[327px\] {
-    max-height: 327px;
   }
 
   .lg\:min-h-\[50vh\] {
@@ -2344,10 +2338,6 @@ h6 {
 
   .lg\:w-\[24vw\] {
     width: 24vw;
-  }
-
-  .lg\:w-\[36vw\] {
-    width: 36vw;
   }
 
   .lg\:w-\[40vw\] {

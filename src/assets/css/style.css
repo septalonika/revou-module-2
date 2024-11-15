@@ -123,7 +123,7 @@ h6 {
 }
 
 .dark-btn-mobile {
-  @apply absolute bottom-0 right-0 flex;
+  @apply absolute right-0 top-[240px] flex md:top-[360px];
 }
 
 .btn:hover {
