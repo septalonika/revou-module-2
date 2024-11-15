@@ -2364,6 +2364,10 @@ h6 {
     max-height: 60vh;
   }
 
+  .lg\:max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+
   .lg\:min-h-\[50vh\] {
     min-height: 50vh;
   }
@@ -2424,12 +2428,20 @@ h6 {
     width: 100%;
   }
 
+  .lg\:w-\[36vw\] {
+    width: 36vw;
+  }
+
   .lg\:max-w-\[40vw\] {
     max-width: 40vw;
   }
 
   .lg\:max-w-\[491px\] {
     max-width: 491px;
+  }
+
+  .lg\:max-w-\[36vw\] {
+    max-width: 36vw;
   }
 
   .lg\:grid-cols-2 {
